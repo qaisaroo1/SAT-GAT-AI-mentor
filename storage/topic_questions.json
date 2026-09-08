@@ -1,0 +1,2882 @@
+[
+  {
+    "id": "sat_linear_01",
+    "exam_type": "SAT",
+    "topic": "Linear Equations and Slope-Intercept Form",
+    "difficulty": "Medium",
+    "question": "Line L1 has the equation 3x - 6y = 12. Line L2 is perpendicular to line L1 and passes through the point (2, -1). What is the equation of line L2?",
+    "options": [
+      {
+        "key": "A",
+        "text": "y = 2x - 5"
+      },
+      {
+        "key": "B",
+        "text": "y = -2x + 3"
+      },
+      {
+        "key": "C",
+        "text": "y = -0.5x"
+      },
+      {
+        "key": "D",
+        "text": "y = 0.5x - 2"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "Step 1: Rearrange 3x - 6y = 12 into slope form: y = (1/2)x - 2, so the slope is 1/2.\n\nStep 2: Perpendicular lines have negative reciprocal slopes. Flip 1/2 and change the sign to get m = -2.\n\nStep 3: Plug point (2, -1) and slope -2 into line equation: y - (-1) = -2(x - 2), which simplifies to y = -2x + 3.",
+    "distractor_analysis": {
+      "A": "Forgot negative sign for perpendicular slope.",
+      "C": "Used negative slope (-1/2) without taking reciprocal.",
+      "D": "Used parallel slope (1/2) instead of perpendicular."
+    }
+  },
+  {
+    "id": "sat_linear_02",
+    "exam_type": "SAT",
+    "topic": "Linear Equations and Slope-Intercept Form",
+    "difficulty": "Medium",
+    "question": "A service technician charges a flat visit fee of  plus  for each hour of repair work. If a customer paid a total of , how many hours did the technician work?",
+    "options": [
+      {
+        "key": "A",
+        "text": "3 hours"
+      },
+      {
+        "key": "B",
+        "text": "5 hours"
+      },
+      {
+        "key": "C",
+        "text": "5.4 hours"
+      },
+      {
+        "key": "D",
+        "text": "4 hours"
+      }
+    ],
+    "correct_key": "D",
+    "rationale": "Step 1: Set up the linear equation: Total Cost = Flat Fee + (Rate x Hours). So 190 = 50 + 35h.\n\nStep 2: Subtract flat fee: 190 - 50 = 140. So 35h = 140.\n\nStep 3: Divide 140 by 35 to get hours: h = 4.",
+    "distractor_analysis": {
+      "A": "Subtracted incorrectly or used (190 - 50) / 45.",
+      "B": "Miscalculated 140 / 35 as 5.",
+      "C": "Divided 190 directly by 35 without subtracting 50 flat fee first."
+    }
+  },
+  {
+    "id": "sat_linear_03",
+    "exam_type": "SAT",
+    "topic": "Linear Equations and Slope-Intercept Form",
+    "difficulty": "Easy",
+    "question": "Line A passes through the points (1, 3) and (4, 9). Line B is parallel to Line A. What is the slope of Line B?",
+    "options": [
+      {
+        "key": "A",
+        "text": "2"
+      },
+      {
+        "key": "B",
+        "text": "-0.5"
+      },
+      {
+        "key": "C",
+        "text": "0.5"
+      },
+      {
+        "key": "D",
+        "text": "6"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Step 1: Find slope of Line A: m = (9 - 3) / (4 - 1) = 6 / 3 = 2.\n\nStep 2: Parallel lines always have identical slopes.\n\nStep 3: Therefore, Line B also has a slope of 2.",
+    "distractor_analysis": {
+      "B": "Used negative reciprocal (-1/2) instead of parallel slope.",
+      "C": "Inverted delta x and delta y (3/6 = 0.5).",
+      "D": "Subtracted only y-values (9 - 3 = 6) without dividing by delta x."
+    }
+  },
+  {
+    "id": "sat_linear_04",
+    "exam_type": "SAT",
+    "topic": "Linear Equations and Slope-Intercept Form",
+    "difficulty": "Medium",
+    "question": "What is the y-intercept of the line with equation 4x + 2y = 16?",
+    "options": [
+      {
+        "key": "A",
+        "text": "(0, 4)"
+      },
+      {
+        "key": "B",
+        "text": "(0, 16)"
+      },
+      {
+        "key": "C",
+        "text": "(0, 8)"
+      },
+      {
+        "key": "D",
+        "text": "(4, 0)"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Step 1: The y-intercept is the point where x = 0.\n\nStep 2: Substitute x = 0: 4(0) + 2y = 16, which simplifies to 2y = 16.\n\nStep 3: Divide by 2: y = 8. So the y-intercept is (0, 8).",
+    "distractor_analysis": {
+      "A": "Divided 16 by 4 (the x-coefficient), getting the x-intercept instead.",
+      "B": "Took 16 directly without dividing by 2.",
+      "D": "Reversed coordinates and found x-intercept (4, 0)."
+    }
+  },
+  {
+    "id": "sat_linear_05",
+    "exam_type": "SAT",
+    "topic": "Linear Equations and Slope-Intercept Form",
+    "difficulty": "Hard",
+    "question": "A phone company charges a monthly bill according to C = 15 + 0.20m, where C is total cost in dollars and m is text messages sent. What does 0.20 represent?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The base monthly subscription fee"
+      },
+      {
+        "key": "B",
+        "text": "The price charged for each individual text message"
+      },
+      {
+        "key": "C",
+        "text": "The total number of text messages sent"
+      },
+      {
+        "key": "D",
+        "text": "The maximum allowable bill discount"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "Step 1: In the linear model y = mx + b, slope m represents the rate per unit increase in x.\n\nStep 2: Here, 0.20 is multiplied by the number of messages m.\n\nStep 3: Therefore, 0.20 represents the cost per individual text message (.20).",
+    "distractor_analysis": {
+      "A": "Confused the rate (0.20) with the flat monthly fee ().",
+      "C": "Confused variable m with its coefficient.",
+      "D": "Assumed an outside discount."
+    }
+  },
+  {
+    "id": "sat_systems_01",
+    "exam_type": "SAT",
+    "topic": "Systems of Linear Equations",
+    "difficulty": "Medium",
+    "question": "Consider the system of two equations:\n2x - 3y = 7\nkx - 6y = 12\nFor which value of the constant k does the system have NO solution?",
+    "options": [
+      {
+        "key": "A",
+        "text": "k = -4"
+      },
+      {
+        "key": "B",
+        "text": "k = 2"
+      },
+      {
+        "key": "C",
+        "text": "k = 4"
+      },
+      {
+        "key": "D",
+        "text": "k = 14"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Step 1: A system has NO solution when the lines are parallel (equal slopes) but different intercepts.\n\nStep 2: Compare coefficients: 2 / k must equal -3 / -6.\n\nStep 3: -3 / -6 = 1/2. So 2 / k = 1/2, which gives k = 4. (Check intercepts: 7/12 != 1/2, so lines never cross).",
+    "distractor_analysis": {
+      "A": "Sign error when simplifying negative coefficients.",
+      "B": "Kept 2 without scaling for the doubled y-coefficient.",
+      "D": "Multiplied 2 by 7 instead of finding slope ratio."
+    }
+  },
+  {
+    "id": "sat_systems_02",
+    "exam_type": "SAT",
+    "topic": "Systems of Linear Equations",
+    "difficulty": "Medium",
+    "question": "Consider the system of equations:\n3x + 2y = 16\nx - 2y = 8\nWhat is the value of x?",
+    "options": [
+      {
+        "key": "A",
+        "text": "6"
+      },
+      {
+        "key": "B",
+        "text": "-1"
+      },
+      {
+        "key": "C",
+        "text": "4"
+      },
+      {
+        "key": "D",
+        "text": "8"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Step 1: Notice +2y in equation 1 and -2y in equation 2 are opposites.\n\nStep 2: Add both equations together: (3x + 2y) + (x - 2y) = 16 + 8.\n\nStep 3: 4x = 24. Divide by 4 to get x = 6.",
+    "distractor_analysis": {
+      "B": "Solved for y instead of x (y = -1).",
+      "C": "Subtracted equations instead of adding.",
+      "D": "Took constant 8 directly from second equation."
+    }
+  },
+  {
+    "id": "sat_systems_03",
+    "exam_type": "SAT",
+    "topic": "Systems of Linear Equations",
+    "difficulty": "Medium",
+    "question": "Consider the system:\n4x - 6y = 10\n2x - 3y = c\nFor which value of the constant c does the system have INFINITELY MANY solutions?",
+    "options": [
+      {
+        "key": "A",
+        "text": "c = 10"
+      },
+      {
+        "key": "B",
+        "text": "c = -5"
+      },
+      {
+        "key": "C",
+        "text": "c = 2"
+      },
+      {
+        "key": "D",
+        "text": "c = 5"
+      }
+    ],
+    "correct_key": "D",
+    "rationale": "Step 1: Infinitely many solutions occur when both equations describe the exact same line.\n\nStep 2: Divide the first equation by 2: (4x - 6y = 10) / 2 gives 2x - 3y = 5.\n\nStep 3: Compare with 2x - 3y = c. For the lines to be identical, c must be 5.",
+    "distractor_analysis": {
+      "A": "Kept 10 without dividing by 2.",
+      "B": "Added an incorrect negative sign.",
+      "C": "Subtracted coefficients."
+    }
+  },
+  {
+    "id": "sat_systems_04",
+    "exam_type": "SAT",
+    "topic": "Systems of Linear Equations",
+    "difficulty": "Easy",
+    "question": "In the system of equations:\ny = 2x + 1\n3x + y = 11\nWhat is the value of x?",
+    "options": [
+      {
+        "key": "A",
+        "text": "5"
+      },
+      {
+        "key": "B",
+        "text": "2"
+      },
+      {
+        "key": "C",
+        "text": "4"
+      },
+      {
+        "key": "D",
+        "text": "1"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "Step 1: Substitute y = 2x + 1 into the second equation: 3x + (2x + 1) = 11.\n\nStep 2: Combine terms: 5x + 1 = 11.\n\nStep 3: Subtract 1: 5x = 10. Divide by 5: x = 2.",
+    "distractor_analysis": {
+      "A": "Solved for y (y = 5) instead of x.",
+      "C": "Added 1 to 11 instead of subtracting.",
+      "D": "Subtracted incorrectly."
+    }
+  },
+  {
+    "id": "sat_systems_05",
+    "exam_type": "SAT",
+    "topic": "Systems of Linear Equations",
+    "difficulty": "Hard",
+    "question": "A student bought a total of 8 notebooks and pens for . Each notebook costs  and each pen costs . How many notebooks did the student buy?",
+    "options": [
+      {
+        "key": "A",
+        "text": "3 notebooks"
+      },
+      {
+        "key": "B",
+        "text": "5 notebooks"
+      },
+      {
+        "key": "C",
+        "text": "6 notebooks"
+      },
+      {
+        "key": "D",
+        "text": "4 notebooks"
+      }
+    ],
+    "correct_key": "D",
+    "rationale": "Step 1: Set up equations: n + p = 8 (items) and 3n + 2p = 20 (cost).\n\nStep 2: p = 8 - n. Substitute: 3n + 2(8 - n) = 20.\n\nStep 3: 3n + 16 - 2n = 20 => n = 4 notebooks.",
+    "distractor_analysis": {
+      "A": "Guessed 3 (would cost , not ).",
+      "B": "Guessed 5 (would cost , over budget).",
+      "C": "Subtracted incorrectly."
+    }
+  },
+  {
+    "id": "sat_quad_01",
+    "exam_type": "SAT",
+    "topic": "Quadratic Functions and Parabola Properties",
+    "difficulty": "Medium",
+    "question": "The function f is defined by f(x) = 2(x - 3)\u00b2 - 8. What is the minimum value of f(x)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "3"
+      },
+      {
+        "key": "B",
+        "text": "-3"
+      },
+      {
+        "key": "C",
+        "text": "10"
+      },
+      {
+        "key": "D",
+        "text": "-8"
+      }
+    ],
+    "correct_key": "D",
+    "rationale": "Step 1: Vertex form is f(x) = a(x - h)\u00b2 + k with vertex (h, k) = (3, -8).\n\nStep 2: Since a = 2 > 0, the parabola opens upward, so vertex is minimum.\n\nStep 3: The minimum VALUE is the y-coordinate: -8.",
+    "distractor_analysis": {
+      "A": "Picked the x-value (x = 3) where minimum occurs instead of minimum value itself.",
+      "B": "Flipped x-sign to -3.",
+      "C": "Added 2 and 8."
+    }
+  },
+  {
+    "id": "sat_quad_02",
+    "exam_type": "SAT",
+    "topic": "Quadratic Functions and Parabola Properties",
+    "difficulty": "Medium",
+    "question": "What are the solutions (x-intercepts) of the equation x\u00b2 - 7x + 10 = 0?",
+    "options": [
+      {
+        "key": "A",
+        "text": "x = -2 and x = -5"
+      },
+      {
+        "key": "B",
+        "text": "x = 2 and x = 5"
+      },
+      {
+        "key": "C",
+        "text": "x = 1 and x = 10"
+      },
+      {
+        "key": "D",
+        "text": "x = -1 and x = -10"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "Step 1: Two numbers that multiply to +10 and add to -7 are -2 and -5.\n\nStep 2: Factor: (x - 2)(x - 5) = 0.\n\nStep 3: Set factors to zero: x = 2 and x = 5.",
+    "distractor_analysis": {
+      "A": "Forgot to flip signs when solving factors = 0.",
+      "C": "Used factors that add to 11 (1 and 10).",
+      "D": "Wrong factors and reversed signs."
+    }
+  },
+  {
+    "id": "sat_quad_03",
+    "exam_type": "SAT",
+    "topic": "Quadratic Functions and Parabola Properties",
+    "difficulty": "Hard",
+    "question": "What are the coordinates of the vertex of the parabola f(x) = x\u00b2 - 6x + 5?",
+    "options": [
+      {
+        "key": "A",
+        "text": "(-3, -4)"
+      },
+      {
+        "key": "B",
+        "text": "(3, 5)"
+      },
+      {
+        "key": "C",
+        "text": "(3, -4)"
+      },
+      {
+        "key": "D",
+        "text": "(6, 5)"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Step 1: x-coordinate of vertex: x = -b / (2a) = -(-6) / 2 = 3.\n\nStep 2: Substitute x = 3: f(3) = 3\u00b2 - 6(3) + 5 = 9 - 18 + 5 = -4.\n\nStep 3: Vertex is (3, -4).",
+    "distractor_analysis": {
+      "A": "Sign error on -b/(2a), getting -3.",
+      "B": "Used y-intercept (5) as y-coordinate.",
+      "D": "Used -b directly without dividing by 2a."
+    }
+  },
+  {
+    "id": "sat_quad_04",
+    "exam_type": "SAT",
+    "topic": "Quadratic Functions and Parabola Properties",
+    "difficulty": "Medium",
+    "question": "How many real solutions does the quadratic equation 2x\u00b2 - 4x + 5 = 0 have?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Zero real solutions"
+      },
+      {
+        "key": "B",
+        "text": "Exactly one real solution"
+      },
+      {
+        "key": "C",
+        "text": "Exactly two real solutions"
+      },
+      {
+        "key": "D",
+        "text": "Infinitely many solutions"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Step 1: Calculate discriminant D = b\u00b2 - 4ac.\n\nStep 2: D = (-4)\u00b2 - 4(2)(5) = 16 - 40 = -24.\n\nStep 3: Since D < 0, there are zero real solutions.",
+    "distractor_analysis": {
+      "B": "Assumed D = 0 without calculating.",
+      "C": "Assumed quadratics always have two real roots.",
+      "D": "Quadratics never have infinitely many solutions."
+    }
+  },
+  {
+    "id": "sat_quad_05",
+    "exam_type": "SAT",
+    "topic": "Quadratic Functions and Parabola Properties",
+    "difficulty": "Easy",
+    "question": "A parabola crosses the x-axis at x = -2 and x = 8. What is the equation of the axis of symmetry?",
+    "options": [
+      {
+        "key": "A",
+        "text": "x = 5"
+      },
+      {
+        "key": "B",
+        "text": "x = 6"
+      },
+      {
+        "key": "C",
+        "text": "x = 3"
+      },
+      {
+        "key": "D",
+        "text": "x = -5"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Step 1: The axis of symmetry is the midpoint of the x-intercepts.\n\nStep 2: Midpoint: (-2 + 8) / 2 = 6 / 2 = 3.\n\nStep 3: The axis of symmetry is x = 3.",
+    "distractor_analysis": {
+      "A": "Calculated distance from midpoint (8 - 3 = 5).",
+      "B": "Added -2 + 8 = 6 but forgot to divide by 2.",
+      "D": "Sign error."
+    }
+  },
+  {
+    "id": "sat_circle_01",
+    "exam_type": "SAT",
+    "topic": "Geometry: Circles in the Coordinate Plane",
+    "difficulty": "Hard",
+    "question": "A circle in the xy-plane has the equation x\u00b2 + y\u00b2 - 8x + 6y = 11. What is the radius of the circle?",
+    "options": [
+      {
+        "key": "A",
+        "text": "6"
+      },
+      {
+        "key": "B",
+        "text": "36"
+      },
+      {
+        "key": "C",
+        "text": "11"
+      },
+      {
+        "key": "D",
+        "text": "4"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Step 1: Complete square: (x - 4)\u00b2 + (y + 3)\u00b2 = 11 + 16 + 9 = 36.\n\nStep 2: Right side is r\u00b2 = 36.\n\nStep 3: Square root gives r = 6.",
+    "distractor_analysis": {
+      "B": "Fell for trap of choosing r\u00b2 (36) instead of radius r (6).",
+      "C": "Assumed 11 was radius.",
+      "D": "Took x-offset (8/2 = 4)."
+    }
+  },
+  {
+    "id": "sat_circle_02",
+    "exam_type": "SAT",
+    "topic": "Geometry: Circles in the Coordinate Plane",
+    "difficulty": "Medium",
+    "question": "A circle is defined by the equation (x + 5)\u00b2 + (y - 2)\u00b2 = 49. What are the coordinates of the center of this circle?",
+    "options": [
+      {
+        "key": "A",
+        "text": "(5, -2)"
+      },
+      {
+        "key": "B",
+        "text": "(-5, -2)"
+      },
+      {
+        "key": "C",
+        "text": "(-5, 2)"
+      },
+      {
+        "key": "D",
+        "text": "(7, 7)"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Step 1: Circle equation is (x - h)\u00b2 + (y - k)\u00b2 = r\u00b2 with center (h, k).\n\nStep 2: (x + 5) gives h = -5; (y - 2) gives k = 2.\n\nStep 3: Center is (-5, 2).",
+    "distractor_analysis": {
+      "A": "Flipped signs, choosing (5, -2).",
+      "B": "Kept both coordinates negative.",
+      "D": "Confused radius (7) with center."
+    }
+  },
+  {
+    "id": "sat_circle_03",
+    "exam_type": "SAT",
+    "topic": "Geometry: Circles in the Coordinate Plane",
+    "difficulty": "Medium",
+    "question": "A circle centered at the origin (0, 0) passes through the point (3, 4). What is the equation of the circle?",
+    "options": [
+      {
+        "key": "A",
+        "text": "x\u00b2 + y\u00b2 = 5"
+      },
+      {
+        "key": "B",
+        "text": "x\u00b2 + y\u00b2 = 25"
+      },
+      {
+        "key": "C",
+        "text": "(x - 3)\u00b2 + (y - 4)\u00b2 = 25"
+      },
+      {
+        "key": "D",
+        "text": "x\u00b2 + y\u00b2 = 7"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "Step 1: Centered at (0, 0) gives x\u00b2 + y\u00b2 = r\u00b2.\n\nStep 2: Distance from (0, 0) to (3, 4) gives r\u00b2 = 3\u00b2 + 4\u00b2 = 9 + 16 = 25.\n\nStep 3: Equation is x\u00b2 + y\u00b2 = 25.",
+    "distractor_analysis": {
+      "A": "Put r = 5 on right side instead of r\u00b2 = 25.",
+      "C": "Used (3, 4) as center.",
+      "D": "Added 3 + 4 = 7."
+    }
+  },
+  {
+    "id": "sat_circle_04",
+    "exam_type": "SAT",
+    "topic": "Geometry: Circles in the Coordinate Plane",
+    "difficulty": "Hard",
+    "question": "A circle in the xy-plane has the equation (x - 1)\u00b2 + (y + 4)\u00b2 = 64. What is the DIAMETER of the circle?",
+    "options": [
+      {
+        "key": "A",
+        "text": "8"
+      },
+      {
+        "key": "B",
+        "text": "64"
+      },
+      {
+        "key": "C",
+        "text": "32"
+      },
+      {
+        "key": "D",
+        "text": "16"
+      }
+    ],
+    "correct_key": "D",
+    "rationale": "Step 1: r\u00b2 = 64, so radius r = 8.\n\nStep 2: Question asks for DIAMETER.\n\nStep 3: Diameter = 2 x 8 = 16.",
+    "distractor_analysis": {
+      "A": "Answered radius (8) instead of diameter (16).",
+      "B": "Chose r\u00b2 = 64 directly.",
+      "C": "Divided 64 by 2."
+    }
+  },
+  {
+    "id": "sat_circle_05",
+    "exam_type": "SAT",
+    "topic": "Geometry: Circles in the Coordinate Plane",
+    "difficulty": "Easy",
+    "question": "A circle is given by the equation (x - 3)\u00b2 + (y - 7)\u00b2 = 16. What is the AREA of this circle?",
+    "options": [
+      {
+        "key": "A",
+        "text": "16\u03c0"
+      },
+      {
+        "key": "B",
+        "text": "4\u03c0"
+      },
+      {
+        "key": "C",
+        "text": "8\u03c0"
+      },
+      {
+        "key": "D",
+        "text": "64\u03c0"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Step 1: Area = \u03c0 r\u00b2.\n\nStep 2: In the circle formula, the number on the right IS r\u00b2 = 16.\n\nStep 3: Area = 16\u03c0.",
+    "distractor_analysis": {
+      "B": "Multiplied radius 4 by \u03c0.",
+      "C": "Multiplied radius 4 by 2.",
+      "D": "Squared 16 to get 256\u03c0."
+    }
+  },
+  {
+    "id": "sat_rw_01",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Reading & Writing (Official College Board)",
+    "difficulty": "Medium",
+    "question": "Passage: 'To dye wool, Navajo (Din\u00e9) weaver Lillie Taylor uses plants and vegetables from Arizona, where she lives. For example, she achieved the deep reds and browns featured in her 2003 rug In the Path of the Four Seasons by using Arizona dock roots, drying and grinding them before mixing the powder with water to create a dye bath. To intensify the appearance of certain colors, Taylor also sometimes mixes in clay obtained from nearby soil.'\n\nWhich choice best states the main idea of the text?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Reds and browns are not commonly featured in most of Taylor's rugs."
+      },
+      {
+        "key": "B",
+        "text": "Taylor draws on local resources in the approach she uses to dye wool."
+      },
+      {
+        "key": "C",
+        "text": "In the Path of the Four Seasons is widely acclaimed for its innovative weaving techniques."
+      },
+      {
+        "key": "D",
+        "text": "Taylor finds it difficult to locate Arizona dock root in the desert."
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "Step 1: Main subject is Taylor using Arizona plants, dock roots, and local clay to dye wool.\n\nStep 2: Choice A accurately summarizes her reliance on local natural resources.\n\nStep 3: Other choices contradict text or invent outside details.",
+    "distractor_analysis": {
+      "A": "Contradicts text: passage states she used these colors, not that they are rare.",
+      "C": "Unsupported: passage never mentions acclaim or weaving technique.",
+      "D": "Unsupported: passage never mentions finding roots difficult."
+    }
+  },
+  {
+    "id": "sat_rw_02",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Reading & Writing (Official College Board)",
+    "difficulty": "Medium",
+    "question": "Many species of bamboo grow rapidly, with some species growing nearly a meter in a single day. _______, bamboo is considered one of the most sustainable building materials in the world, as harvested stands replenish themselves in a fraction of the time required by traditional timber forests.\n\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Consequently,"
+      },
+      {
+        "key": "B",
+        "text": "However,"
+      },
+      {
+        "key": "C",
+        "text": "In contrast,"
+      },
+      {
+        "key": "D",
+        "text": "For instance,"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Step 1: Sentence 1 is cause (rapid growth).\n\nStep 2: Sentence 2 is result (considered sustainable material).\n\nStep 3: 'Consequently' means 'as a result', perfectly linking cause to effect.",
+    "distractor_analysis": {
+      "B": "'However' indicates contrast, but ideas agree.",
+      "C": "'In contrast' indicates opposite facts.",
+      "D": "'For instance' introduces an example, not a result."
+    }
+  },
+  {
+    "id": "sat_rw_03",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Reading & Writing (Official College Board)",
+    "difficulty": "Medium",
+    "question": "Passage: 'The astronomer's discovery of an exoplanet orbiting within the star's habitable zone was considered novel because all previously detected planets in that system were scorching gas giants.'\n\nAs used in the text, what does the word 'novel' most nearly mean?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Lengthy and narrative"
+      },
+      {
+        "key": "B",
+        "text": "Fictional and imaginary"
+      },
+      {
+        "key": "C",
+        "text": "Complex and difficult"
+      },
+      {
+        "key": "D",
+        "text": "Unprecedented and new"
+      }
+    ],
+    "correct_key": "D",
+    "rationale": "Step 1: Context: previous planets were all gas giants, but this one is in the habitable zone.\n\nStep 2: 'Novel' means unprecedented or new in that system.\n\nStep 3: Choice A correctly captures this meaning.",
+    "distractor_analysis": {
+      "A": "Confused adjective 'novel' with a long book.",
+      "B": "Confused with fictional writing.",
+      "C": "Added unsupported negative tone."
+    }
+  },
+  {
+    "id": "sat_rw_04",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Reading & Writing (Official College Board)",
+    "difficulty": "Hard",
+    "question": "Ecologists hypothesize that bright nighttime city lights disrupt nocturnal bird migration routes. Which finding, if true, would most directly support this hypothesis?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Some bird species migrate strictly during daylight hours when city lights are off."
+      },
+      {
+        "key": "B",
+        "text": "City streetlights slightly decrease the insect populations that birds eat during the day."
+      },
+      {
+        "key": "C",
+        "text": "Radar tracking shows migrating flocks regularly detour toward illuminated skyscrapers and become disoriented."
+      },
+      {
+        "key": "D",
+        "text": "Non-migratory urban pigeons reproduce more frequently than rural birds."
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Step 1: Hypothesis is that night lights disrupt nocturnal migration routes.\n\nStep 2: Choice A directly links illuminated buildings to nocturnal detour and disorientation.\n\nStep 3: Other choices address daytime migration or non-migrating birds.",
+    "distractor_analysis": {
+      "A": "Addresses daytime migration.",
+      "B": "Addresses food supply rather than route disruption.",
+      "D": "Compares non-migratory birds."
+    }
+  },
+  {
+    "id": "sat_rw_05",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Reading & Writing (Official College Board)",
+    "difficulty": "Medium",
+    "question": "Student Notes:\n- Maya Angelou was an American poet and activist.\n- In 1969, she published her autobiography, 'I Know Why the Caged Bird Sings'.\n- The book received international acclaim and spent two years on bestseller lists.\n\nThe student wants to introduce Maya Angelou's famous book and its success to a new audience. Which choice best accomplishes this goal?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Maya Angelou was an American poet who was very active in civil rights."
+      },
+      {
+        "key": "B",
+        "text": "In 1969, acclaimed poet Maya Angelou published her landmark autobiography 'I Know Why the Caged Bird Sings', which earned international praise and spent two years on bestseller lists."
+      },
+      {
+        "key": "C",
+        "text": "Many autobiographies published in 1969 became international bestsellers."
+      },
+      {
+        "key": "D",
+        "text": "'I Know Why the Caged Bird Sings' was composed after Angelou wrote poetry."
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "Step 1: Goal is introducing the book AND its success.\n\nStep 2: Choice A includes author, book title, international praise, and bestseller duration.\n\nStep 3: Other choices omit the title or its success.",
+    "distractor_analysis": {
+      "A": "Omits book title and its success.",
+      "C": "Omits author and her specific book.",
+      "D": "Omits critical acclaim and bestseller success."
+    }
+  },
+  {
+    "id": "sat_official_math_01",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Math & Problem Solving (Official College Board)",
+    "difficulty": "Medium",
+    "question": "A line in the xy-plane passes through the points (0, 4) and (5, 14). What is the slope of the line?",
+    "options": [
+      {
+        "key": "A",
+        "text": "0.5"
+      },
+      {
+        "key": "B",
+        "text": "4"
+      },
+      {
+        "key": "C",
+        "text": "2"
+      },
+      {
+        "key": "D",
+        "text": "10"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Step 1: Slope formula: m = (y2 - y1) / (x2 - x1).\n\nStep 2: m = (14 - 4) / (5 - 0) = 10 / 5 = 2.\n\nStep 3: Slope is 2.",
+    "distractor_analysis": {
+      "A": "Inverted slope formula (5/10 = 0.5).",
+      "B": "Confused y-intercept (4) with slope.",
+      "D": "Forgot to divide by delta x."
+    }
+  },
+  {
+    "id": "sat_official_math_02",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Math & Problem Solving (Official College Board)",
+    "difficulty": "Medium",
+    "question": "If 3x + 7 = 22, what is the value of 6x + 5?",
+    "options": [
+      {
+        "key": "A",
+        "text": "5"
+      },
+      {
+        "key": "B",
+        "text": "30"
+      },
+      {
+        "key": "C",
+        "text": "49"
+      },
+      {
+        "key": "D",
+        "text": "35"
+      }
+    ],
+    "correct_key": "D",
+    "rationale": "Step 1: 3x = 22 - 7 = 15.\n\nStep 2: 6x is double 3x, so 6x = 30.\n\nStep 3: 6x + 5 = 30 + 5 = 35.",
+    "distractor_analysis": {
+      "A": "Solved only for x (5) without evaluating 6x + 5.",
+      "B": "Found 6x = 30 but forgot to add 5.",
+      "C": "Added 7 and 22 instead of subtracting."
+    }
+  },
+  {
+    "id": "sat_official_math_03",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Math & Problem Solving (Official College Board)",
+    "difficulty": "Easy",
+    "question": "A laptop computer originally costs . During a sale, the price is discounted by 20%. What is the sale price of the laptop?",
+    "options": [
+      {
+        "key": "A",
+        "text": ""
+      },
+      {
+        "key": "B",
+        "text": ""
+      },
+      {
+        "key": "C",
+        "text": ""
+      },
+      {
+        "key": "D",
+        "text": ""
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Step 1: Discount = 0.20 x 500 = .\n\nStep 2: Sale price = 500 - 100 = .\n\nStep 3: Final price is .",
+    "distractor_analysis": {
+      "B": "Gave discount amount () instead of sale price.",
+      "C": "Subtracted 10% ().",
+      "D": "Calculated discount incorrectly."
+    }
+  },
+  {
+    "id": "sat_official_math_04",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Math & Problem Solving (Official College Board)",
+    "difficulty": "Medium",
+    "question": "In a laboratory, the ratio of test tubes to beakers is 3 to 5. If there are 30 beakers in the laboratory, how many test tubes are there?",
+    "options": [
+      {
+        "key": "A",
+        "text": "50"
+      },
+      {
+        "key": "B",
+        "text": "18"
+      },
+      {
+        "key": "C",
+        "text": "15"
+      },
+      {
+        "key": "D",
+        "text": "20"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "Step 1: Ratio T / B = 3 / 5.\n\nStep 2: T / 30 = 3 / 5.\n\nStep 3: T = 30 x (3 / 5) = 18 test tubes.",
+    "distractor_analysis": {
+      "A": "Inverted ratio (5/3 x 30 = 50).",
+      "C": "Divided 30 by 2.",
+      "D": "Guessed without using 3:5 proportion."
+    }
+  },
+  {
+    "id": "sat_official_math_05",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Math & Problem Solving (Official College Board)",
+    "difficulty": "Hard",
+    "question": "A vehicle travels at a steady speed of 60 miles per hour. How many miles does the vehicle travel in 45 minutes?",
+    "options": [
+      {
+        "key": "A",
+        "text": "40 miles"
+      },
+      {
+        "key": "B",
+        "text": "50 miles"
+      },
+      {
+        "key": "C",
+        "text": "30 miles"
+      },
+      {
+        "key": "D",
+        "text": "45 miles"
+      }
+    ],
+    "correct_key": "D",
+    "rationale": "Step 1: 45 minutes = 45/60 = 0.75 hours.\n\nStep 2: Distance = Speed x Time = 60 x 0.75.\n\nStep 3: Distance = 45 miles.",
+    "distractor_analysis": {
+      "A": "Subtracted 20 minutes.",
+      "B": "Multiplied by 5/6.",
+      "C": "Calculated for 30 minutes."
+    }
+  },
+  {
+    "id": "gat_seq_01",
+    "exam_type": "GAT",
+    "topic": "Linear Sequencing Puzzles",
+    "difficulty": "Medium",
+    "question": "Six professors\u2014Farooq, Ghazala, Hamid, Imran, Junaid, and Khalid\u2014lecture on Monday through Saturday (Days 1 to 6). Imran lectures on Wednesday (Day 3). Farooq must lecture before Ghazala (F < G). Khalid lectures immediately after Hamid ([H][K]). Neither Farooq nor Khalid can lecture on Saturday. If Farooq lectures on Monday, which day MUST Khalid lecture?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tuesday"
+      },
+      {
+        "key": "B",
+        "text": "Thursday"
+      },
+      {
+        "key": "C",
+        "text": "Saturday"
+      },
+      {
+        "key": "D",
+        "text": "Friday"
+      }
+    ],
+    "correct_key": "D",
+    "rationale": "Step 1: Farooq is Monday (Day 1) and Imran is Wednesday (Day 3).\n\nStep 2: Hamid and Khalid lecture consecutively [H][K], and Khalid cannot be Saturday.\n\nStep 3: The only two consecutive open days are Thursday (Day 4) for Hamid and Friday (Day 5) for Khalid.",
+    "distractor_analysis": {
+      "A": "Requires Hamid on Monday, but Farooq is on Monday.",
+      "B": "Hamid is Thursday, so Khalid is Friday.",
+      "C": "Khalid cannot lecture on Saturday."
+    }
+  },
+  {
+    "id": "gat_seq_02",
+    "exam_type": "GAT",
+    "topic": "Linear Sequencing Puzzles",
+    "difficulty": "Medium",
+    "question": "Five runners\u2014A, B, C, D, and E\u2014finish a race in positions 1 to 5 (1 = 1st, 5 = 5th).\nRules:\n1. A finishes before B (A < B).\n2. C finishes immediately after B ([B][C]).\n3. D finishes in 1st place.\nIf E finishes in 5th place, in which position does B finish?",
+    "options": [
+      {
+        "key": "A",
+        "text": "2nd place"
+      },
+      {
+        "key": "B",
+        "text": "4th place"
+      },
+      {
+        "key": "C",
+        "text": "3rd place"
+      },
+      {
+        "key": "D",
+        "text": "1st place"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Step 1: Slots 2, 3, 4 are open for A, B, and C.\n\nStep 2: B and C finish consecutively as [B][C], and A finishes before B.\n\nStep 3: Only valid order is A (2nd), B (3rd), C (4th). So B finishes 3rd.",
+    "distractor_analysis": {
+      "A": "If B were 2nd, C is 3rd, leaving A in 4th, violating A < B.",
+      "B": "If B were 4th, C is 5th, but E is in 5th.",
+      "D": "D is already 1st."
+    }
+  },
+  {
+    "id": "gat_seq_03",
+    "exam_type": "GAT",
+    "topic": "Linear Sequencing Puzzles",
+    "difficulty": "Easy",
+    "question": "Four cars\u2014P, Q, R, and S\u2014park in spots 1, 2, 3, and 4.\nRules:\n1. Car P is parked immediately to the left of Car Q ([P][Q]).\n2. Car R is parked in spot 3.\n3. Car S is parked in spot 4.\nWhich parking spot MUST Car P occupy?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Spot 2"
+      },
+      {
+        "key": "B",
+        "text": "Spot 1"
+      },
+      {
+        "key": "C",
+        "text": "Spot 3"
+      },
+      {
+        "key": "D",
+        "text": "Spot 4"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "Step 1: Spots 3 and 4 are occupied by R and S.\n\nStep 2: Only Spots 1 and 2 are open.\n\nStep 3: [P][Q] requires adjacent spots, so P must be in Spot 1 and Q in Spot 2.",
+    "distractor_analysis": {
+      "A": "If P is in Spot 2, Q would need Spot 3, but R is there.",
+      "C": "Spot 3 is taken by R.",
+      "D": "Spot 4 is taken by S."
+    }
+  },
+  {
+    "id": "gat_seq_04",
+    "exam_type": "GAT",
+    "topic": "Linear Sequencing Puzzles",
+    "difficulty": "Hard",
+    "question": "Five students\u2014T, U, V, W, and X\u2014present 1st through 5th.\nRules:\n1. U presents 2nd.\n2. W presents before T (W < T).\n3. X presents immediately after V ([V][X]).\nIf W presents 1st, who MUST present 5th?",
+    "options": [
+      {
+        "key": "A",
+        "text": "T"
+      },
+      {
+        "key": "B",
+        "text": "V"
+      },
+      {
+        "key": "C",
+        "text": "X"
+      },
+      {
+        "key": "D",
+        "text": "U"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Step 1: W is 1st and U is 2nd. Slots 3, 4, 5 are open for V, X, and T.\n\nStep 2: [V][X] must be adjacent, so they occupy slots 3 and 4.\n\nStep 3: That leaves slot 5 for T.",
+    "distractor_analysis": {
+      "B": "V is followed by X, so V cannot be last.",
+      "C": "If X is 5th, V is 4th, leaving T in 3rd, but rule requires T.",
+      "D": "U is already 2nd."
+    }
+  },
+  {
+    "id": "gat_seq_05",
+    "exam_type": "GAT",
+    "topic": "Linear Sequencing Puzzles",
+    "difficulty": "Medium",
+    "question": "Six books are placed on a shelf in positions 1 to 6 (left to right).\nRules:\n1. Book A is in position 1.\n2. Book B is in position 6.\n3. Exactly two books are placed between Book C and Book D.\nIf Book C is in position 2, which position MUST Book D occupy?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Position 4"
+      },
+      {
+        "key": "B",
+        "text": "Position 3"
+      },
+      {
+        "key": "C",
+        "text": "Position 5"
+      },
+      {
+        "key": "D",
+        "text": "Position 6"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Step 1: Book C is in Position 2.\n\nStep 2: Two books are between C and D (Positions 3 and 4).\n\nStep 3: Therefore, Book D is in Position 5.",
+    "distractor_analysis": {
+      "A": "Leaves only 1 book between C and D.",
+      "B": "Zero books between C and D.",
+      "D": "Position 6 is occupied by Book B."
+    }
+  },
+  {
+    "id": "gat_group_01",
+    "exam_type": "GAT",
+    "topic": "Grouping and Selection Problems",
+    "difficulty": "Medium",
+    "question": "A committee of 3 members is formed from 5 candidates: Ali, Bilal, Daniyal, Ehtisham, and Fahad.\nRules:\n1. If Ali is selected, Bilal must also be selected.\n2. Daniyal and Ehtisham cannot both be selected.\n3. Bilal and Fahad cannot both be selected.\nIf Ali is selected, which candidate MUST also be a member?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bilal"
+      },
+      {
+        "key": "B",
+        "text": "Fahad"
+      },
+      {
+        "key": "C",
+        "text": "Daniyal"
+      },
+      {
+        "key": "D",
+        "text": "Ehtisham"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Step 1: Rule 1 states: If Ali is selected, Bilal must also be selected.\n\nStep 2: The question states Ali IS selected.\n\nStep 3: Therefore, Bilal must automatically be selected.",
+    "distractor_analysis": {
+      "B": "Bilal is selected, so Fahad is excluded by Rule 3.",
+      "C": "Daniyal is possible but not guaranteed.",
+      "D": "Ehtisham is possible but not guaranteed."
+    }
+  },
+  {
+    "id": "gat_group_02",
+    "exam_type": "GAT",
+    "topic": "Grouping and Selection Problems",
+    "difficulty": "Medium",
+    "question": "A panel of 3 judges is chosen from X, Y, Z, W, and V.\nRules:\n1. If X is selected, Y cannot be selected.\n2. Either Z or W must be selected, but not both.\n3. V is always selected.\nIf X is selected, which other two judges MUST complete the panel?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Y and V"
+      },
+      {
+        "key": "B",
+        "text": "Z and W"
+      },
+      {
+        "key": "C",
+        "text": "X cannot be selected"
+      },
+      {
+        "key": "D",
+        "text": "V and either Z or W"
+      }
+    ],
+    "correct_key": "D",
+    "rationale": "Step 1: X is selected, so Y is excluded.\n\nStep 2: V is always selected.\n\nStep 3: Third member must come from {Z, W}. So other two judges are V and either Z or W.",
+    "distractor_analysis": {
+      "A": "Violates Rule 1 (X and Y together).",
+      "B": "Violates Rule 2 (Z and W together).",
+      "C": "X can be validly selected."
+    }
+  },
+  {
+    "id": "gat_group_03",
+    "exam_type": "GAT",
+    "topic": "Grouping and Selection Problems",
+    "difficulty": "Hard",
+    "question": "A team of 4 is selected from 6 candidates: A, B, C, D, E, and F.\nRule: If candidate A is selected, candidate D CANNOT be selected.\nIf candidate D is definitely on the team, which candidate CANNOT be selected?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Candidate B"
+      },
+      {
+        "key": "B",
+        "text": "Candidate E"
+      },
+      {
+        "key": "C",
+        "text": "Candidate A"
+      },
+      {
+        "key": "D",
+        "text": "Candidate F"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Step 1: Rule: A implies not D.\n\nStep 2: Contrapositive: D implies not A.\n\nStep 3: Since D is on the team, Candidate A cannot be selected.",
+    "distractor_analysis": {
+      "A": "Candidate B has no conflict with D.",
+      "B": "Candidate E has no conflict with D.",
+      "D": "Candidate F has no conflict with D."
+    }
+  },
+  {
+    "id": "gat_group_04",
+    "exam_type": "GAT",
+    "topic": "Grouping and Selection Problems",
+    "difficulty": "Medium",
+    "question": "In a committee selection from candidates M, N, O, and P:\n'Candidate M is selected IF AND ONLY IF Candidate N is selected.'\nIf Candidate M is NOT selected, what must be true regarding Candidate N?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Candidate N must be selected"
+      },
+      {
+        "key": "B",
+        "text": "Candidate N is also NOT selected"
+      },
+      {
+        "key": "C",
+        "text": "Candidate O must be selected"
+      },
+      {
+        "key": "D",
+        "text": "Candidate P cannot be selected"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "Step 1: 'If and only if' means M and N are always together (both selected or neither).\n\nStep 2: M is not selected.\n\nStep 3: Therefore, N is also NOT selected.",
+    "distractor_analysis": {
+      "A": "Assumes mutual exclusion instead of co-requisite.",
+      "C": "Candidate O is independent.",
+      "D": "Candidate P is independent."
+    }
+  },
+  {
+    "id": "gat_group_05",
+    "exam_type": "GAT",
+    "topic": "Grouping and Selection Problems",
+    "difficulty": "Easy",
+    "question": "Two representatives are chosen from Tariq, Usman, and Waqas.\nRule: Tariq and Usman cannot both be chosen together.\nWhich of the following is a valid pair of representatives?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tariq and Waqas"
+      },
+      {
+        "key": "B",
+        "text": "Tariq and Usman"
+      },
+      {
+        "key": "C",
+        "text": "Usman and Tariq"
+      },
+      {
+        "key": "D",
+        "text": "No valid pair exists"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Step 1: Possible pairs are (T, U), (T, W), and (U, W).\n\nStep 2: (Tariq, Usman) is forbidden.\n\nStep 3: (Tariq, Waqas) is valid.",
+    "distractor_analysis": {
+      "B": "Directly violates rule.",
+      "C": "Same forbidden pair.",
+      "D": "Valid pairs exist."
+    }
+  },
+  {
+    "id": "gat_scenario_01",
+    "exam_type": "GAT",
+    "topic": "Sample Analytical Scenario: University Department Presentations",
+    "difficulty": "Hard",
+    "question": "Six professors lecture Monday through Saturday (Days 1 to 6):\n- Imran lectures on Wednesday (Day 3).\n- Farooq lectures before Ghazala (F < G).\n- Khalid lectures immediately after Hamid ([H][K]).\n- Neither Farooq nor Khalid can lecture on Saturday.\nIf the block [Hamid, Khalid] is placed on Thursday and Friday, which professor MUST lecture on Saturday?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Farooq"
+      },
+      {
+        "key": "B",
+        "text": "Junaid"
+      },
+      {
+        "key": "C",
+        "text": "Ghazala"
+      },
+      {
+        "key": "D",
+        "text": "Hamid"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "Step 1: Imran is Day 3, Hamid is Day 4, Khalid is Day 5.\n\nStep 2: Monday, Tuesday, Saturday are left for Farooq, Ghazala, Junaid.\n\nStep 3: Farooq cannot be Saturday and F < G, so Farooq is Monday and Ghazala is Tuesday.\n\nStep 4: Junaid must lecture on Saturday.",
+    "distractor_analysis": {
+      "A": "Farooq cannot lecture on Saturday.",
+      "C": "Violates F < G placement.",
+      "D": "Hamid is on Thursday."
+    }
+  },
+  {
+    "id": "gat_scenario_02",
+    "exam_type": "GAT",
+    "topic": "Sample Analytical Scenario: University Department Presentations",
+    "difficulty": "Medium",
+    "question": "Six professors lecture Monday through Saturday (Days 1 to 6):\n- Imran lectures on Wednesday (Day 3).\n- Farooq lectures before Ghazala (F < G).\n- Khalid lectures immediately after Hamid ([H][K]).\n- Neither Farooq nor Khalid can lecture on Saturday.\nIf [Hamid, Khalid] lecture on Monday and Tuesday (Days 1 and 2), which professor MUST lecture on Wednesday?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Farooq"
+      },
+      {
+        "key": "B",
+        "text": "Ghazala"
+      },
+      {
+        "key": "C",
+        "text": "Imran"
+      },
+      {
+        "key": "D",
+        "text": "Junaid"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Step 1: The rules explicitly fix Imran on Wednesday (Day 3).\n\nStep 2: This is an unchangeable anchor rule regardless of where other professors lecture.",
+    "distractor_analysis": {
+      "A": "Imran is permanently fixed on Wednesday.",
+      "B": "Imran is permanently fixed on Wednesday.",
+      "D": "Imran is permanently fixed on Wednesday."
+    }
+  },
+  {
+    "id": "gat_scenario_03",
+    "exam_type": "GAT",
+    "topic": "Sample Analytical Scenario: University Department Presentations",
+    "difficulty": "Medium",
+    "question": "Refer to the 6 professors schedule (Monday to Saturday):\n- Imran is on Wednesday (Day 3).\n- Farooq lectures before Ghazala (F < G).\n- Khalid lectures immediately after Hamid ([H][K]).\n- Neither Farooq nor Khalid can lecture on Saturday.\nIf Ghazala lectures on Tuesday (Day 2), which day MUST Farooq lecture?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Monday (Day 1)"
+      },
+      {
+        "key": "B",
+        "text": "Thursday (Day 4)"
+      },
+      {
+        "key": "C",
+        "text": "Friday (Day 5)"
+      },
+      {
+        "key": "D",
+        "text": "Saturday (Day 6)"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Step 1: Ghazala is on Tuesday (Day 2).\n\nStep 2: Farooq must lecture before Ghazala (F < G).\n\nStep 3: Only day earlier than Tuesday is Monday (Day 1). So Farooq MUST lecture on Monday.",
+    "distractor_analysis": {
+      "B": "Thursday is after Tuesday.",
+      "C": "Friday is after Tuesday.",
+      "D": "Saturday is after Tuesday and Farooq cannot be on Saturday."
+    }
+  },
+  {
+    "id": "gat_scenario_04",
+    "exam_type": "GAT",
+    "topic": "Sample Analytical Scenario: University Department Presentations",
+    "difficulty": "Easy",
+    "question": "Refer to the 6 professors schedule:\n- Imran is on Wednesday (Day 3).\n- Farooq is before Ghazala (F < G).\n- Khalid is immediately after Hamid ([H][K]).\n- Neither Farooq nor Khalid can lecture on Saturday.\nWhich of the following assignments is strictly IMPOSSIBLE?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Junaid lectures on Saturday"
+      },
+      {
+        "key": "B",
+        "text": "Ghazala lectures on Tuesday"
+      },
+      {
+        "key": "C",
+        "text": "Hamid lectures on Thursday"
+      },
+      {
+        "key": "D",
+        "text": "Farooq lectures on Saturday"
+      }
+    ],
+    "correct_key": "D",
+    "rationale": "Step 1: Rule 4 states: Neither Farooq nor Khalid can lecture on Saturday.\n\nStep 2: Assigning Farooq to Saturday is an immediate violation.\n\nStep 3: All other assignments are valid possibilities.",
+    "distractor_analysis": {
+      "A": "Junaid on Saturday is valid.",
+      "B": "Ghazala on Tuesday is valid with Farooq on Monday.",
+      "C": "Hamid on Thursday is valid with Khalid on Friday."
+    }
+  },
+  {
+    "id": "gat_scenario_05",
+    "exam_type": "GAT",
+    "topic": "Sample Analytical Scenario: University Department Presentations",
+    "difficulty": "Hard",
+    "question": "Refer to the 6 professors schedule:\n- Imran is on Wednesday (Day 3).\n- Farooq is before Ghazala (F < G).\n- Khalid is immediately after Hamid ([H][K]).\n- Neither Farooq nor Khalid can lecture on Saturday.\nIf Junaid lectures on Monday (Day 1), which two days MUST the block [Hamid, Khalid] occupy?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tuesday and Wednesday (Days 2 and 3)"
+      },
+      {
+        "key": "B",
+        "text": "Friday and Saturday (Days 5 and 6)"
+      },
+      {
+        "key": "C",
+        "text": "Thursday and Friday (Days 4 and 5)"
+      },
+      {
+        "key": "D",
+        "text": "Monday and Tuesday (Days 1 and 2)"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Step 1: Day 1 is Junaid and Day 3 is Imran.\n\nStep 2: [H][K] needs 2 consecutive days.\n\nStep 3: Cannot take Fri-Sat (Khalid cannot be Saturday) or Tue-Wed (Imran is Day 3).\n\nStep 4: Only consecutive days left are Thursday and Friday (Days 4 and 5).",
+    "distractor_analysis": {
+      "A": "Wednesday is Imran.",
+      "B": "Khalid cannot lecture Saturday.",
+      "D": "Monday is Junaid."
+    }
+  },
+  {
+    "id": "sat_linear_06",
+    "exam_type": "SAT",
+    "topic": "Linear Equations and Slope-Intercept Form",
+    "difficulty": "Easy",
+    "question": "What is the slope of the line given by the equation y = -3x + 7?",
+    "options": [
+      {
+        "key": "A",
+        "text": "7"
+      },
+      {
+        "key": "B",
+        "text": "-3"
+      },
+      {
+        "key": "C",
+        "text": "3"
+      },
+      {
+        "key": "D",
+        "text": "-7"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "In slope-intercept form y = mx + b, m represents the slope. Here m = -3 and the y-intercept is 7.",
+    "distractor_analysis": {
+      "A": "Selected the y-intercept instead of the slope.",
+      "C": "Forgot the negative sign on the slope.",
+      "D": "Inverted both the intercept and slope."
+    }
+  },
+  {
+    "id": "sat_linear_07",
+    "exam_type": "SAT",
+    "topic": "Linear Equations and Slope-Intercept Form",
+    "difficulty": "Medium",
+    "question": "A line passes through (1, 4) and (5, 12). What is the slope of this line?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1/2"
+      },
+      {
+        "key": "B",
+        "text": "4"
+      },
+      {
+        "key": "C",
+        "text": "2"
+      },
+      {
+        "key": "D",
+        "text": "8"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Slope m = (y2 - y1) / (x2 - x1) = (12 - 4) / (5 - 1) = 8 / 4 = 2.",
+    "distractor_analysis": {
+      "A": "Calculated (x2 - x1) / (y2 - y1) by mistake.",
+      "B": "Subtracted x coordinates instead of dividing.",
+      "D": "Calculated the difference in y (12 - 4 = 8) but forgot to divide by the difference in x."
+    }
+  },
+  {
+    "id": "sat_linear_08",
+    "exam_type": "SAT",
+    "topic": "Linear Equations and Slope-Intercept Form",
+    "difficulty": "Medium",
+    "question": "Which of the following lines is parallel to y = 4x - 9?",
+    "options": [
+      {
+        "key": "A",
+        "text": "y = -4x + 1"
+      },
+      {
+        "key": "B",
+        "text": "y = -(1/4)x + 5"
+      },
+      {
+        "key": "C",
+        "text": "y = (1/4)x - 2"
+      },
+      {
+        "key": "D",
+        "text": "y = 4x + 3"
+      }
+    ],
+    "correct_key": "D",
+    "rationale": "Parallel lines have the exact same slope. The given line has slope 4, so any parallel line must also have slope 4.",
+    "distractor_analysis": {
+      "A": "Changed the sign of the slope.",
+      "B": "Used the perpendicular slope instead of parallel.",
+      "C": "Used the reciprocal without keeping the same slope."
+    }
+  },
+  {
+    "id": "sat_linear_09",
+    "exam_type": "SAT",
+    "topic": "Linear Equations and Slope-Intercept Form",
+    "difficulty": "Hard",
+    "question": "A line has a y-intercept of -6 and an x-intercept of 2. What is the equation of the line?",
+    "options": [
+      {
+        "key": "A",
+        "text": "y = 3x - 6"
+      },
+      {
+        "key": "B",
+        "text": "y = -3x - 6"
+      },
+      {
+        "key": "C",
+        "text": "y = (1/3)x + 2"
+      },
+      {
+        "key": "D",
+        "text": "y = 3x + 2"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "The two points are (0, -6) and (2, 0). Slope m = (0 - (-6)) / (2 - 0) = 6 / 2 = 3. Using y-intercept -6 gives y = 3x - 6.",
+    "distractor_analysis": {
+      "B": "Made a sign error when subtracting -6.",
+      "C": "Took reciprocal of the slope.",
+      "D": "Used the x-intercept value as the y-intercept."
+    }
+  },
+  {
+    "id": "sat_linear_10",
+    "exam_type": "SAT",
+    "topic": "Linear Equations and Slope-Intercept Form",
+    "difficulty": "Hard",
+    "question": "If the line 2x + ky = 10 is perpendicular to y = (3/2)x - 4, what is the value of k?",
+    "options": [
+      {
+        "key": "A",
+        "text": "-3"
+      },
+      {
+        "key": "B",
+        "text": "3"
+      },
+      {
+        "key": "C",
+        "text": "-2/3"
+      },
+      {
+        "key": "D",
+        "text": "2"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "Slope of given line is 3/2. A perpendicular line must have slope -2/3. Rewrite 2x + ky = 10 as y = -(2/k)x + 10/k. Therefore -(2/k) = -2/3, which means k = 3.",
+    "distractor_analysis": {
+      "A": "Missed the double negative cancellation.",
+      "C": "Confused the value of k with the slope itself.",
+      "D": "Substituted the coefficient of x directly."
+    }
+  },
+  {
+    "id": "sat_systems_06",
+    "exam_type": "SAT",
+    "topic": "Systems of Linear Equations",
+    "difficulty": "Easy",
+    "question": "If x + y = 10 and x - y = 4, what is the value of x?",
+    "options": [
+      {
+        "key": "A",
+        "text": "3"
+      },
+      {
+        "key": "B",
+        "text": "5"
+      },
+      {
+        "key": "C",
+        "text": "7"
+      },
+      {
+        "key": "D",
+        "text": "14"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Add the two equations: (x + y) + (x - y) = 10 + 4 -> 2x = 14 -> x = 7.",
+    "distractor_analysis": {
+      "A": "Solved for y instead of x (y = 3).",
+      "B": "Took the average of 10 and 0.",
+      "D": "Forgot to divide 14 by 2."
+    }
+  },
+  {
+    "id": "sat_systems_07",
+    "exam_type": "SAT",
+    "topic": "Systems of Linear Equations",
+    "difficulty": "Medium",
+    "question": "At a school cafe, 2 coffees and 3 muffins cost $13. If 1 coffee and 2 muffins cost $8, how much does 1 muffin cost?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$2"
+      },
+      {
+        "key": "B",
+        "text": "$4"
+      },
+      {
+        "key": "C",
+        "text": "$3"
+      },
+      {
+        "key": "D",
+        "text": "$2.50"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Let c = coffee, m = muffin. 2c + 3m = 13 and c + 2m = 8. Multiply second equation by 2: 2c + 4m = 16. Subtract first equation: (2c + 4m) - (2c + 3m) = 16 - 13 -> m = 3.",
+    "distractor_analysis": {
+      "A": "Solved for coffee cost (c = $2) instead of muffin.",
+      "B": "Divided 8 by 2 without considering coffee cost.",
+      "D": "Estimated average cost."
+    }
+  },
+  {
+    "id": "sat_systems_08",
+    "exam_type": "SAT",
+    "topic": "Systems of Linear Equations",
+    "difficulty": "Medium",
+    "question": "For what value of c will the system 3x - 6y = 12 and x - 2y = c have infinitely many solutions?",
+    "options": [
+      {
+        "key": "A",
+        "text": "4"
+      },
+      {
+        "key": "B",
+        "text": "12"
+      },
+      {
+        "key": "C",
+        "text": "-4"
+      },
+      {
+        "key": "D",
+        "text": "6"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Divide the first equation 3x - 6y = 12 by 3: x - 2y = 4. For infinitely many solutions, the two equations must be identical, so c = 4.",
+    "distractor_analysis": {
+      "B": "Left the constant unscaled.",
+      "C": "Added an unnecessary negative sign.",
+      "D": "Divided 12 by 2 instead of 3."
+    }
+  },
+  {
+    "id": "sat_systems_09",
+    "exam_type": "SAT",
+    "topic": "Systems of Linear Equations",
+    "difficulty": "Hard",
+    "question": "If 4x + 3y = 24 and 3x + 4y = 18, what is the value of x + y?",
+    "options": [
+      {
+        "key": "A",
+        "text": "7"
+      },
+      {
+        "key": "B",
+        "text": "42"
+      },
+      {
+        "key": "C",
+        "text": "6"
+      },
+      {
+        "key": "D",
+        "text": "5"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Add both equations directly: (4x + 3y) + (3x + 4y) = 24 + 18 -> 7x + 7y = 42. Divide both sides by 7: x + y = 6.",
+    "distractor_analysis": {
+      "A": "Confused the common coefficient 7 with the result.",
+      "B": "Forgot to divide 42 by 7.",
+      "D": "Approximated incorrectly."
+    }
+  },
+  {
+    "id": "sat_systems_10",
+    "exam_type": "SAT",
+    "topic": "Systems of Linear Equations",
+    "difficulty": "Hard",
+    "question": "If 2x - y = 5 and x + 2y = 10, what is the value of x\u00b2 - y\u00b2?",
+    "options": [
+      {
+        "key": "A",
+        "text": "7"
+      },
+      {
+        "key": "B",
+        "text": "12"
+      },
+      {
+        "key": "C",
+        "text": "16"
+      },
+      {
+        "key": "D",
+        "text": "9"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Multiply first equation by 2: 4x - 2y = 10. Add to second equation: 5x = 20 -> x = 4. Substitute x = 4 into 2(4) - y = 5 -> y = 3. Thus x\u00b2 - y\u00b2 = 4\u00b2 - 3\u00b2 = 16 - 9 = 7.",
+    "distractor_analysis": {
+      "B": "Subtracted x - y = 1 and multiplied.",
+      "C": "Computed only x\u00b2 (16).",
+      "D": "Computed only y\u00b2 (9)."
+    }
+  },
+  {
+    "id": "sat_quad_06",
+    "exam_type": "SAT",
+    "topic": "Quadratic Functions and Parabola Properties",
+    "difficulty": "Easy",
+    "question": "What are the solutions to the quadratic equation x\u00b2 - 9 = 0?",
+    "options": [
+      {
+        "key": "A",
+        "text": "x = 3 only"
+      },
+      {
+        "key": "B",
+        "text": "x = 3 and x = -3"
+      },
+      {
+        "key": "C",
+        "text": "x = 9 and x = -9"
+      },
+      {
+        "key": "D",
+        "text": "x = 0 and x = 3"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "x\u00b2 = 9. Taking the square root of both sides gives x = 3 and x = -3.",
+    "distractor_analysis": {
+      "A": "Forgot the negative square root.",
+      "C": "Did not take the square root of 9.",
+      "D": "Added 0 as a false solution."
+    }
+  },
+  {
+    "id": "sat_quad_07",
+    "exam_type": "SAT",
+    "topic": "Quadratic Functions and Parabola Properties",
+    "difficulty": "Medium",
+    "question": "What is the sum of the solutions of the equation 2x\u00b2 - 12x + 10 = 0?",
+    "options": [
+      {
+        "key": "A",
+        "text": "5"
+      },
+      {
+        "key": "B",
+        "text": "12"
+      },
+      {
+        "key": "C",
+        "text": "6"
+      },
+      {
+        "key": "D",
+        "text": "-6"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "By Vieta's formulas, the sum of roots is -b / a. Here -(-12) / 2 = 12 / 2 = 6.",
+    "distractor_analysis": {
+      "A": "Calculated the product of roots (c/a = 10/2 = 5).",
+      "B": "Used -b without dividing by a.",
+      "D": "Forgot to change the sign of b."
+    }
+  },
+  {
+    "id": "sat_quad_08",
+    "exam_type": "SAT",
+    "topic": "Quadratic Functions and Parabola Properties",
+    "difficulty": "Medium",
+    "question": "What is the minimum value of the function f(x) = (x - 4)\u00b2 + 5?",
+    "options": [
+      {
+        "key": "A",
+        "text": "4"
+      },
+      {
+        "key": "B",
+        "text": "-4"
+      },
+      {
+        "key": "C",
+        "text": "-5"
+      },
+      {
+        "key": "D",
+        "text": "5"
+      }
+    ],
+    "correct_key": "D",
+    "rationale": "In vertex form f(x) = a(x - h)\u00b2 + k, since a > 0, the minimum value is the y-coordinate of the vertex, which is k = 5 (at x = 4).",
+    "distractor_analysis": {
+      "A": "Gave the x-value where the minimum occurs instead of the minimum value itself.",
+      "B": "Inverted the vertex x-coordinate.",
+      "C": "Made a sign error on the y-value."
+    }
+  },
+  {
+    "id": "sat_quad_09",
+    "exam_type": "SAT",
+    "topic": "Quadratic Functions and Parabola Properties",
+    "difficulty": "Hard",
+    "question": "For what value of k will the equation x\u00b2 + 6x + k = 0 have exactly one real solution?",
+    "options": [
+      {
+        "key": "A",
+        "text": "9"
+      },
+      {
+        "key": "B",
+        "text": "36"
+      },
+      {
+        "key": "C",
+        "text": "3"
+      },
+      {
+        "key": "D",
+        "text": "12"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "A quadratic has exactly one real solution when its discriminant b\u00b2 - 4ac = 0. Here, 6\u00b2 - 4(1)(k) = 0 -> 36 - 4k = 0 -> 4k = 36 -> k = 9.",
+    "distractor_analysis": {
+      "B": "Computed b\u00b2 (36) without dividing by 4.",
+      "C": "Divided 6 by 2 without squaring.",
+      "D": "Subtracted incorrectly."
+    }
+  },
+  {
+    "id": "sat_quad_10",
+    "exam_type": "SAT",
+    "topic": "Quadratic Functions and Parabola Properties",
+    "difficulty": "Hard",
+    "question": "The graph of y = ax\u00b2 + bx + c passes through (0, 3) and has a vertex at (2, -1). What is the value of a?",
+    "options": [
+      {
+        "key": "A",
+        "text": "2"
+      },
+      {
+        "key": "B",
+        "text": "1"
+      },
+      {
+        "key": "C",
+        "text": "4"
+      },
+      {
+        "key": "D",
+        "text": "1/2"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "Using vertex form y = a(x - 2)\u00b2 - 1. Plug in point (0, 3): 3 = a(0 - 2)\u00b2 - 1 -> 3 = 4a - 1 -> 4a = 4 -> a = 1.",
+    "distractor_analysis": {
+      "A": "Calculated 4a = 8 by adding 3 and 1 incorrectly.",
+      "C": "Forgot to subtract -1 when solving for a.",
+      "D": "Inverted 4a = 2."
+    }
+  },
+  {
+    "id": "sat_circle_06",
+    "exam_type": "SAT",
+    "topic": "Geometry: Circles in the Coordinate Plane",
+    "difficulty": "Easy",
+    "question": "What is the center and radius of the circle given by (x + 3)\u00b2 + (y - 5)\u00b2 = 49?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Center (3, -5), radius 49"
+      },
+      {
+        "key": "B",
+        "text": "Center (-3, 5), radius 7"
+      },
+      {
+        "key": "C",
+        "text": "Center (3, -5), radius 7"
+      },
+      {
+        "key": "D",
+        "text": "Center (-3, 5), radius 49"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "Standard circle equation is (x - h)\u00b2 + (y - k)\u00b2 = r\u00b2. Here h = -3, k = 5, and r = sqrt(49) = 7.",
+    "distractor_analysis": {
+      "A": "Flipped signs of center and forgot to take square root of 49.",
+      "C": "Flipped signs of center.",
+      "D": "Forgot to take square root of 49."
+    }
+  },
+  {
+    "id": "sat_circle_07",
+    "exam_type": "SAT",
+    "topic": "Geometry: Circles in the Coordinate Plane",
+    "difficulty": "Medium",
+    "question": "A circle has center (0, 0) and passes through the point (3, 4). What is the equation of the circle?",
+    "options": [
+      {
+        "key": "A",
+        "text": "x\u00b2 + y\u00b2 = 5"
+      },
+      {
+        "key": "B",
+        "text": "x\u00b2 + y\u00b2 = 7"
+      },
+      {
+        "key": "C",
+        "text": "x\u00b2 + y\u00b2 = 25"
+      },
+      {
+        "key": "D",
+        "text": "(x - 3)\u00b2 + (y - 4)\u00b2 = 25"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Radius r = sqrt((3-0)\u00b2 + (4-0)\u00b2) = sqrt(9 + 16) = sqrt(25) = 5. Equation is x\u00b2 + y\u00b2 = r\u00b2 = 25.",
+    "distractor_analysis": {
+      "A": "Put r (5) on right hand side instead of r\u00b2 (25).",
+      "B": "Added 3 + 4 = 7.",
+      "D": "Used (3, 4) as the center instead of (0, 0)."
+    }
+  },
+  {
+    "id": "sat_circle_08",
+    "exam_type": "SAT",
+    "topic": "Geometry: Circles in the Coordinate Plane",
+    "difficulty": "Medium",
+    "question": "What is the radius of the circle given by x\u00b2 + y\u00b2 - 8x = 9?",
+    "options": [
+      {
+        "key": "A",
+        "text": "3"
+      },
+      {
+        "key": "B",
+        "text": "4"
+      },
+      {
+        "key": "C",
+        "text": "9"
+      },
+      {
+        "key": "D",
+        "text": "5"
+      }
+    ],
+    "correct_key": "D",
+    "rationale": "Complete the square for x: (x\u00b2 - 8x + 16) + y\u00b2 = 9 + 16 -> (x - 4)\u00b2 + y\u00b2 = 25. Radius r = sqrt(25) = 5.",
+    "distractor_analysis": {
+      "A": "Took square root of 9 without completing the square.",
+      "B": "Gave the x-coordinate of the center (h = 4).",
+      "C": "Kept the original constant."
+    }
+  },
+  {
+    "id": "sat_circle_09",
+    "exam_type": "SAT",
+    "topic": "Geometry: Circles in the Coordinate Plane",
+    "difficulty": "Hard",
+    "question": "A circle has diameter endpoints at (-2, 3) and (4, 11). What is the center of the circle?",
+    "options": [
+      {
+        "key": "A",
+        "text": "(1, 7)"
+      },
+      {
+        "key": "B",
+        "text": "(2, 8)"
+      },
+      {
+        "key": "C",
+        "text": "(3, 4)"
+      },
+      {
+        "key": "D",
+        "text": "(6, 8)"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "The center of a circle is the midpoint of any diameter: Midpoint = ((-2 + 4)/2, (3 + 11)/2) = (2/2, 14/2) = (1, 7).",
+    "distractor_analysis": {
+      "B": "Subtracted coordinates instead of adding.",
+      "C": "Took difference of coordinates.",
+      "D": "Added coordinates without dividing by 2."
+    }
+  },
+  {
+    "id": "sat_circle_10",
+    "exam_type": "SAT",
+    "topic": "Geometry: Circles in the Coordinate Plane",
+    "difficulty": "Hard",
+    "question": "The equation x\u00b2 + y\u00b2 - 6x + 4y - 12 = 0 represents a circle. What is its area?",
+    "options": [
+      {
+        "key": "A",
+        "text": "12\u03c0"
+      },
+      {
+        "key": "B",
+        "text": "13\u03c0"
+      },
+      {
+        "key": "C",
+        "text": "25\u03c0"
+      },
+      {
+        "key": "D",
+        "text": "5\u03c0"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Complete the square: (x\u00b2 - 6x + 9) + (y\u00b2 + 4y + 4) = 12 + 9 + 4 -> (x - 3)\u00b2 + (y + 2)\u00b2 = 25. Thus r\u00b2 = 25. Area = \u03c0r\u00b2 = 25\u03c0.",
+    "distractor_analysis": {
+      "A": "Used the constant 12 from the original equation.",
+      "B": "Added 9 + 4 = 13 without adding the constant 12.",
+      "D": "Used r = 5 instead of r\u00b2 = 25."
+    }
+  },
+  {
+    "id": "sat_rw_06",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Reading & Writing (Official College Board)",
+    "difficulty": "Easy",
+    "question": "Choose the correct word: The research team was delighted because ________ findings were published in a top scientific journal.",
+    "options": [
+      {
+        "key": "A",
+        "text": "there"
+      },
+      {
+        "key": "B",
+        "text": "they're"
+      },
+      {
+        "key": "C",
+        "text": "their"
+      },
+      {
+        "key": "D",
+        "text": "it's"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "'Their' is the possessive pronoun showing ownership of the findings. 'They're' means 'they are' and 'there' indicates a location.",
+    "distractor_analysis": {
+      "A": "Used 'there' (location indicator).",
+      "B": "Used contraction 'they're' (they are).",
+      "D": "Used singular pronoun for plural antecedent."
+    }
+  },
+  {
+    "id": "sat_rw_07",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Reading & Writing (Official College Board)",
+    "difficulty": "Medium",
+    "question": "Many desert plants exhibit adaptations to reduce water loss; ________, the saguaro cactus stores water in its expandable trunk.",
+    "options": [
+      {
+        "key": "A",
+        "text": "however"
+      },
+      {
+        "key": "B",
+        "text": "for example"
+      },
+      {
+        "key": "C",
+        "text": "in contrast"
+      },
+      {
+        "key": "D",
+        "text": "nevertheless"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "The second clause illustrates a specific instance of the general statement about desert plant adaptations. 'For example' correctly introduces an illustrative example.",
+    "distractor_analysis": {
+      "A": "'However' indicates a contrast, but the sentence provides support.",
+      "C": "'In contrast' implies opposite behavior.",
+      "D": "'Nevertheless' suggests concession rather than example."
+    }
+  },
+  {
+    "id": "sat_rw_08",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Reading & Writing (Official College Board)",
+    "difficulty": "Medium",
+    "question": "Select the punctuation that correctly connects the two independent clauses: The museum unveiled a rare medieval manuscript ________ scholars from around the globe traveled to examine it.",
+    "options": [
+      {
+        "key": "A",
+        "text": ", and"
+      },
+      {
+        "key": "B",
+        "text": ", however"
+      },
+      {
+        "key": "C",
+        "text": "and"
+      },
+      {
+        "key": "D",
+        "text": ","
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Two independent clauses can be joined using a comma followed by a coordinating conjunction (FANBOYS: For, And, Nor, But, Or, Yet, So).",
+    "distractor_analysis": {
+      "B": "Creates a comma splice; conjunctive adverbs require a semicolon.",
+      "C": "Missing comma before coordinating conjunction joining complete clauses.",
+      "D": "Comma splice (joining two complete sentences with only a comma)."
+    }
+  },
+  {
+    "id": "sat_rw_09",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Reading & Writing (Official College Board)",
+    "difficulty": "Hard",
+    "question": "Neither the lead engineer nor the laboratory technicians ________ surprised when the test results confirmed the original hypothesis.",
+    "options": [
+      {
+        "key": "A",
+        "text": "was"
+      },
+      {
+        "key": "B",
+        "text": "is"
+      },
+      {
+        "key": "C",
+        "text": "were"
+      },
+      {
+        "key": "D",
+        "text": "being"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "With correlative conjunctions like 'neither... nor', the verb must agree with the subject closest to it. 'Technicians' is plural, so the plural past verb 'were' is required.",
+    "distractor_analysis": {
+      "A": "Matched verb to singular 'engineer' instead of the closer plural subject 'technicians'.",
+      "B": "Wrong tense (present instead of past).",
+      "D": "Incomplete verb form lacking an auxiliary."
+    }
+  },
+  {
+    "id": "sat_rw_10",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Reading & Writing (Official College Board)",
+    "difficulty": "Hard",
+    "question": "A historian argues that 14th-century trade routes flourished not merely because of maritime innovations, but because regional leaders established shared commercial laws. Which finding, if true, would most directly SUPPORT the historian's claim?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Shipbuilding techniques remained unchanged in regions where trade volume doubled following the adoption of unified maritime codes."
+      },
+      {
+        "key": "B",
+        "text": "Navigational compasses were adopted simultaneously across all major coastal ports in Europe."
+      },
+      {
+        "key": "C",
+        "text": "Piracy increased dramatically along unsecured waterways throughout the late 1300s."
+      },
+      {
+        "key": "D",
+        "text": "Trade declined sharply when new shipping vessels were introduced without state sponsorship."
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Option A shows trade doubling after legal codes were adopted even when ship technology stayed the same, isolating legal agreements as the key driver.",
+    "distractor_analysis": {
+      "B": "Supports technology rather than legal codes.",
+      "C": "Mentions piracy without addressing the impact of shared laws.",
+      "D": "Focuses on state sponsorship rather than legal frameworks."
+    }
+  },
+  {
+    "id": "sat_official_math_06",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Math & Problem Solving (Official College Board)",
+    "difficulty": "Easy",
+    "question": "If 3x + 15 = 36, what is the value of x?",
+    "options": [
+      {
+        "key": "A",
+        "text": "7"
+      },
+      {
+        "key": "B",
+        "text": "9"
+      },
+      {
+        "key": "C",
+        "text": "12"
+      },
+      {
+        "key": "D",
+        "text": "21"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Subtract 15 from both sides: 3x = 21. Divide by 3: x = 7.",
+    "distractor_analysis": {
+      "B": "Subtracted 15 and divided by 2 instead of 3.",
+      "C": "Added 15 and 36.",
+      "D": "Found 3x = 21 but did not divide by 3."
+    }
+  },
+  {
+    "id": "sat_official_math_07",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Math & Problem Solving (Official College Board)",
+    "difficulty": "Medium",
+    "question": "A store offers a 20% discount on a $80 jacket. If sales tax is 5% applied to the discounted price, what is the final price?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$64.00"
+      },
+      {
+        "key": "B",
+        "text": "$68.00"
+      },
+      {
+        "key": "C",
+        "text": "$67.20"
+      },
+      {
+        "key": "D",
+        "text": "$65.20"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Discounted price = 80 x 0.80 = $64. Sales tax = 64 x 0.05 = $3.20. Final price = 64 + 3.20 = $67.20.",
+    "distractor_analysis": {
+      "A": "Calculated the discounted price without adding tax.",
+      "B": "Subtracted 15% (20% - 5%) from $80 directly.",
+      "D": "Miscalculated 5% of 64 as 1.20."
+    }
+  },
+  {
+    "id": "sat_official_math_08",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Math & Problem Solving (Official College Board)",
+    "difficulty": "Medium",
+    "question": "If f(x) = 2x\u00b2 - 3x + 4, what is the value of f(-2)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "6"
+      },
+      {
+        "key": "B",
+        "text": "18"
+      },
+      {
+        "key": "C",
+        "text": "14"
+      },
+      {
+        "key": "D",
+        "text": "-10"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "f(-2) = 2(-2)\u00b2 - 3(-2) + 4 = 2(4) + 6 + 4 = 8 + 6 + 4 = 18.",
+    "distractor_analysis": {
+      "A": "Treated (-2)\u00b2 as -4: 2(-4) + 6 + 4 = 2.",
+      "C": "Subtracted 6 instead of adding: 8 - 6 + 4 = 6.",
+      "D": "Forgot that squaring a negative number yields a positive."
+    }
+  },
+  {
+    "id": "sat_official_math_09",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Math & Problem Solving (Official College Board)",
+    "difficulty": "Hard",
+    "question": "A cylindrical water tank has a radius of 3 meters and a height of 10 meters. If water is pumped in at a rate of 15\u03c0 cubic meters per minute, how many minutes will it take to fill the empty tank?",
+    "options": [
+      {
+        "key": "A",
+        "text": "6 minutes"
+      },
+      {
+        "key": "B",
+        "text": "9 minutes"
+      },
+      {
+        "key": "C",
+        "text": "12 minutes"
+      },
+      {
+        "key": "D",
+        "text": "15 minutes"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Volume of cylinder = \u03c0r\u00b2h = \u03c0(3\u00b2)(10) = 90\u03c0 cubic meters. Time = Total Volume / Rate = 90\u03c0 / 15\u03c0 = 6 minutes.",
+    "distractor_analysis": {
+      "B": "Divided 90 by 10 instead of 15.",
+      "C": "Used 2\u03c0rh instead of \u03c0r\u00b2h.",
+      "D": "Estimated rate as time."
+    }
+  },
+  {
+    "id": "sat_official_math_10",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Math & Problem Solving (Official College Board)",
+    "difficulty": "Hard",
+    "question": "In a right triangle, angle \u03b8 has cos(\u03b8) = 5/13. What is the value of tan(\u03b8)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "12/5"
+      },
+      {
+        "key": "B",
+        "text": "5/12"
+      },
+      {
+        "key": "C",
+        "text": "12/13"
+      },
+      {
+        "key": "D",
+        "text": "13/5"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "In a right triangle with hypotenuse 13 and adjacent side 5, the opposite side is sqrt(13\u00b2 - 5\u00b2) = sqrt(169 - 25) = sqrt(144) = 12. Therefore tan(\u03b8) = opposite / adjacent = 12/5.",
+    "distractor_analysis": {
+      "B": "Inverted tangent (adjacent / opposite).",
+      "C": "Found sin(\u03b8) = 12/13 instead of tan(\u03b8).",
+      "D": "Found sec(\u03b8) = 13/5."
+    }
+  },
+  {
+    "id": "gat_seq_06",
+    "exam_type": "GAT",
+    "topic": "Linear Sequencing Puzzles",
+    "difficulty": "Easy",
+    "question": "Four runners (W, X, Y, Z) finish a race. W finishes ahead of X. Y finishes after X. Z finishes first. Who finishes last?",
+    "options": [
+      {
+        "key": "A",
+        "text": "W"
+      },
+      {
+        "key": "B",
+        "text": "X"
+      },
+      {
+        "key": "C",
+        "text": "Z"
+      },
+      {
+        "key": "D",
+        "text": "Y"
+      }
+    ],
+    "correct_key": "D",
+    "rationale": "Order is: Z (1st), followed by W, then X, and Y finishes after X. So Y must finish last (4th).",
+    "distractor_analysis": {
+      "A": "W is 2nd.",
+      "B": "X is 3rd, not last.",
+      "C": "Z is 1st."
+    }
+  },
+  {
+    "id": "gat_seq_07",
+    "exam_type": "GAT",
+    "topic": "Linear Sequencing Puzzles",
+    "difficulty": "Medium",
+    "question": "Five cars (1, 2, 3, 4, 5) are parked in a row from left to right. Car 3 is in the middle (Slot 3). Car 1 is immediately to the left of Car 3. Car 5 is at an end. Where is Car 1?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Slot 1"
+      },
+      {
+        "key": "B",
+        "text": "Slot 2"
+      },
+      {
+        "key": "C",
+        "text": "Slot 4"
+      },
+      {
+        "key": "D",
+        "text": "Slot 5"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "If Car 3 is in Slot 3, the position immediately to its left is Slot 2. Therefore, Car 1 is in Slot 2.",
+    "distractor_analysis": {
+      "A": "Slot 1 is two spaces to the left.",
+      "C": "Slot 4 is to the right of Car 3.",
+      "D": "Slot 5 is the rightmost slot."
+    }
+  },
+  {
+    "id": "gat_seq_08",
+    "exam_type": "GAT",
+    "topic": "Linear Sequencing Puzzles",
+    "difficulty": "Medium",
+    "question": "Five students (A, B, C, D, E) give speeches one after another. A speaks immediately before B. D speaks third. If E speaks first, when must C speak?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Second"
+      },
+      {
+        "key": "B",
+        "text": "Fourth"
+      },
+      {
+        "key": "C",
+        "text": "Fifth"
+      },
+      {
+        "key": "D",
+        "text": "Third"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Slot 1 is E. Slot 3 is D. The remaining slots are 2, 4, and 5. The block [A, B] requires two adjacent slots, so they must be in Slots 4 and 5. That leaves Slot 2 for C.",
+    "distractor_analysis": {
+      "B": "Slot 4 is occupied by A.",
+      "C": "Slot 5 is occupied by B.",
+      "D": "Slot 3 is already fixed for D."
+    }
+  },
+  {
+    "id": "gat_seq_09",
+    "exam_type": "GAT",
+    "topic": "Linear Sequencing Puzzles",
+    "difficulty": "Hard",
+    "question": "Six books (P, Q, R, S, T, U) are arranged on a shelf 1 to 6. Exactly two books sit between P and Q. If P is in position 2, which positions could Q occupy?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Position 5 only"
+      },
+      {
+        "key": "B",
+        "text": "Position 4 only"
+      },
+      {
+        "key": "C",
+        "text": "Positions 1 or 5"
+      },
+      {
+        "key": "D",
+        "text": "Position 6 only"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Two books between P and Q means |P - Q| = 3. Since P = 2: 2 - 3 = -1 (invalid) or 2 + 3 = 5 (valid). Thus Q must be in Position 5.",
+    "distractor_analysis": {
+      "B": "Distance |2 - 4| = 2 gives only one book between.",
+      "C": "Position 1 gives 0 books between P and Q.",
+      "D": "Distance |2 - 6| = 4 gives 3 books between."
+    }
+  },
+  {
+    "id": "gat_seq_10",
+    "exam_type": "GAT",
+    "topic": "Linear Sequencing Puzzles",
+    "difficulty": "Hard",
+    "question": "Seven passengers (1 through 7) board a bus in single file. J boards before K. L boards after M. Neither J nor K can board 4th. If M boards 4th and L boards 7th, which CANNOT be true?",
+    "options": [
+      {
+        "key": "A",
+        "text": "J boards 1st"
+      },
+      {
+        "key": "B",
+        "text": "K boards 5th"
+      },
+      {
+        "key": "C",
+        "text": "K boards 2nd and J boards 3rd"
+      },
+      {
+        "key": "D",
+        "text": "J boards 2nd"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "We are given that 'J boards before K'. Therefore K cannot board before J. Option C has K boarding 2nd and J 3rd, which directly violates 'J boards before K'.",
+    "distractor_analysis": {
+      "A": "J can easily board 1st.",
+      "B": "K can board 5th as long as J boards earlier.",
+      "D": "J can board 2nd."
+    }
+  },
+  {
+    "id": "gat_group_06",
+    "exam_type": "GAT",
+    "topic": "Grouping and Selection Problems",
+    "difficulty": "Easy",
+    "question": "A committee of 3 must be chosen from {A, B, C, D}. If A is selected, B cannot be selected. If A and C are chosen, who must be the third member?",
+    "options": [
+      {
+        "key": "A",
+        "text": "B"
+      },
+      {
+        "key": "B",
+        "text": "D"
+      },
+      {
+        "key": "C",
+        "text": "Neither B nor D"
+      },
+      {
+        "key": "D",
+        "text": "Any member"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "Since A is chosen, B cannot be chosen. Two members are A and C. The third member must come from the remaining candidates, which leaves only D.",
+    "distractor_analysis": {
+      "A": "Violates the rule that A and B cannot be chosen together.",
+      "C": "A third member is strictly required to make a committee of 3.",
+      "D": "B is prohibited."
+    }
+  },
+  {
+    "id": "gat_group_07",
+    "exam_type": "GAT",
+    "topic": "Grouping and Selection Problems",
+    "difficulty": "Medium",
+    "question": "From 4 boys and 4 girls, a 4-person team is formed with exactly 2 boys and 2 girls. If Boy 1 and Girl 1 refuse to be on the team together, and Boy 1 is selected, how many girls must be selected from the remaining 3 girls?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1"
+      },
+      {
+        "key": "B",
+        "text": "2"
+      },
+      {
+        "key": "C",
+        "text": "3"
+      },
+      {
+        "key": "D",
+        "text": "0"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "The team requires 2 girls. Since Boy 1 is chosen, Girl 1 is eliminated. Thus, all 2 required girls must be chosen from the remaining 3 girls.",
+    "distractor_analysis": {
+      "A": "Team requires 2 girls, not 1.",
+      "C": "Team only has room for 2 girls.",
+      "D": "Must pick 2 girls."
+    }
+  },
+  {
+    "id": "gat_group_08",
+    "exam_type": "GAT",
+    "topic": "Grouping and Selection Problems",
+    "difficulty": "Medium",
+    "question": "Six people (U, V, W, X, Y, Z) are split into two teams of 3: Red and Blue. U and V must be on the same team. W and X must be on opposite teams. If U is on Team Red, which of the following is a possible Team Red?",
+    "options": [
+      {
+        "key": "A",
+        "text": "{U, V, W}"
+      },
+      {
+        "key": "B",
+        "text": "{U, W, X}"
+      },
+      {
+        "key": "C",
+        "text": "{U, V, Y, Z}"
+      },
+      {
+        "key": "D",
+        "text": "{U, Y, Z}"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Team Red must have U and V (since U and V are always together). The third member must be either W or X (since W and X are on opposite teams). {U, V, W} perfectly satisfies all rules.",
+    "distractor_analysis": {
+      "B": "Missing V, violating the rule that U and V are together.",
+      "C": "Has 4 members instead of 3.",
+      "D": "Missing V."
+    }
+  },
+  {
+    "id": "gat_group_09",
+    "exam_type": "GAT",
+    "topic": "Grouping and Selection Problems",
+    "difficulty": "Hard",
+    "question": "A panel of 4 judges is selected from 6 candidates: A, B, C, D, E, F. Rules: If A is selected, E must be selected. If D is selected, B cannot be selected. If both B and D are rejected, who must be selected?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A, C, E, F"
+      },
+      {
+        "key": "B",
+        "text": "A, B, C, D"
+      },
+      {
+        "key": "C",
+        "text": "C, D, E, F"
+      },
+      {
+        "key": "D",
+        "text": "B, C, E, F"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "If B and D are both rejected, only 4 candidates remain: A, C, E, F. All 4 must be selected to form a 4-person panel. Checking rules: A is selected and E is selected (valid).",
+    "distractor_analysis": {
+      "B": "Contains B and D, which are rejected.",
+      "C": "Contains D, which is rejected.",
+      "D": "Contains B, which is rejected."
+    }
+  },
+  {
+    "id": "gat_group_10",
+    "exam_type": "GAT",
+    "topic": "Grouping and Selection Problems",
+    "difficulty": "Hard",
+    "question": "Items K, L, M, N, O, P are divided into two display cases of 3 items each. Case 1 contains K. If L and M cannot be together, and N must be with P, what items must be in Case 2?",
+    "options": [
+      {
+        "key": "A",
+        "text": "{L, N, P}"
+      },
+      {
+        "key": "B",
+        "text": "{K, N, P}"
+      },
+      {
+        "key": "C",
+        "text": "{L, M, O}"
+      },
+      {
+        "key": "D",
+        "text": "{N, P, O}"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "N and P form a block of 2. If N and P were in Case 1 along with K, Case 1 would be {K, N, P}, forcing L and M into Case 2 together, which violates 'L and M cannot be together'. Therefore, N and P must be in Case 2 with either L or M (e.g. {L, N, P}).",
+    "distractor_analysis": {
+      "B": "Case 1 already contains K.",
+      "C": "Puts L and M together, directly violating the separation rule.",
+      "D": "Forces L and M into Case 1 together with K."
+    }
+  },
+  {
+    "id": "gat_scenario_06",
+    "exam_type": "GAT",
+    "topic": "Sample Analytical Scenario: University Department Presentations",
+    "difficulty": "Easy",
+    "question": "Six departments (Biology, Chemistry, English, History, Math, Physics) present on Saturday. Biology presents first. History presents immediately after Biology. When does History present?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1st"
+      },
+      {
+        "key": "B",
+        "text": "2nd"
+      },
+      {
+        "key": "C",
+        "text": "3rd"
+      },
+      {
+        "key": "D",
+        "text": "4th"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "If Biology presents 1st, 'immediately after' means History presents 2nd.",
+    "distractor_analysis": {
+      "A": "Biology presents 1st.",
+      "C": "3rd is two slots after.",
+      "D": "4th is not immediately after."
+    }
+  },
+  {
+    "id": "gat_scenario_07",
+    "exam_type": "GAT",
+    "topic": "Sample Analytical Scenario: University Department Presentations",
+    "difficulty": "Medium",
+    "question": "In the department presentation schedule, Chemistry must present before Math. Physics must present after Math. Which department CANNOT present first?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Chemistry"
+      },
+      {
+        "key": "B",
+        "text": "English"
+      },
+      {
+        "key": "C",
+        "text": "History"
+      },
+      {
+        "key": "D",
+        "text": "Physics"
+      }
+    ],
+    "correct_key": "D",
+    "rationale": "Chemistry is before Math, and Math is before Physics (Chemistry -> Math -> Physics). Since Physics has at least two departments before it, Physics cannot present first.",
+    "distractor_analysis": {
+      "A": "Chemistry can present first.",
+      "B": "English has no constraints and can present first.",
+      "C": "History has no constraints preventing it from presenting first."
+    }
+  },
+  {
+    "id": "gat_scenario_08",
+    "exam_type": "GAT",
+    "topic": "Sample Analytical Scenario: University Department Presentations",
+    "difficulty": "Medium",
+    "question": "If English presents 4th and Math presents 5th, and Biology must present before Chemistry, where can Chemistry present?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Slot 1 only"
+      },
+      {
+        "key": "B",
+        "text": "Slot 6 only"
+      },
+      {
+        "key": "C",
+        "text": "Slots 2, 3, or 6"
+      },
+      {
+        "key": "D",
+        "text": "Slot 4"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Slots 4 and 5 are occupied. Open slots are 1, 2, 3, and 6. Since Biology must be before Chemistry, Chemistry cannot be in Slot 1. Therefore Chemistry can be in Slots 2, 3, or 6 (with Biology in an earlier slot).",
+    "distractor_analysis": {
+      "A": "Chemistry in Slot 1 leaves no room for Biology before it.",
+      "B": "Chemistry can also be in Slots 2 or 3.",
+      "D": "Slot 4 is already occupied by English."
+    }
+  },
+  {
+    "id": "gat_scenario_09",
+    "exam_type": "GAT",
+    "topic": "Sample Analytical Scenario: University Department Presentations",
+    "difficulty": "Hard",
+    "question": "If Chemistry and Physics must present consecutively (in either order), and Math must present 3rd, which slots CANNOT be the Chemistry-Physics block?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Slots 1 and 2"
+      },
+      {
+        "key": "B",
+        "text": "Slots 4 and 5"
+      },
+      {
+        "key": "C",
+        "text": "Slots 2 and 3"
+      },
+      {
+        "key": "D",
+        "text": "Slots 5 and 6"
+      }
+    ],
+    "correct_key": "C",
+    "rationale": "Math occupies Slot 3. The Chemistry-Physics pair requires two consecutive open slots. Since Slot 3 is occupied by Math, the block cannot occupy Slots 2 and 3 (or 3 and 4).",
+    "distractor_analysis": {
+      "A": "Slots 1 and 2 are both available before Math.",
+      "B": "Slots 4 and 5 are both available after Math.",
+      "D": "Slots 5 and 6 are both available after Math."
+    }
+  },
+  {
+    "id": "gat_scenario_10",
+    "exam_type": "GAT",
+    "topic": "Sample Analytical Scenario: University Department Presentations",
+    "difficulty": "Hard",
+    "question": "If exactly three presentations take place between History and English, and History presents 2nd, which department could present 6th?",
+    "options": [
+      {
+        "key": "A",
+        "text": "History"
+      },
+      {
+        "key": "B",
+        "text": "English"
+      },
+      {
+        "key": "C",
+        "text": "Biology"
+      },
+      {
+        "key": "D",
+        "text": "Physics"
+      }
+    ],
+    "correct_key": "B",
+    "rationale": "If History is 2nd, three presentations between means English must be at Position 2 + 3 + 1 = 6th. Therefore, English MUST present 6th.",
+    "distractor_analysis": {
+      "A": "History is in Slot 2.",
+      "C": "Slot 6 is strictly English.",
+      "D": "Slot 6 is strictly English."
+    }
+  }
+]

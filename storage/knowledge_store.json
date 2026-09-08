@@ -1,0 +1,479 @@
+{
+  "chunks": [
+    {
+      "id": "SAT_sat_math_sample_0",
+      "content": "# SAT Quantitative Prep Guide  \n## Linear Equations and Slope-Intercept Form  \n### Core Concept\nA linear equation in two variables can be written in slope-intercept form:\n$$y = mx + b$$\nwhere $m$ is the slope and $b$ is the $y$-intercept $(0, b)$.  \nThe slope $m$ between two points $(x_1, y_1)$ and $(x_2, y_2)$ is given by:\n$$m = \\frac{y_2 - y_1}{x_2 - x_1}$$",
+      "metadata": {
+        "chapter": "SAT Quantitative Prep Guide",
+        "topic": "Linear Equations and Slope-Intercept Form",
+        "subtopic": "Core Concept",
+        "exam_type": "SAT",
+        "source_file": "sat_math_sample.md",
+        "chunk_id": "SAT_sat_math_sample_0"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_sat_math_sample_1",
+      "content": "### Parallel and Perpendicular Lines\n- **Parallel lines** have equal slopes: $m_1 = m_2$.\n- **Perpendicular lines** have negative reciprocal slopes: $m_1 \\cdot m_2 = -1 \\implies m_2 = -\\frac{1}{m_1}$.",
+      "metadata": {
+        "chapter": "SAT Quantitative Prep Guide",
+        "topic": "Linear Equations and Slope-Intercept Form",
+        "subtopic": "Parallel and Perpendicular Lines",
+        "exam_type": "SAT",
+        "source_file": "sat_math_sample.md",
+        "chunk_id": "SAT_sat_math_sample_1"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_sat_math_sample_2",
+      "content": "### Common SAT Traps\n- **Trap 1 (Inverted Slope):** Calculating $\\frac{\\Delta x}{\\Delta y}$ instead of $\\frac{\\Delta y}{\\Delta x}$.\n- **Trap 2 (Sign Error on Negative Reciprocal):** Forgetting to negate when finding the perpendicular slope (e.g., thinking perpendicular to $3$ is $\\frac{1}{3}$ instead of $-\\frac{1}{3}$).\n- **Trap 3 (Standard Form Confusion):** For $Ax + By = C$, the slope is $-\\frac{A}{B}$, not $\\frac{A}{B}$.  \n---",
+      "metadata": {
+        "chapter": "SAT Quantitative Prep Guide",
+        "topic": "Linear Equations and Slope-Intercept Form",
+        "subtopic": "Common SAT Traps",
+        "exam_type": "SAT",
+        "source_file": "sat_math_sample.md",
+        "chunk_id": "SAT_sat_math_sample_2"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_sat_math_sample_3",
+      "content": "## Systems of Linear Equations  \n### Number of Solutions\nFor a system of two linear equations:\n$$\\begin{cases} a_1 x + b_1 y = c_1 \\\\ a_2 x + b_2 y = c_2 \\end{cases}$$  \n1. **Exactly One Solution:** The lines intersect at one point. This occurs when slopes are different: $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$.\n2. **Infinitely Many Solutions:** The lines are identical (coincident). Slopes and intercepts are proportional: $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$.\n3. **No Solution:** The lines are parallel and distinct. Slopes are equal, but intercepts differ: $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$.",
+      "metadata": {
+        "chapter": "SAT Quantitative Prep Guide",
+        "topic": "Systems of Linear Equations",
+        "subtopic": "Number of Solutions",
+        "exam_type": "SAT",
+        "source_file": "sat_math_sample.md",
+        "chunk_id": "SAT_sat_math_sample_3"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_sat_math_sample_4",
+      "content": "### Common SAT Traps\n- **Trap 1:** Confusing \"No solution\" with \"Infinitely many solutions\" by forgetting to compare the constants ($c_1, c_2$).\n- **Trap 2:** Not solving for the requested expression (e.g., the question asks for $x + y$, but the student stops after finding $x$).  \n---",
+      "metadata": {
+        "chapter": "SAT Quantitative Prep Guide",
+        "topic": "Systems of Linear Equations",
+        "subtopic": "Common SAT Traps",
+        "exam_type": "SAT",
+        "source_file": "sat_math_sample.md",
+        "chunk_id": "SAT_sat_math_sample_4"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_sat_math_sample_5",
+      "content": "## Quadratic Functions and Parabola Properties  \n### Standard, Vertex, and Factored Forms\n1. **Standard Form:** $f(x) = ax^2 + bx + c$\n- $y$-intercept is $(0, c)$.\n- Axis of symmetry: $x = -\\frac{b}{2a}$.\n- Vertex coordinates: $\\left(-\\frac{b}{2a}, f\\left(-\\frac{b}{2a}\\right)\\right)$.  \n2. **Vertex Form:** $f(x) = a(x - h)^2 + k$\n- Vertex is $(h, k)$.\n- If $a > 0$, the parabola opens upward and has a minimum value of $k$.\n- If $a < 0$, the parabola opens downward and has a maximum value of $k$.  \n3. **Factored Form:** $f(x) = a(x - r_1)(x - r_2)$\n- $x$-intercepts (roots/zeros) are $r_1$ and $r_2$.",
+      "metadata": {
+        "chapter": "SAT Quantitative Prep Guide",
+        "topic": "Quadratic Functions and Parabola Properties",
+        "subtopic": "Standard, Vertex, and Factored Forms",
+        "exam_type": "SAT",
+        "source_file": "sat_math_sample.md",
+        "chunk_id": "SAT_sat_math_sample_5"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_sat_math_sample_6",
+      "content": "### The Discriminant\nFor $ax^2 + bx + c = 0$, the discriminant is $D = b^2 - 4ac$:\n- $D > 0$: Two distinct real solutions.\n- $D = 0$: Exactly one real solution (double root; tangent to $x$-axis).\n- $D < 0$: No real solutions (two complex roots; does not touch $x$-axis).",
+      "metadata": {
+        "chapter": "SAT Quantitative Prep Guide",
+        "topic": "Quadratic Functions and Parabola Properties",
+        "subtopic": "The Discriminant",
+        "exam_type": "SAT",
+        "source_file": "sat_math_sample.md",
+        "chunk_id": "SAT_sat_math_sample_6"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_sat_math_sample_7",
+      "content": "### Common SAT Traps\n- **Trap 1 (Vertex Sign Error):** In $y = 2(x + 3)^2 - 5$, the vertex is $(-3, -5)$, NOT $(3, -5)$.\n- **Trap 2 (Extreme Value Meaning):** Confusing the $x$-value where the maximum occurs ($x = h$) with the maximum value itself ($y = k$).  \n---",
+      "metadata": {
+        "chapter": "SAT Quantitative Prep Guide",
+        "topic": "Quadratic Functions and Parabola Properties",
+        "subtopic": "Common SAT Traps",
+        "exam_type": "SAT",
+        "source_file": "sat_math_sample.md",
+        "chunk_id": "SAT_sat_math_sample_7"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_sat_math_sample_8",
+      "content": "## Geometry: Circles in the Coordinate Plane  \n### Standard Equation of a Circle\nThe standard equation of a circle with center $(h, k)$ and radius $r$ is:\n$$(x - h)^2 + (y - k)^2 = r^2$$",
+      "metadata": {
+        "chapter": "SAT Quantitative Prep Guide",
+        "topic": "Geometry: Circles in the Coordinate Plane",
+        "subtopic": "Standard Equation of a Circle",
+        "exam_type": "SAT",
+        "source_file": "sat_math_sample.md",
+        "chunk_id": "SAT_sat_math_sample_8"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_sat_math_sample_9",
+      "content": "### Completing the Square for Circles\nIf given in general form $x^2 + y^2 + Dx + Ey + F = 0$:\n1. Group $x$ terms and $y$ terms: $(x^2 + Dx) + (y^2 + Ey) = -F$.\n2. Complete the square for both: add $\\left(\\frac{D}{2}\\right)^2$ and $\\left(\\frac{E}{2}\\right)^2$ to both sides.\n3. Factor into standard form $(x - h)^2 + (y - k)^2 = r^2$.",
+      "metadata": {
+        "chapter": "SAT Quantitative Prep Guide",
+        "topic": "Geometry: Circles in the Coordinate Plane",
+        "subtopic": "Completing the Square for Circles",
+        "exam_type": "SAT",
+        "source_file": "sat_math_sample.md",
+        "chunk_id": "SAT_sat_math_sample_9"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_sat_math_sample_10",
+      "content": "### Common SAT Traps\n- **Trap 1 ($r^2$ vs $r$):** The right side of the equation is $r^2$. If the equation ends in $= 25$, the radius is $5$, NOT $25$. If radius is $6$, the equation ends in $36$.\n- **Trap 2 (Center Signs):** In $(x - 4)^2 + (y + 7)^2 = 16$, center is $(4, -7)$, not $(-4, 7)$.",
+      "metadata": {
+        "chapter": "SAT Quantitative Prep Guide",
+        "topic": "Geometry: Circles in the Coordinate Plane",
+        "subtopic": "Common SAT Traps",
+        "exam_type": "SAT",
+        "source_file": "sat_math_sample.md",
+        "chunk_id": "SAT_sat_math_sample_10"
+      },
+      "embedding": null
+    },
+    {
+      "id": "GAT_gat_analytical_sample_0",
+      "content": "# GAT General Analytical Reasoning Prep Guide  \n## Linear Sequencing Puzzles  \n### Core Methodology\nLinear sequencing involves ordering entities (people, tasks, presentations, cars) in a straight line from 1 to $N$ (or Monday to Sunday).  \n1. **Step 1: Define Entities and Positions:** Note the exact number of slots $1, 2, \\dots, N$.\n2. **Step 2: Symbolize Initial Rules:**\n- \"A is immediately before B\": $[A][B]$ (a fused block).\n- \"A is before B (not necessarily immediately)\": $A < B$.\n- \"Exactly two entities between A and B\": $A \\_ \\_ B$ or $B \\_ \\_ A$.\n- \"A cannot be in slot 1\": $A \\neq 1$.\n3. **Step 3: Combine Clues into Super-Blocks:** Look for shared variables across rules to establish anchor positions.",
+      "metadata": {
+        "chapter": "GAT General Analytical Reasoning Prep Guide",
+        "topic": "Linear Sequencing Puzzles",
+        "subtopic": "Core Methodology",
+        "exam_type": "GAT",
+        "source_file": "gat_analytical_sample.md",
+        "chunk_id": "GAT_gat_analytical_sample_0"
+      },
+      "embedding": null
+    },
+    {
+      "id": "GAT_gat_analytical_sample_1",
+      "content": "### Common GAT Traps\n- **Trap 1 (Assuming Immediate Precedence):** Confusing \"X arrives before Y\" ($X < Y$) with \"X arrives immediately before Y\" ($[X][Y]$).\n- **Trap 2 (Direction Confusion):** Reversing \"ahead of\" or \"behind\". Always establish a left-to-right convention (e.g., 1 = earliest, 5 = latest).\n- **Trap 3 (Neglecting Symmetric Constraints):** When given \"two persons between M and N\", students often only test $M$ first and forget $N$ can also come first.  \n---",
+      "metadata": {
+        "chapter": "GAT General Analytical Reasoning Prep Guide",
+        "topic": "Linear Sequencing Puzzles",
+        "subtopic": "Common GAT Traps",
+        "exam_type": "GAT",
+        "source_file": "gat_analytical_sample.md",
+        "chunk_id": "GAT_gat_analytical_sample_1"
+      },
+      "embedding": null
+    },
+    {
+      "id": "GAT_gat_analytical_sample_2",
+      "content": "## Grouping and Selection Problems  \n### Core Methodology\nGrouping involves selecting a subset of candidates from a larger pool or partitioning them into two or more distinct committees or teams under compatibility rules.",
+      "metadata": {
+        "chapter": "GAT General Analytical Reasoning Prep Guide",
+        "topic": "Grouping and Selection Problems",
+        "subtopic": "Core Methodology",
+        "exam_type": "GAT",
+        "source_file": "gat_analytical_sample.md",
+        "chunk_id": "GAT_gat_analytical_sample_2"
+      },
+      "embedding": null
+    },
+    {
+      "id": "GAT_gat_analytical_sample_3",
+      "content": "### Typical Rule Patterns:\n1. **Conditional Inclusion ($P \\implies Q$):** \"If Ali is selected, then Bilal must be selected.\"\n- **Valid Contrapositive:** If Bilal is NOT selected, Ali CANNOT be selected ($\\neg Q \\implies \\neg P$).\n- **Invalid Fallacy:** If Bilal is selected, Ali must be selected (False converse).\n2. **Mutual Exclusion ($P \\implies \\neg Q$):** \"Ali and Bilal cannot both be on the team.\" (At most one can be chosen, or neither).\n3. **Co-requisite ($P \\iff Q$):** \"Ali is selected if and only if Bilal is selected.\" (Either both are on the team, or neither is).",
+      "metadata": {
+        "chapter": "GAT General Analytical Reasoning Prep Guide",
+        "topic": "Grouping and Selection Problems",
+        "subtopic": "Typical Rule Patterns:",
+        "exam_type": "GAT",
+        "source_file": "gat_analytical_sample.md",
+        "chunk_id": "GAT_gat_analytical_sample_3"
+      },
+      "embedding": null
+    },
+    {
+      "id": "GAT_gat_analytical_sample_4",
+      "content": "### Common GAT Traps\n- **Trap 1 (The Converse Error):** Assuming that if Bilal is selected, Ali must also be selected.\n- **Trap 2 (Mutual Exclusion Misunderstanding):** Assuming that because Ali and Bilal cannot both be selected, one of them *must* be selected. In reality, both could be left out!  \n---",
+      "metadata": {
+        "chapter": "GAT General Analytical Reasoning Prep Guide",
+        "topic": "Grouping and Selection Problems",
+        "subtopic": "Common GAT Traps",
+        "exam_type": "GAT",
+        "source_file": "gat_analytical_sample.md",
+        "chunk_id": "GAT_gat_analytical_sample_4"
+      },
+      "embedding": null
+    },
+    {
+      "id": "GAT_gat_analytical_sample_5",
+      "content": "## Sample Analytical Scenario: University Department Presentations  \n### Premise\nSix professors\u2014Farooq, Ghazala, Hamid, Imran, Junaid, and Khalid\u2014are scheduled to deliver lectures on six consecutive days from Monday through Saturday:\n- Day 1: Monday, Day 2: Tuesday, Day 3: Wednesday, Day 4: Thursday, Day 5: Friday, Day 6: Saturday.",
+      "metadata": {
+        "chapter": "GAT General Analytical Reasoning Prep Guide",
+        "topic": "Sample Analytical Scenario: University Department Presentations",
+        "subtopic": "Premise",
+        "exam_type": "GAT",
+        "source_file": "gat_analytical_sample.md",
+        "chunk_id": "GAT_gat_analytical_sample_5"
+      },
+      "embedding": null
+    },
+    {
+      "id": "GAT_gat_analytical_sample_6",
+      "content": "### Conditions:\n1. Imran must present on Wednesday (Day 3).\n2. Farooq must present earlier in the week than Ghazala ($F < G$).\n3. Khalid must present on the day immediately after Hamid ($[H][K]$).\n4. Neither Farooq nor Khalid can present on Saturday (Day 6).",
+      "metadata": {
+        "chapter": "GAT General Analytical Reasoning Prep Guide",
+        "topic": "Sample Analytical Scenario: University Department Presentations",
+        "subtopic": "Conditions:",
+        "exam_type": "GAT",
+        "source_file": "gat_analytical_sample.md",
+        "chunk_id": "GAT_gat_analytical_sample_6"
+      },
+      "embedding": null
+    },
+    {
+      "id": "GAT_gat_analytical_sample_7",
+      "content": "### Deductions:\n- Since Imran is on Wednesday (3), the consecutive block $[H][K]$ must fit either on (Monday, Tuesday) or (Thursday, Friday). It cannot be on (Friday, Saturday) because Khalid cannot present on Saturday.\n- If $[H][K]$ is on (Thursday, Friday), then Farooq and Ghazala must be on Monday and Tuesday respectively (since $F < G$), leaving Junaid for Saturday.",
+      "metadata": {
+        "chapter": "GAT General Analytical Reasoning Prep Guide",
+        "topic": "Sample Analytical Scenario: University Department Presentations",
+        "subtopic": "Deductions:",
+        "exam_type": "GAT",
+        "source_file": "gat_analytical_sample.md",
+        "chunk_id": "GAT_gat_analytical_sample_7"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_0",
+      "content": "# Digital-Sat-Sample-Questions  \n## Section / Page 1  \nDigital SAT\n\u00ae\nSample Questions and\nAnswer Explanations  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 1",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_0"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_1",
+      "content": "## Section / Page 2  \n2 THE DIGITAL SAT SAMPLE QUESTIONS\nTHE DIGITAL SAT SAMPLE QUESTIONS n READING AND WRITING\nRW question 1\nTo dye wool, Navajo (Din\u00e9) weaver Lillie Taylor uses\nplants and vegetables from Arizona, where she lives. For\nexample, she achieved the deep reds and browns featured\nin her 2003 rug In the Path of the Four Seasons by using\nArizona dock roots, drying and grinding them before\nmixing the powder with water to create a dye bath. To\nintensify the appearance of certain colors, Taylor also\nsometimes mixes in clay obtained from nearby soil.\nWhich choice best states the main idea of the text?\nA) Reds and browns are not commonly featured in\nmost of Taylor\u2019s rugs.\nB) In the Path of the Four Seasons is widely acclaimed for\nits many colors and innovative weaving techniques.\nC) Taylor draws on local resources in the approach she\nuses to dye wool.\nD) Taylor finds it difficult to locate Arizona dock root\nin the desert.\nKey C\nDomain Information and Ideas\nSkill Central Ideas and Details\nKey Explanation: Choice C is the best answer. The\npassage focuses on the idea that the artist Lillie T aylor\nuses resources such as plants and vegetables from\nwhere she lives in Arizona to make dyes for wool.\nDistractor Explanations: Choice A is incorrect because\nthe passage offers no evidence that reds and browns\nare unusual colors in T aylor\u2019s rugs; in fact, it offers an\nexample of a rug that does feature those colors. ChoiceB\nis incorrect because the passage offers no indication\nof whether In the Path of the Four Seasons is widely\nacclaimed; it also does not mention whether the weaving\ntechniques are innovative. Choice D is incorrect because\nthe passage offers no evidence that T aylor has a hard\ntime finding Arizona dock root.\nRW question 2\nJan Gimsa, Robert Sleigh, and Ulrike Gimsa have\nhypothesized that the sail-like structure running down\nthe back of the dinosaur Spinosaurus aegyptiacus\nimproved the animal\u2019s success in underwater pursuits of\nprey species capable of making quick, evasive\nmovements. To evaluate their hypothesis, a second team\nof researchers constructed two battery-powered\nmechanical models of S. aegyptiacus, one with a sail and\none without, and subjected the models to a series of\nidentical tests in a water-filled tank.\nWhich finding from the model tests, if true, would most\nstrongly support Gimsa and colleagues\u2019 hypothesis?\nA) The model with a sail took significantly longer to\ntravel a specified distance while submerged than the\nmodel without a sail did.\nB) The model with a sail displaced significantly more\nwater while submerged than the model without a\nsail did.\nC) The model with a sail had significantly less battery\npower remaining after completing the tests than the\nmodel without a sail did.\nD) The model with a sail took significantly less time to\ncomplete a sharp turn while submerged than the\nmodel without a sail did.\nKey D\nDomain Information and Ideas\nSkill Command of Evidence (T extual)\nKey Explanation: Choice D is the best answer. The\npassage states that Gimsa and colleagues\u2019 hypothesis\nwas that the sail-like structure on the back of S.\naegyptiacus enhanced the dinosaur\u2019s ability to travel\nunderwater to hunt down \u201cprey species capable of\nmaking quick, evasive movements.\u201d This choice\u2019s finding\nwould effectively support the hypothesis because it\nwould indicate that the sail-like structure would enable a  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 2",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_1"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_2",
+      "content": "## Section / Page 3  \n3 THE DIGITAL SAT SAMPLE QUESTIONS\nTHE DIGITAL SAT SAMPLE QUESTIONS n READING AND WRITING\ndinosaur moving underwater to maneuver more quickly\nthan a dinosaur moving underwater without the structure.\nDistractor Explanations: Choice A is incorrect because\nit would essentially contradict the hypothesis by\nsuggesting that a dinosaur moving underwater with\nthe sail-like structure would move more slowly than\na dinosaur moving underwater without the structure.\nChoice B is incorrect because there is no clear passage-\nbased relationship between the amount of water\ndisplaced and the hypothesis. ChoiceC is incorrect\nbecause there is no clear passage-based relationship\nbetween the amount of battery power used and the\nhypothesis.\nRW question 3\n\u201cGhosts of the Old Year\u201d is an early 1900s poem by James\nWeldon Johnson. In the poem, the speaker describes\nexperiencing an ongoing cycle of anticipation followed\nby regretful reflection: ______\nWhich quotation from \u201cGhosts of the Old Year\u201d most\neffectively illustrates the claim?\nA) \u201cThe snow has ceased its fluttering flight, / The\nwind sunk to a whisper light, / An ominous stillness\nfills the night, / A pause\u2014a hush.\u201d\nB) \u201cAnd so the years go swiftly by, / Each, coming,\nbrings ambitions high, / And each, departing, leaves\na sigh / Linked to the past.\u201d\nC) \u201cWhat does this brazen tongue declare, / That\nfalling on the midnight air / Brings to my heart a\nsense of care / Akin to fright?\u201d\nD) \u201cIt tells of many a squandered day, / Of slighted\ngems and treasured clay, / Of precious stores not\nlaid away, / Of fields unreaped.\u201d\nKey B\nDomain Information and Ideas\nSkill Command of Evidence (T extual)\nKey Explanation: Choice B is the best answer. The\nquotation addresses both aspects of the claim: cycles of\nanticipation (\u201cEach, coming, brings ambitions high\u201d) and\nregretful reflection (\u201cAnd each, departing, leaves a sigh /\nLinked to the past\u201d).\nDistractor Explanations: Choice A is incorrect because\nthe quotation focuses on anticipation (\u201cAn ominous\nstillness fills the night, / A pause\u2014a hush\u201d) but not\nregretful reflection. Choice C is incorrect because the\nquotation focuses on worry and anxiety (\u201c. . . a sense\nof care / Akin to fright?\u201d) rather than anticipation and\nregretful reflection. Choice D is incorrect because the\nquotation focuses on regretful reflection (\u201cIt tells of many\na squandered day\u201d) but not anticipation.  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 3",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_2"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_3",
+      "content": "## Section / Page 4  \n4 THE DIGITAL SAT SAMPLE QUESTIONS\nTHE DIGITAL SAT SAMPLE QUESTIONS n READING AND WRITING\nRW question 4\nParticipants\u2019 Evaluation of the Likelihood That Robots\nCan Work Effectively in Different Occupations\nOccupation\nSomewhat\nor very\nunlikely (%) Neutral (%)\nSomewhat\nor very\nlikely (%)\ntelevision\nnews anchor 24 9 67\nteacher 37 16 47\nfirefighter 62 9 30\nsurgeon 74 9 16\ntour guide 10 8 82\nRows in table may not add up to 100 due to rounding.\nGeorgia Tech roboticists De\u2019Aira Bryant and Ayanna\nHoward, along with ethicist Jason Borenstein, were\ninterested in people\u2019s perceptions of robots\u2019 competence.\nThey recruited participants and asked them how likely\nthey think it is that a robot could do the work required\nin various occupations. Participants\u2019 evaluations varied\nwidely depending on which occupation was being\nconsidered; for example, ______\nWhich choice most effectively uses data from the table to\ncomplete the example?\nA) 82% of participants believe that it is somewhat or\nvery likely that a robot could work effectively as a\ntour guide, but only 16% believe that it is somewhat\nor very likely that a robot could work as a surgeon.\nB) 47% of participants believe that it is somewhat or\nvery likely that a robot could work effectively as a\nteacher, but 37% of respondents believe that it is\nsomewhat or very unlikely that a robot could do so.\nC) 9% of participants were neutral about whether a\nrobot could work effectively as a television news\nanchor, which is the same percent of participants\nwho were neutral when asked about a robot\nworking as a surgeon.\nD) 62% of participants believe that it is somewhat or\nvery unlikely that a robot could work effectively as a\nfirefighter.\nKey A\nDomain Information and Ideas\nSkill Command of Evidence (Quantitative)\nKey Explanation: Choice A is the best answer.\nThis choice supports the claim by contrasting two\noccupations that survey participants gave widely\ndivergent probabilities of robots working effectively in:\ntour guide (82 percent) and surgeon (16 percent).\nDistractor Explanations: Choice B is incorrect because\nit focuses on only one occupation\u2014that of teacher\u2014and\ntherefore does not illustrate how survey participants\u2019\nviews of the likelihood of robots working effectively vary\nwidely by occupation. Choice C is incorrect because\nalthough it does compare survey participants\u2019 views\nof robots working effectively in two occupations, the\npercentages cited for television news anchor and\nsurgeon are the same, not widely varied. Choice D is\nincorrect because it focuses on only one occupation\u2014\nthat of firefighter\u2014and therefore does not illustrate how\nsurvey participants\u2019 views of the likelihood of robots\nworking effectively vary widely by occupation.  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 4",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_3"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_4",
+      "content": "## Section / Page 5  \n5 THE DIGITAL SAT SAMPLE QUESTIONS\nTHE DIGITAL SAT SAMPLE QUESTIONS n READING AND WRITING\nRW question 5\nMany animals, including humans, must sleep, and sleep\nis known to have a role in everything from healing\ninjuries to encoding information in long-term memory.\nBut some scientists claim that, from an evolutionary\nstandpoint, deep sleep for hours at a time leaves an\nanimal so vulnerable that the known benefits of sleeping\nseem insufficient to explain why it became so widespread\nin the animal kingdom. These scientists therefore imply\nthat ______\nWhich choice most logically completes the text?\nA) it is more important to understand how widespread\nprolonged deep sleep is than to understand its\nfunction.\nB) prolonged deep sleep is likely advantageous in ways\nthat have yet to be discovered.\nC) many traits that provide significant benefits for an\nanimal also likely pose risks to that animal.\nD) most traits perform functions that are hard to\nunderstand from an evolutionary standpoint.\nKey B\nDomain Information and Ideas\nSkill Inferences\nKey Explanation: Choice B is the best answer. The\npassage indicates that although scientists recognize that\nsleep, which is widespread among animal species, has\nbenefits, some scientists believe that deep, prolonged\nsleep is so risky from the perspective of animal species\u2019\nsurvival and well-being that there must be some so-far-\nundiscovered advantage(s) to sleep to make it worthwhile\nfrom an evolutionary standpoint.\nDistractor Explanations: Choice A is incorrect because\nthe passage suggests that the extent of deep, prolonged\nsleep among animal species is well understood by\nscientists and that the real question for scientists is\nwhy so many animal species engage in deep, prolonged\nsleep. Choice C is incorrect because the passage offers\nno evidence that any trait other than deep, prolonged\nsleep poses both benefits and risks for animal species.\nChoiceD is incorrect because the passage offers no\nevidence that any trait other than deep, prolonged sleep\nhas one or more functions that are hard for scientists to\nunderstand.\nRW question 6\nIn recommending Bao Phi\u2019s collection S\u00f4ng I Sing, a\nlibrarian noted that pieces by the spoken-word poet\ndon\u2019t lose their ______ nature when printed: the\nlanguage has the same pleasant musical quality on the\npage as it does when performed by Phi.\nWhich choice completes the text with the most logical\nand precise word or phrase?\nA) jarring\nB) scholarly\nC) melodic\nD) personal\nKey C\nDomain Craft and Structure\nSkill Words in Context\nKey Explanation: Choice C is the best answer. \u201cMelodic,\u201d\nreferring to a pleasant arrangement of sounds, effectively\nsignals the later use in the passage of \u201cpleasant musical\nquality\u201d to refer to Phi\u2019s spoken-word poetry when read\nrather than heard.\nDistractor Explanations: Choice A is incorrect because\n\u201cjarring,\u201d meaning disagreeable or upsetting, suggests\nthe opposite of what the passage says about the\n\u201cpleasant musical quality\u201d of Phi\u2019s spoken-word poetry,\nwhether read or heard. Choice B is incorrect because\n\u201cscholarly\u201d does not effectively signal the later use in the\npassage of \u201cpleasant musical quality\u201d to refer to Phi\u2019s\nspoken-word poetry. Choice D is incorrect because\n\u201cpersonal\u201d does not effectively signal the later use in the\npassage of \u201cpleasant musical quality\u201d to refer to Phi\u2019s\nspoken-word poetry.  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 5",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_4"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_5",
+      "content": "## Section / Page 6  \n6 THE DIGITAL SAT SAMPLE QUESTIONS\nTHE DIGITAL SAT SAMPLE QUESTIONS n READING AND WRITING\nRW question 7\nThe following text is from F. Scott Fitzgerald\u2019s 1925\nnovel The Great Gatsby.\n[Jay Gatsby] was balancing himself on the dashboard of\nhis car with that resourcefulness of movement that is so\npeculiarly American\u2014that comes, I suppose, with the\nabsence of lifting work in youth and, even more, with\nthe formless grace of our nervous, sporadic games. This\nquality was continually breaking through his punctilious\nmanner in the shape of restlessness.\nAs used in the text, what does the word \u201cquality\u201d most\nnearly mean?\nA) Characteristic\nB) Standard\nC) Prestige\nD) Accomplishment\nKey A\nDomain Craft and Structure\nSkill Words in Context\nKey Explanation: Choice A is the best answer. As used in\nthe last sentence of the passage, \u201cquality\u201d refers to a trait\nor attribute (\u201ccharacteristic\u201d)\u2014specifically, Jay Gatsby\u2019s\n\u201cresourcefulness of movement,\u201d which manifested as\nrestlessness.\nDistractor Explanations: Choice B is incorrect because\nalthough Jay Gatsby\u2019s \u201cresourcefulness of movement\u201d is\na trait or attribute, referring to it as a \u201cstandard\u201d implies\nthat he is meeting a requirement or criterion set by\nothers, a conclusion the passage does not support.\nChoices C and D are incorrect because neither \u201cprestige\u201d\nnor \u201caccomplishment\u201d makes sense in this context.\nRW question 8\nThe work of molecular biophysicist Enrique M. De La\nCruz is known for ______ traditional boundaries\nbetween academic disciplines. The university laboratory\nthat De La Cruz runs includes engineers, biologists,\nchemists, and physicists, and the research the lab\nproduces makes use of insights and techniques from all\nthose fields.\nWhich choice completes the text with the most logical\nand precise word or phrase?\nA) reinforcing\nB) anticipating\nC) epitomizing\nD) transcending\nKey D\nDomain Craft and Structure\nSkill Words in Context\nKey Explanation: Choice D is the best answer.\n\u201cT ranscending,\u201d which means rising above or going\nbeyond limits, effectively signals that De La Cruz broke\ndown traditional academic disciplinary boundaries by\nworking with experts, ideas, and methods from numerous\nfields.\nDistractor Explanations: Choice A is incorrect because\n\u201creinforcing\u201d suggests the opposite of what the passage\nsays, which is that De La Cruz broke down, rather than\nmade stronger, traditional barriers between academic\ndisciplines. Choice B is incorrect because \u201canticipating,\u201d\nin the sense of expecting or acting in advance of\nsomething, does not make sense in this context.\nChoiceC is incorrect because \u201cepitomizing,\u201d meaning\nto use something as an ideal example, suggests the\nopposite of what the text says, which is that De La Cruz\nbroke down, rather than idealized, traditional barriers\nbetween academic disciplines.  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 6",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_5"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_6",
+      "content": "## Section / Page 7  \n7 THE DIGITAL SAT SAMPLE QUESTIONS\nTHE DIGITAL SAT SAMPLE QUESTIONS n READING AND WRITING\nRW question 9\nSome studies have suggested that posture can influence\ncognition, but we should not overstate this\nphenomenon. A case in point: In a 2014 study, Megan\nO\u2019Brien and Alaa Ahmed had subjects stand or sit while\nmaking risky simulated economic decisions. Standing is\nmore physically unstable and cognitively demanding\nthan sitting; accordingly, O\u2019Brien and Ahmed\nhypothesized that standing subjects would display more\nrisk aversion during the decision-making tasks than\nsitting subjects did, since they would want to avoid\nfurther feelings of discomfort and complicated risk\nevaluations. But O\u2019Brien and Ahmed actually found no\ndifference in the groups\u2019 performance.\nWhich choice best states the main purpose of the text?\nA) It presents the study by O\u2019Brien and Ahmed to\ncritique the methods and results reported in\nprevious studies of the effects of posture on\ncognition.\nB) It argues that research findings about the effects of\nposture on cognition are often misunderstood, as in\nthe case of O\u2019Brien and Ahmed\u2019s study.\nC) It explains a significant problem in the emerging\nunderstanding of posture\u2019s effects on cognition and\nhow O\u2019Brien and Ahmed tried to solve that problem.\nD) It discusses the study by O\u2019Brien and Ahmed to\nillustrate why caution is needed when making claims\nabout the effects of posture on cognition.\nKey D\nDomain Craft and Structure\nSkill T ext Structure and Purpose\nKey Explanation: Choice D is the best answer. The\npassage asserts that \u201cwe should not overstate\u201d the effect\nof posture on cognition and uses the O\u2019Brien and Ahmed\nstudy as a \u201ccase in point\u201d in support of that claim.\nDistractor Explanations: Choice A is incorrect\nbecause although the passage indicates that O\u2019Brien\nand Ahmed reached different conclusions from those\nof other researchers, it does not use the O\u2019Brien and\nAhmed study to criticize how those earlier studies were\nconducted or to directly challenge the accuracy of those\nstudies\u2019 results. Choice B is incorrect because although\nthe passage indicates that the results from studies\nfinding a link between posture and cognition have been\noverstated, it offers no evidence that the O\u2019Brien and\nAhmed study has often been misunderstood. ChoiceC\nis incorrect because the passage suggests that although\nO\u2019Brien and Ahmed were interested in studying the\nmatter of posture and cognition, it does not indicate what\nthese researchers thought before conducting their study\nor that the researchers set out specifically to solve a\nproblem.\nRW question 10\nThe following text is from Herman Melville\u2019s 1854 short\nstory \u201cThe Lightning-Rod Man.\u201d\nThe stranger still stood in the exact middle of the\ncottage, where he had first planted himself. His\nsingularity impelled a closer scrutiny. A lean, gloomy\nfigure. Hair dark and lank, mattedly streaked over his\nbrow. His sunken pitfalls of eyes were ringed by indigo\nhalos, and played with an innocuous sort of lightning:\nthe gleam without the bolt. The whole man was\ndripping. He stood in a puddle on the bare oak floor: his\nstrange walking-stick vertically resting at his side.\nWhich choice best states the function of the underlined\nsentence in the text as a whole?\nA) It sets up the character description presented in the\nsentences that follow.\nB) It establishes a contrast with the description in the\nprevious sentence.\nC) It elaborates on the previous sentence\u2019s description\nof the character.\nD) It introduces the setting that is described in the\nsentences that follow.  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 7",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_6"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_7",
+      "content": "## Section / Page 8  \n8 THE DIGITAL SAT SAMPLE QUESTIONS\nTHE DIGITAL SAT SAMPLE QUESTIONS n READING AND WRITING\nKey A\nDomain Craft and Structure\nSkill T ext Structure and Purpose\nKey Explanation: Choice A is the best answer. The\nunderlined sentence, which asserts that the uniqueness\nof the stranger\u2019s physical appearance invited careful\nexamination, sets up the following sentences\u2019 description\nof the stranger\u2019s distinctive physical features and stance.\nDistractor Explanations: Choice B is incorrect because\nthe underlined sentence has no direct logical relationship\nto the previous sentence. Choice C is incorrect because\nthe previous sentence does not describe the stranger,\nso the underlined sentence cannot build on it in this way.\nChoiceD is incorrect because the underlined sentence\noffers a general sense of the stranger\u2019s physical\nappearance and does not introduce a setting, nor is the\nmain purpose of the following sentences to describe a\nsetting.\nRW question 11\nText 1\nWhat factors influence the abundance of species in a\ngiven ecological community? Some theorists have argued\nthat historical diversity is a major driver of how diverse\nan ecological community eventually becomes: differences\nin community diversity across otherwise similar habitats,\nin this view, are strongly affected by the number of\nspecies living in those habitats at earlier times.\nText 2\nIn 2010, a group of researchers including biologist Carla\nC\u00e1ceres created artificial pools in a New York forest.\nThey stocked some pools with a diverse mix of\nzooplankton species and others with a single\nzooplankton species and allowed the pool communities\nto develop naturally thereafter. Over the course of four\nyears, C\u00e1ceres and colleagues periodically measured the\nspecies diversity of the pools, finding\u2014contrary to their\nexpectations\u2014that by the end of the study there was little\nto no difference in the pools\u2019 species diversity.\nBased on the texts, how would C\u00e1ceres and colleagues\n(Text 2) most likely describe the view of the theorists\npresented in Text 1?\nA) It is largely correct, but it requires a minor\nrefinement in light of the research team\u2019s results.\nB) It is not compelling as a theory regardless of any\nexperimental data collected by the research team.\nC) It may seem plausible, but it is not supported by the\nresearch team\u2019s findings.\nD) It probably holds true only in conditions like those\nin the research team\u2019s study.\nKey C\nDomain Craft and Structure\nSkill Cross-T ext Connections\nKey Explanation: Choice C is the best answer. T ext 2\nindicates that C\u00e1ceres and colleagues expected to find\nat the end of their study that the pools they stocked\nwith multiple zooplankton species would have greater\ndiversity than the pools they stocked with a single\nzooplankton species but that this was not, in fact, the\ncase.\nDistractor Explanations: Choice A is incorrect because\nthe findings obtained by C\u00e1ceres and colleagues\nfundamentally challenge the hypothesis in T ext 1 rather\nthan largely support it. Choice B is incorrect because\n\u201ccontrary to their expectations\u201d (T ext 2) indicates that\nC\u00e1ceres and colleagues had assumed the hypothesis in\nT ext 1 was correct prior to conducting their own study.\nChoice D is incorrect because the findings obtained by\nC\u00e1ceres and colleagues undermine, rather than support,\nthe hypothesis in T ext 1.  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 8",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_7"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_8",
+      "content": "## Section / Page 9  \n9 THE DIGITAL SAT SAMPLE QUESTIONS\nTHE DIGITAL SAT SAMPLE QUESTIONS n READING AND WRITING\nRW question 12\nWhile researching a topic, a student has taken the\nfollowing notes:\n\u2022 Maika\u2019i Tubbs is a Native Hawaiian sculptor and\ninstallation artist.\n\u2022 His work has been shown in the United States,\nCanada, Japan, and Germany, among other places.\n\u2022 Many of his sculptures feature discarded objects.\n\u2022 His work Erasure (2008) includes discarded\naudiocassette tapes and magnets.\n\u2022 His work Home Grown (2009) includes discarded\npushpins, plastic plates and forks, and wood.\nThe student wants to emphasize a similarity between the\ntwo works. Which choice most effectively uses relevant\ninformation from the notes to accomplish this goal?\nA) Erasure (2008) uses discarded objects such as\naudiocassette tapes and magnets; Home Grown\n(2009), however, includes pushpins, plastic plates\nand forks, and wood.\nB) Like many of Tubbs\u2019s sculptures, both Erasure and\nHome Grown include discarded objects: Erasure uses\naudiocassette tapes, and Home Grown uses plastic\nforks.\nC) Tubbs\u2019s work, which often features discarded\nobjects, has been shown both within the United\nStates and abroad.\nD) Tubbs completed Erasure in 2008 and Home Grown in\n2009.\nKey B\nDomain Expression of Ideas\nSkill Rhetorical Synthesis\nKey Explanation: Choice B is the best answer. The\nsentence uses \u201clike many of T ubbs\u2019s sculptures\u201d and\n\u201cboth\u201d to emphasize a similarity between Erasure and\nHome Grown in terms of their common use of discarded\nobjects, though the specific discarded objects used\ndiffered between the two works.\nDistractor Explanations: Choice A is incorrect because\nalthough the sentence discusses two of T ubbs\u2019s works,\nthe use of \u201chowever\u201d emphasizes a contrast, rather than\na similarity, between the works. Choice C is incorrect\nbecause the sentence focuses only on T ubbs\u2019s work\nin general and does not mention any specific works.\nChoice D is incorrect because the sentence simply\nconveys information about two of T ubbs\u2019s works\u2014the\nyear in which each was completed\u2014without establishing\nany sort of logical relationship between the pieces of\ninformation.\nRW question 13\nIraqi artist Nazik Al-Malaika, celebrated as the first\nArabic poet to write in free verse, didn\u2019t reject traditional\nforms entirely; her poem \u201cElegy for a Woman of No\nImportance\u201d consists of two ten-line stanzas and a\nstandard number of syllables. Even in this superficially\ntraditional work, ______ Al-Malaika was breaking new\nground by memorializing an anonymous woman rather\nthan a famous man.\nWhich choice completes the text with the most logical\ntransition?\nA) in fact,\nB) though,\nC) therefore,\nD) moreover,\nKey B\nDomain Expression of Ideas\nSkill T ransitions\nKey Explanation: Choice B is the best answer. The\npassage\u2019s first sentence establishes that although\nAl-Malaika is famous for her free verse poetry, she still\nmade some use of traditional poetic forms, as in her work\n\u201cElegy for a Woman of No Importance.\u201d The passage\u2019s\nlast sentence qualifies the point made in the passage\u2019s\nfirst sentence by indicating that even when Al-Malaika  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 9",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_8"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_9",
+      "content": "## Section / Page 10  \n10  THE DIGITAL SAT SAMPLE QUESTIONS\nTHE DIGITAL SAT SAMPLE QUESTIONS n READING AND WRITING\nused traditional forms, as in \u201cElegy,\u201d she challenged\ntradition, in this case by making an \u201canonymous woman\nrather than a famous man\u201d the subject of the poem.\n\u201cThough\u201d is the best transition for the passage\u2019s last\nsentence because, along with \u201ceven,\u201d it signals that Al-\nMalaika subverted traditional poetic forms even when\nshe used them by, in this case, using a nontraditional\nsubject for an elegy.\nDistractor Explanations: Choice A is incorrect\nbecause \u201cin fact\u201d illogically signals that the passage\u2019s\nlast sentence stresses or amplifies the truth of the\nassertion made in the passage\u2019s first sentence. ChoiceC\nis incorrect because \u201ctherefore\u201d illogically signals that\nthe passage\u2019s last sentence describes a consequence\narising from the assertion made in the passage\u2019s first\nsentence. Choice D is incorrect because \u201cmoreover\u201d\nillogically signals that the passage\u2019s last sentence merely\noffers additional information about the assertion made in\nthe passage\u2019s first sentence.\nRW question 14\nAccording to Naomi Nakayama of the University of\nEdinburgh, the reason seeds from a dying dandelion\nappear to float in the air while ______ is that their\nporous plumes enhance drag, allowing the seeds to stay\nairborne long enough for the wind to disperse them\nthroughout the surrounding area.\nWhich choice completes the text so that it conforms to\nthe conventions of Standard English?\nA) falling,\nB) falling:\nC) falling;\nD) falling\nKey D\nDomain Standard English Conventions\nSkill Boundaries\nKey Explanation: Choice D is the best answer. No\npunctuation is needed.\nDistractor Explanations: Choices A, B, and C are\nincorrect because each inserts unnecessary punctuation\n(a comma, colon, and semicolon, respectively) between\nthe sentence\u2019s subject (\u201cthe reason . . . falling\u201d) and the\nverb \u201cis.\u201d\nRW question 15\nRabinal Ach\u00ed is a precolonial Maya dance drama\nperformed annually in Rabinal, a town in the\nGuatemalan highlands. Based on events that occurred\nwhen Rabinal was a city-state ruled by a king, ______\nhad once been an ally of the king but was later captured\nwhile leading an invading force against him.\nWhich choice completes the text so that it conforms to\nthe conventions of Standard English?\nA) Rabinal Ach\u00ed tells the story of K\u2019iche\u2019 Ach\u00ed, a military\nleader who\nB) K\u2019iche\u2019 Ach\u00ed, the military leader in the story of\nRabinal Ach\u00ed,\nC) there was a military leader, K\u2019iche\u2019 Ach\u00ed, who in\nRabinal Ach\u00ed\nD) the military leader whose story is told in Rabinal\nAch\u00ed, K\u2019iche\u2019 Ach\u00ed,\nKey A\nDomain Standard English Conventions\nSkill Form, Structure, and Sense\nKey Explanation: Choice A is the best answer. This\nchoice ensures that the introductory participial phrase\n\u201cBased on events that occurred when Rabinal was a city-\nstate ruled by a king\u201d appears immediately before the\nnoun it modifies, \u201cRabinal Ach\u00ed.\u201d\nDistractor Explanations: Choices B, C, and D are\nincorrect because \u201cBased on events that occurred when\nRabinal was a city-state ruled by a king\u201d should appear\nnext to the words it modifies, \u201cRabinal Ach\u00ed,\u201d whereas all\nthese choices result in dangling modifiers.  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 10",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_9"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_10",
+      "content": "## Section / Page 11  \nTHE DIGITAL SAT SAMPLE QUESTIONS n MA TH\n11  THE DIGITAL SAT SAMPLE QUESTIONS\nMath question 1\nIf f (x) = x + 7 and g(x) = 7x, what is the value of\n4f (2) \u2212 g(2)?\nA) \u22125\nB) 1\nC) 22\nD) 28\nKey C\nDomain Algebra\nSkill Linear functions\nEvaluate a linear function given an input\nvalue\nKey Explanation: Choice C is correct. The value of\nf(2) can be found by substituting 2 for x in the given\nequation f(x) = x + 7, which yields f(2) = 2 + 7, or\nf(2) = 9. The value of g(2) can be found by substituting 2\nfor x in the given equation g(x) = 7x, which yields\ng(2) = 7(2), or g(2) = 14. The value of the expression\n4f(2) \u2212 g(2) can be found by substituting the\ncorresponding values into the expression, which gives\n4(9) \u2212 14. This expression is equivalent to 36 \u2212 14, or 22.\nDistractor Explanations: Choice A is incorrect. This\nis the value of f(2) \u2212 g(2), not 4f(2) \u2212 g(2). Choice B is\nincorrect and may result from calculating 4f(2) as 4(2)+7,\nrather than 4(2 + 7). Choice D is incorrect and may result\nfrom conceptual or calculation errors.\nMath question 2\nThe y-intercept of the graph of y = \u22126x \u2212 32 in the\nxy-plane is (0, y). What is the value of y ?\nKey \u221232\nDomain Algebra\nSkill Linear equations in two variables\nMake connections between an algebraic\nrepresentation and a graph\nKey Explanation: The correct answer is \u221232. It\u2019s given\nthat the y-intercept of the graph of y = \u22126x \u2212 32 is (0, y).\nSubstituting 0 for x in this equation yields y=\u22126(0)\u221232\nor y = \u221232. Therefore, the value of y that corresponds to\nthe y-intercept of the graph of y = \u22126x \u2212 32 in the\nxy-plane is \u221232.\nMath question 3\nThe graph of the function f, where y = f (x), models the\ntotal cost y, in dollars, for a certain video game system\nand x games. What is the best interpretation of the slope\nof the graph in this context?\nA) Each game costs $25.\nB) The video game system costs $100.\nC) The video game system costs $25.\nD) Each game costs $100.  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 11",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_10"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_11",
+      "content": "## Section / Page 12  \nTHE DIGITAL SAT SAMPLE QUESTIONS n MA TH\n12  THE DIGITAL SAT SAMPLE QUESTIONS\nKey A\nDomain Algebra\nSkill Linear functions\nInterpret the graph of a linear function in\nterms of a context\nKey Explanation: Choice A is correct. The given graph is\na line, and the slope of a line is defined as the change in\nthe value of y for each increase in the value of x by 1. It\u2019s\ngiven that y represents the total cost, in dollars, and that\nx represents the number of games. Therefore, the change\nin the value of y for each increase in the value of x by 1\nrepresents the change in total cost, in dollars, for each\nincrease in the number of games by 1. In other words, the\nslope represents the cost, in dollars, per game. The graph\nshows that when the value of x increases from 0 to 1, the\nvalue of y increases from 100 to 125. It follows that the\nslope is 25, or the cost per game is $25. Thus, the best\ninterpretation of the slope of the graph is that each game\ncosts $25.\nDistractor Explanations: Choice B is incorrect. This is an\ninterpretation of the y-intercept of the graph rather than\nthe slope of the graph. Choice C is incorrect. The slope\nof the graph is the cost per game, not the cost of the\nvideo game system. Choice D is incorrect. Each game\ncosts $25, not $100.\nMath question 4\ny < \u22124x + 4\nWhich point (x, y) is a solution to the given inequality in\nthe xy-plane?\nA) (2, \u22121)\nB) (2, 1)\nC) (0, 5)\nD) (\u22124, 0)\nKey D\nDomain Algebra\nSkill Linear inequalities in one or two variables\nFor a linear inequality, interpret a point in\nthe xy-plane\nKey Explanation: Choice D is correct. For a point (x, y) to\nbe a solution to the given inequality in the xy-plane, the\nvalue of the point\u2019s y-coordinate must be less than the\nvalue of \u22124x + 4, where x is the value of the x-coordinate\nof the point. This is true of the point (\u22124, 0) because\n0 < \u22124(\u22124) + 4, or 0 < 20. Therefore, the point (\u22124, 0) is a\nsolution to the given inequality.\nDistractor Explanations: Choices A, B, and C are\nincorrect. None of these points is a solution to the given\ninequality because each point\u2019s y-coordinate is greater\nthan the value of \u22124x + 4 for the point\u2019s x-coordinate.\nMath question 5\nFigure A and figure B are both regular polygons. The\nsum of the perimeter of figure A and the perimeter of\nfigure B is 63 inches. The equation 3x + 6y = 63\nrepresents this situation, where x is the number of sides\nof figure A and y is the number of sides of figure B.\nWhich statement is the best interpretation of 6 in this\ncontext?\nA) Each side of figure B has a length of 6 inches.\nB) The number of sides of figure B is 6.\nC) Each side of figure A has a length of 6 inches.\nD) The number of sides of figure A is 6.\nKey A\nDomain Algebra\nSkill Linear equations in two variables\nFor a linear equation, interpret a solution,\nconstant, variable, factor, or term based on\nthe context  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 12",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_11"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_12",
+      "content": "## Section / Page 13  \nTHE DIGITAL SAT SAMPLE QUESTIONS n MA TH\n13  THE DIGITAL SAT SAMPLE QUESTIONS\nKey Explanation: Choice A is correct. It\u2019s given that\nfigure A and figure B (not shown) are both regular\npolygons and the sum of the perimeters of the two\nfigures is 63 inches. It\u2019s also given that x is the number\nof sides of figure A and y is the number of sides of\nfigureB, and that the equation 3x + 6y = 63 represents\nthis situation. Thus, 3x and 6y represent the perimeters,\nin inches, of figure A and figureB, respectively. Since 6y\nrepresents the perimeter, in inches, of figure B and y is\nthe number of sides of figure B, it follows that each side\nof figure B has a length of 6inches.\nDistractor Explanations: Choice B is incorrect. The\nnumber of sides of figureB is y, not 6. Choice C is\nincorrect. Since the perimeter, in inches, of figure A is\nrepresented by 3x, each side of figure A has a length of\n3inches, not 6 inches. Choice D is incorrect. The number\nof sides of figure A is x, not 6.\nMath question 6\nStore A sells raspberries for $5.50 per pint and\nblackberries for $3.00 per pint. Store B sells raspberries\nfor $6.50 per pint and blackberries for $8.00 per pint. A\ncertain purchase of raspberries and blackberries would\ncost $37.00 at store A or $66.00 at store B. How many\npints of blackberries are in this purchase?\nA) 12\nB) 8\nC) 5\nD) 4\nKey C\nDomain Algebra\nSkill Systems of two linear equations in two\nvariables\nCreate and use a system of two linear\nequations\nKey Explanation: Choice C is correct. It\u2019s given that\nstoreA sells raspberries for $5.50 per pint and\nblackberries for $3.00 per pint, and a certain purchase of\nraspberries and blackberries at store A would cost\n$37.00. It\u2019s also given that store B sells raspberries for\n$6.50 per pint and blackberries for $8.00 per pint, and\nthis purchase of raspberries and blackberries at store B\nwould cost $66.00. Let r represent the number of pints of\nraspberries and b represent the number of pints of\nblackberries in this purchase. The equation\n5.50r + 3.00b = 37.00 represents this purchase of\nraspberries and blackberries from store A and the\nequation 6.50r+8.00b = 66.00 represents this purchase\nof raspberries and blackberries from store B. Solving the\nsystem of equations by elimination gives the value of r\nand the value of b that make the system of equations\ntrue. Multiplying both sides of the equation for store A by\n6.5 yields (5.50r)(6.5) + (3.00b)(6.5) = (37.00)(6.5), or\n35.75r+19.5b = 240.5. Multiplying both sides\nof the equation for store B by 5.5 yields\n(6.50r)(5.5) + (8.00b)(5.5) = (66.00)(5.5), or\n35.75r + 44b = 363. Subtracting both sides of the\nequation for store A, 35.75r + 19.5b = 240.5, from\nthe corresponding sides of the equation for\nstore B, 35.75r + 44b = 363, yields\n(35.75r\u221235.75r) + (44b \u2212 19.5b) = (363 \u2212 240.5), or\n24.5b = 122.5. Dividing both sides of this equation by\n24.5 yields b = 5. Thus, 5 pints of blackberries are in this\npurchase.\nDistractor Explanations: Choices A and B are incorrect\nand may result from conceptual or calculation errors.\nChoice D is incorrect. This is the number of pints of\nraspberries, not blackberries, in the purchase.\nMath question 7\ng (x) = x 2 + 55\nWhat is the minimum value of the given function?\nA) 3,025\nB) 110\nC) 55\nD) 0  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 13",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_12"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_13",
+      "content": "## Section / Page 14  \nTHE DIGITAL SAT SAMPLE QUESTIONS n MA TH\n14  THE DIGITAL SAT SAMPLE QUESTIONS\nKey C\nDomain Advanced Math\nSkill Nonlinear functions\nDetermine the most suitable form of a\nfunction to display key features\nKey Explanation: Choice C is correct. A quadratic\nfunction in the form g(x) = a(x\u2212\u210e)2 + k, where a, h, and k\nare constants, has a minimum value of k at x = \u210e when\na > 0. The given quadratic function can be rewritten as\ng(x) = 1(x \u2212 0)2 + 55, where \u210e = 0 and k = 55. Therefore, the\nminimum value of the given function is 55.\nDistractor Explanations: Choice A is incorrect and may\nresult from squaring the minimum value. Choice B is\nincorrect and may result from multiplying the minimum\nvalue by 2. Choice D is incorrect. This is the x-value at\nwhich the minimum value of g(x) occurs.\nMath question 8\nThe function h is defined by h(x) = ax + b, where a\nand b are positive constants. The graph of y = h(x) in\nthe xy-plane passes through the points (0, 10) and\n\u2212\n3252,  36\n. What is the value of ab ?\nA) 1\n4\nB) 1\n2\nC) 54\nD) 60\nKey C\nDomain Advanced Math\nSkill Nonlinear functions\nMake connections between algebraic\nrepresentations and a graph\nKey Explanation: Choice C is correct. It\u2019s given that the\nfunction h is defined by \u210e(x) = ax + b and that the graph\nof y = \u210e(x) in the xy-plane passes through the\npoints (0, 10) and 3252,\n36\n\u00e6\u00f6 \u00f7\u00e7 \u00f7-\u00e7 \u00f7\u00e7 \u00f7\u00e7\u00e8\u00f8 . Substituting 0 for x and 10\nfor \u210e(x) in the equation \u210e(x)= ax + b yields 10 = a0 + b, or\n10 = 1 + b. Subtracting 1 from both sides of this equation\nyields 9 = b. Substituting \u22122 for x and 325\n36\nfor \u210e(x) in the\nequation \u210e(x) = ax + 9 yields 325\n36\n= a\u20132 + 9. Subtracting 9\nfrom both sides of this equation yields 1\n36\n= a\u20132, which\ncan be rewritten as 1\n36\n= 2\n1\na\n, or a2 = 36. T aking the\nsquare root of both sides of this equation yields a = 6 and\na = \u22126, but because it\u2019s given that a is a positive constant,\na must equal 6. Because the value of a is 6 and the value\nof b is 9, the value of ab is (6)(9), or 54.\nDistractor Explanations: Choice A is incorrect and\nmay result from finding the value of a\u20132b rather than the\nvalue of ab. Choice B is incorrect and may result from\nconceptual or calculation errors. Choice D is incorrect\nand may result from correctly finding the value of a as 6,\nbut multiplying it by the y-value in the first ordered pair\nrather than by the value of b.\nMath question 9\n(x \u2212 1)2 = \u22124\nHow many distinct real solutions does the given\nequation have?\nA) Exactly one\nB) Exactly two\nC) Infinitely many\nD) Zero  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 14",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_13"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_14",
+      "content": "## Section / Page 15  \nTHE DIGITAL SAT SAMPLE QUESTIONS n MA TH\n15  THE DIGITAL SAT SAMPLE QUESTIONS\nKey D\nDomain Advanced Math\nSkill Nonlinear equations in one variable and\nsystems of equations in two variables\nDetermine the conditions under which a\nquadratic equation has zero, one, two, or\ninfinitely many real solutions\nKey Explanation: Choice D is correct. Any quantity\nthat is positive or negative in value has a positive value\nwhen squared. Therefore, the left-hand side of the given\nequation is either positive or zero for any value of x. Since\nthe right-hand side of the given equation is negative,\nthere is no value of x for which the given equation is true.\nThus, the number of distinct real solutions for the given\nequation is zero.\nDistractor Explanations: Choices A, B, and C are\nincorrect and may result from conceptual errors.\nMath question 10\nWhich expression is equivalent to 4\n45x \u2212  \u2013 +\n1\n1x  ?\nA) ( )( )\n9\n1 4 5xx+\u2212\nB) 3\n36x \u2212\nC) ( )( )\n1\n1 4 5xx+\u2212\nD)\n\u2212\n( )( )\n1\n1 4 5xx+\u2212\nKey A\nDomain Advanced Math\nSkill Equivalent expressions\nRewrite a rational expression\nKey Explanation: Choice A is correct. T o subtract one\nrational expression from another, the denominators of\nthe expressions must be the same. Since 4x \u2013 5 and x+1\ndo not have any common factors, each rational\nexpression should be rewritten with a denominator\nof (x + 1)(4x \u2013 5). Multiplying ( )\n4\n45x -  by\n1\n1\nx\nx\n+\n+\nand multiplying ( )\n1\n1x +  by\n45\n45\nx\nx\n-\n-  yields\n( )\n( )( )\n4  1\n1 4 5\nx\nxx\n+\n+-  \u2013 ( )( )\n45\n1 4 5\nx\nxx\n-\n+- . This expression can be\nrewritten using the distributive property, which yields\n( )( )\n4  4\n1 4 5\nx\nxx\n+\n+-  \u2013 ( )( )\n45\n1 4 5\nx\nxx\n-\n+- . Since the denominators\nare the same, this expression is equivalent to\n( )( )\n4  4  4  5\n1 4 5\nxx\nxx\n+- +\n+- , or ( )( )\n9\n1 4 5xx+- .\nDistractor Explanations: Choices B, C, and D are\nincorrect and may result from conceptual or calculation\nerrors.\nMath question 11\nFor the function f, f (0) = 86, and for each increase in x\nby 1, the value of f (x) decreases by 80%. What is the\nvalue of f (2)?\nKeys 3.44, 86/25\nDomain Advanced Math\nSkill Nonlinear functions\nCreate and use quadratic or exponential\nfunctions\nKey Explanation: The correct answer is 3.44. It\u2019s given\nthat f(0) = 86 and that for each increase in x by 1, the\nvalue of f(x) decreases by 80%. Because the output of\nthe function decreases by a constant percentage for\neach 1-unit increase in the value of x, this relationship\ncan be represented by an exponential function of the\nform f(x) = a(b)x, where a represents the initial value of the\nfunction and b represents the rate of decay, expressed\nas a decimal. Because f(0) = 86, the value of a must be\n86. Because the value of f(x) decreases by 80% for each\n1-unit increase in x, the value of b must be (1 \u2212 0.80), or\n0.2. Therefore, the function f can be defined by  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 15",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_14"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_15",
+      "content": "## Section / Page 16  \nTHE DIGITAL SAT SAMPLE QUESTIONS n MA TH\n16  THE DIGITAL SAT SAMPLE QUESTIONS\nf(x) = 86(0.2)x. Substituting 2 for x in this function yields\nf(2) = 86(0.2)2, which is equivalent to f(2) = 86(0.04), or\nf(2) = 3.44. Either 3.44 or 86/25 may be entered as the\ncorrect answer.\nAlternate approach: It\u2019s given that f(0) = 86 and that for\neach increase in x by 1, the value of f(x) decreases by\n80%. Therefore, when x = 1, the value of f(x) is\n(100 \u2212 80)%, or 20%, of 86, which can be expressed as\n(0.20)(86). Since (0.20)(86) = 17.2, the value of f(1) is 17.2.\nSimilarly, when x = 2, the value of f(x) is 20% of 17.2,\nwhich can be expressed as (0.20)(17.2). Since\n(0.20)(17.2) = 3.44, the value of f(2) is 3.44. Either 3.44\nor 86/25 may be entered as the correct answer.\nMath question 12\nIn the xy-plane, a line with equation 2y = 4.5 intersects a\nparabola at exactly one point. If the parabola has\nequation y = \u22124x2 + bx, where b is a positive constant,\nwhat is the value of b ?\nKey 6\nDomain Advanced Math\nSkill Nonlinear equations in one variable and\nsystems of equations in two variables\nSolve systems of linear and nonlinear\nequations in two variables\nKey Explanation: The correct answer is 6. It\u2019s given that\na line with equation 2y = 4.5 intersects a parabola with\nequation y = \u22124x2 + bx, where b is a positive constant,\nat exactly one point in the xy-plane. It follows that the\nsystem of equations consisting of 2y = 4.5 and\ny = \u22124x2+ bx has exactly one solution. Dividing both\nsides of the equation of the line by 2 yields y = 2.25.\nSubstituting 2.25 for y in the equation of the parabola\nyields 2.25 = \u22124x2 + bx. Adding 4x2 and subtracting bx\nfrom both sides of this equation yields 4x2 \u2013 bx + 2.25 = 0.\nA quadratic equation in the form of ax2 + bx + c = 0, where\na, b, and c are constants, has exactly one solution\nwhen the discriminant, b2 \u2212 4ac, is equal to zero.\nSubstituting 4 for a and 2.25 for c in the expression\nb2 \u2212 4ac and setting this expression equal to 0 yields\nb2 \u2212 4(4)(2.25) = 0, or b2 \u2212 36 = 0. Adding 36 to each side\nof this equation yields b2 = 36. T aking the square root of\neach side of this equation yields b = \u00b16. It\u2019s given that b is\npositive, so the value of b is 6.\nMath question 13\nThe scatterplot shows the relationship between two\nvariables, x and y. A line of best fit for the data is also\nshown.\nAt x = 32, which of the following is closest to the y-value\npredicted by the line of best fit?\nA) 0.4\nB) 1.5\nC) 2.4\nD) 3.3\nKey C\nDomain Problem-Solving and Data Analysis\nSkill Two-variable data: Models and scatterplots\nAnalyze and interpret data in a scatterplot\nKey Explanation: Choice C is correct. At x = 32, the line\nof best fit has a y-value between 2 and 3. The only choice\nwith a value between 2 and 3 is choice C.\nDistractor Explanations: Choice A is incorrect. This is\nthe difference between the y-value predicted by the line\nof best fit and the actual y-value at x = 32 rather than\nthe y-value predicted by the line of best fit at x = 32.  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 16",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_15"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_16",
+      "content": "## Section / Page 17  \nTHE DIGITAL SAT SAMPLE QUESTIONS n MA TH\n17  THE DIGITAL SAT SAMPLE QUESTIONS\nChoiceB is incorrect. This is the y-value predicted by the\nline of best fit at x = 31 rather than at x = 32. Choice D is\nincorrect. This is the y-value predicted by the line of best\nfit at x = 33 rather than at x= 32.\nMath question 14\nIn a group, 40% of the items are red. Of all the red items\nin the group, 30% also have stripes. What percentage of\nthe items in the group are red and have stripes?\nA) 10%\nB) 12%\nC) 70%\nD) 75%\nKey B\nDomain Problem-Solving and Data Analysis\nSkill Percentages\nUse percentages to solve problems\nKey Explanation: Choice B is correct. It\u2019s given that\nin a group, 40% of the items are red. It follows that the\nnumber of red items in the group can be represented\nby 0.4x, where x represents the total number of items in\nthe group. It\u2019s also given that of all the red items in the\ngroup, 30% also have stripes. It follows that the number\nof items in the group that are red and have stripes can be\nrepresented by 0.3(0.4x), or 0.12x. The expression 0.12x\nrepresents 12% of x. Since x represents the total number\nof items in the group, it follows that 12% of the items in\nthe group are red and have stripes.\nDistractor Explanations: Choice A is incorrect and\nmay result from subtracting 30% from 40% rather than\ncalculating 30% of 40%. Choice C is incorrect and may\nresult from adding 30% and 40% rather than calculating\n30% of 40%. Choice D is incorrect and may result from\ncalculating the percentage that 30% is of 40% rather\nthan calculating 30% of 40%.\nMath question 15\nThe density of a certain type of wood is 353 kilograms\nper cubic meter. A sample of this type of wood is in the\nshape of a cube and has a mass of 345 kilograms. To the\nnearest hundredth of a meter, what is the length of one\nedge of this sample?\nA) 0.98\nB) 0.99\nC) 1.01\nD) 1.02\nKey B\nDomain Problem-Solving and Data Analysis\nSkill Ratios, rates, proportional relationships,\nand units\nSolve problems involving derived units\nKey Explanation: Choice B is correct. It\u2019s given that the\ndensity of a certain type of wood is 353 kilograms per\ncubic meter (kg/m3), and a sample of this type of wood\nhas a mass of 345 kg. Let x represent the volume, in m3,\nof the sample. It follows that the relationship between the\ndensity, mass, and volume of this sample can be written\nas 3\n353 kg\n1 m\n= 3\n345 kg\nmx\n, or 353 = 345\nx\n. Multiplying both\nsides of this equation by x yields 353x = 345. Dividing\nboth sides of this equation by 353 yields x = 345\n353\n.\nTherefore, the volume of this sample is 345\n353\nm3. Since\nit\u2019s given that the sample of this type of wood is a cube, it\nfollows that the length of one edge of this sample can be\nfound using the volume formula for a cube, V = s3, where\nV represents the volume, in m3, and s represents the\nlength, in m, of one edge of the cube. Substituting 345\n353  \nfor V in this formula yields 345\n353\n= s3. T aking the cube root  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 17",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_16"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_17",
+      "content": "## Section / Page 18  \nTHE DIGITAL SAT SAMPLE QUESTIONS n MA TH\n18  THE DIGITAL SAT SAMPLE QUESTIONS\nof both sides of this equation yields 3 345\n353\n= s, or\ns \u2248 0.99. Therefore, the length of one edge of this sample\nto the nearest hundredth of a meter is 0.99.\nDistractor Explanations: Choices A, C, and D are\nincorrect and may result from conceptual or calculation\nerrors.\nMath question 16\nTwo nearby trees are perpendicular to the ground,\nwhich is flat. One of these trees is 10 feet tall and has a\nshadow that is 5 feet long. At the same time, the shadow\nof the other tree is 2 feet long. How tall, in feet, is the\nother tree?\nA) 3\nB) 4\nC) 8\nD) 27\nKey B\nDomain Geometry and T rigonometry\nSkill Lines, angles, and triangles\nUse concepts of congruence and similarity\nof triangles to solve problems\nKey Explanation: Choice B is correct. Each tree and its\nshadow can be modeled using a right triangle, where the\nheight of the tree and the length of its shadow are the\nlegs of the triangle. At a given point in time, the\nright triangles formed by two nearby trees and their\nrespective shadows will be similar. Therefore, if the\nheight of the other tree is x, in feet, the value of x can\nbe calculated by solving the proportional relationship\n10feettall\n5feetlong  =\nfeettall\n2feetlong\nx\n. This equation is equivalent to\n10\n5\n=\n2\nx , or 2 =\n2\nx . Multiplying each side of the equation\n2 =\n2\nx  by 2 yields 4 = x. Therefore, the other tree is\n4 feet tall.\nDistractor Explanations: Choice A is incorrect and\nmay result from calculating the difference between\nthe lengths of the shadows, rather than the height of\nthe other tree. Choice C is incorrect and may result\nfrom calculating the difference between the height of\nthe 10-foot-tall tree and the length of the shadow of\nthe other tree, rather than calculating the height of the\nother tree. Choice D is incorrect and may result from a\nconceptual or calculation error.\nMath question 17\nThe length of a rectangle\u2019s diagonal is 5 17 , and the\nlength of the rectangle\u2019s shorter side is 5. What is the\nlength of the rectangle\u2019s longer side?\nA) 17\nB) 20\nC) 15 2\nD) 400\nKey B\nDomain Geometry and T rigonometry\nSkill Right triangles and trigonometry\nUse the Pythagorean theorem to solve\nproblems\nKey Explanation: Choice B is correct. A rectangle\u2019s\ndiagonal divides a rectangle into two congruent right\ntriangles, where the diagonal is the hypotenuse of both\ntriangles. It\u2019s given that the length of the diagonal is\n5 17 and the length of the rectangle\u2019s shorter side is 5.\nTherefore, each of the two right triangles formed by the\nrectangle\u2019s diagonal has a hypotenuse with length 5 17 ,\nand a shorter leg with length 5. T o calculate the length of\nthe longer leg of each right triangle, the Pythagorean  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 18",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_17"
+      },
+      "embedding": null
+    },
+    {
+      "id": "SAT_digital-sat-sample-questions_18",
+      "content": "## Section / Page 19  \nTHE DIGITAL SAT SAMPLE QUESTIONS n MA TH\n19  THE DIGITAL SAT SAMPLE QUESTIONS\ntheorem, a2 + b2= c2, can be used, where a and b are the\nlengths of the legs and c is the length of the hypotenuse\nof the triangle. Substituting 5 for a and 5 17 for c in the\nequation a2 + b2 = c2 yields 52 + b2 = ( )\n2\n5 17 , which is\nequivalent to 25 + b2 = 25(17), or 25 + b2 = 425.\nSubtracting 25 from each side of this equation yields\nb2 = 400. T aking the positive square root of each side of\nthis equation yields b = 20. Therefore, the length of the\nlonger leg of each right triangle formed by the diagonal of\nthe rectangle is 20. It follows that the length of the\nrectangle\u2019s longer side is 20.\nDistractor Explanations: Choice A is incorrect and may\nresult from dividing the length of the rectangle\u2019s diagonal\nby the length of the rectangle\u2019s shorter side, rather\nthan substituting these values into the Pythagorean\ntheorem. Choice C is incorrect and may result from using\nthe length of the rectangle\u2019s diagonal as the length of\na leg of the right triangle, rather than the length of the\nhypotenuse. ChoiceD is incorrect. This is the square of\nthe length of the rectangle\u2019s longer side.\nMath question 18\nA circle has center O, and points A and B lie on the circle.\nThe measure of arc AB is 45\u00b0 and the length of arc AB is\n3 inches. What is the circumference, in inches, of the\ncircle?\nA) 3\nB) 6\nC) 9\nD) 24\nKey D\nDomain Geometry and T rigonometry\nSkill Circles\nUse definitions, properties, and theorems\nrelating to circles to solve problems\nKey Explanation: Choice D is correct. It\u2019s given that the\nmeasure of arc AB is 45\u00b0 and the length of arc AB is\n3inches. The arc measure of the full circle is 360\u00b0. If x\nrepresents the circumference, in inches, of the circle, it\nfollows that 45\n360\n\u00b0\n\u00b0\n= 3inches\ninchesx\n. This equation is\nequivalent to 45\n360\n= 3\nx\n, or 1\n8\n= 3\nx\n. Multiplying both\nsides of this equation by 8x yields 1(x) = 3(8), or x = 24.\nTherefore, the circumference of the circle is 24 inches.\nDistractor Explanations: Choice A is incorrect. This is\nthe length of arc AB. ChoiceB is incorrect and may result\nfrom multiplying the length of arc AB by 2. ChoiceC is\nincorrect and may result from squaring the length of\narcAB.  \n---",
+      "metadata": {
+        "chapter": "Digital-Sat-Sample-Questions",
+        "topic": "Section / Page 19",
+        "exam_type": "SAT",
+        "source_file": "digital-sat-sample-questions.md",
+        "chunk_id": "SAT_digital-sat-sample-questions_18"
+      },
+      "embedding": null
+    }
+  ]
+}
