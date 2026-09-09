@@ -98,6 +98,7 @@ STRICT REQUIREMENTS:
 5. Return strictly valid JSON adhering to the Question schema.
 """
         try:
+            import time
             response = self.client.models.generate_content(
                 model=DEFAULT_MODEL,
                 contents=prompt,
@@ -108,6 +109,11 @@ STRICT REQUIREMENTS:
                 )
             )
             q = Question.model_validate_json(response.text)
+            if not q.id or q.id in ["string", "id"]:
+                q.id = f"ai_{exam_type.lower()}_{int(time.time())}"
+            q.exam_type = exam_type
+            if not q.topic:
+                q.topic = topic
             return q
         except Exception as e:
             print(f"[DiagnosticAgent] Live AI question generation error ({e}).")

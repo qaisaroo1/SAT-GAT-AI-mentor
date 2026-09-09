@@ -1,5 +1,6 @@
 import os
 import time
+import random
 import urllib.parse
 from pathlib import Path
 from dotenv import load_dotenv
@@ -147,6 +148,26 @@ if "show_inline_quiz" not in st.session_state:
 if "gemini_api_key" not in st.session_state:
     st.session_state.gemini_api_key = os.getenv("GEMINI_API_KEY", "")
 
+# Adaptive 1-by-1 AI Practice state (New question generated after every attempt)
+if "ad_q" not in st.session_state:
+    st.session_state.ad_q = None
+if "ad_submitted" not in st.session_state:
+    st.session_state.ad_submitted = False
+if "ad_result" not in st.session_state:
+    st.session_state.ad_result = None
+if "ad_choice" not in st.session_state:
+    st.session_state.ad_choice = None
+if "ad_hints" not in st.session_state:
+    st.session_state.ad_hints = []
+if "ad_total" not in st.session_state:
+    st.session_state.ad_total = 0
+if "ad_correct" not in st.session_state:
+    st.session_state.ad_correct = 0
+if "ad_streak" not in st.session_state:
+    st.session_state.ad_streak = 0
+if "ad_last_weak" not in st.session_state:
+    st.session_state.ad_last_weak = None
+
 # Simulator state
 if "sim_active" not in st.session_state:
     st.session_state.sim_active = False
@@ -237,7 +258,7 @@ def render_quiz_flow(orchestrator: MentorOrchestrator, exam_type: str, is_standa
                 )
             with c_src:
                 has_key = bool(st.session_state.gemini_api_key)
-                src_options = ["Calibrated & Parametric Bank", "✨ Live Gemini AI"] if has_key else ["Calibrated & Parametric Bank"]
+                src_options = ["✨ Live Gemini AI", "Calibrated & Parametric Bank"] if has_key else ["Calibrated & Parametric Bank"]
                 q_source = st.selectbox(
                     "Question Source",
                     src_options,
@@ -1482,7 +1503,7 @@ st.markdown("")
 # Workflow Tabs: 1. Study & Targeted Quiz vs 2. Free Diagnostic Drill vs 3. Full Exam Simulator
 tab_study, tab_drill, tab_sim = st.tabs([
     "📚 1. Study Topic & Take Quiz",
-    "⚡ 2. Quick Diagnostic Drill",
+    "⚡ 2. Adaptive AI Practice (New Q After Every Attempt)",
     tab3_label
 ])
 # ================= TAB 1: STUDY THEN QUIZ =================
@@ -1554,40 +1575,203 @@ with tab_study:
         render_quiz_flow(orchestrator, exam_type, is_standalone=False)
 
 
-# ================= TAB 2: RAPID DRILL =================
+# ================= TAB 2: LIVE AI PRACTICE (NEW Q AFTER EVERY ATTEMPT) =================
 with tab_drill:
-    st.markdown("### ⚡ Mixed Diagnostic Challenge")
-    st.caption("Test across random syllabus topics to uncover hidden weak spots.")
-    
-    col_d1, col_d2 = st.columns([1, 1])
-    with col_d1:
-        drill_count = st.selectbox("Drill Length", [5, 10, 15], index=0, format_func=lambda x: f"{x} Questions", key="drill_len")
-    with col_d2:
-        drill_diff = st.selectbox("Difficulty", ["Medium", "Easy", "Hard"], index=0, key="drill_diff")
+    st.markdown("### ⚡ Live AI Adaptive Practice: Continuous Question Loop")
+    st.caption("Google AI evaluates each attempt and instantly generates a new question tailored to your performance.")
 
-    if st.button("🎲 Generate Mixed Challenge", type="primary", use_container_width=True, key="btn_gen_mixed"):
-        st.session_state.active_agent = "Diagnostic Agent"
-        st.session_state.target_topic = "Mixed Diagnostic Challenge"
-        
-        st.session_state.quiz_questions = orchestrator.get_custom_quiz(
-            topic="Mixed Diagnostic Challenge",
-            exam_type=exam_type,
-            count=drill_count,
-            difficulty=drill_diff,
-            use_ai=bool(st.session_state.gemini_api_key)
-        )
-        st.session_state.quiz_index = 0
-        st.session_state.quiz_evals = {}
-        st.session_state.quiz_answers = {}
-        st.session_state.quiz_completed = False
-        st.session_state.quiz_started = True
-        st.session_state.hint_history = []
-        st.session_state.show_drill_quiz = True
+    has_key = bool(st.session_state.gemini_api_key.strip())
+    if has_key:
+        st.markdown("""
+        <div style='background: #F0FDF4; border: 1px solid #86EFAC; border-radius: 8px; padding: 10px 14px; margin-bottom: 12px; font-size: 14px; color: #166534;'>
+            🟢 <strong>Google Gemini AI Active</strong> — A fresh, original question is generated live after every single attempt.
+        </div>
+        """, unsafe_allow_html=True)
+    else:
+        st.markdown("""
+        <div style='background: #EFF6FF; border: 1px solid #BFDBFE; border-radius: 8px; padding: 10px 14px; margin-bottom: 12px; font-size: 14px; color: #1E40AF;'>
+            ℹ️ <strong>Offline Past-Paper Mode</strong> — Currently sampling from official past papers. To enable live Google AI generation, save your free <strong>Gemini API Key</strong> in the sidebar 👈!
+        </div>
+        """, unsafe_allow_html=True)
+
+    # Session Scoreboard & Controls
+    col_c1, col_c2, col_c3 = st.columns([1.5, 1, 1])
+    with col_c1:
+        ad_topics = ["🎲 Mixed Syllabus Challenge"] + available_topics
+        ad_topic = st.selectbox("Practice Focus:", ad_topics, key=f"ad_topic_{exam_type}")
+    with col_c2:
+        ad_diff = st.selectbox("Difficulty:", ["Medium", "Easy", "Hard"], index=0, key=f"ad_diff_{exam_type}")
+    with col_c3:
+        st.markdown("<div style='height:28px;'></div>", unsafe_allow_html=True)
+        if st.button("🔄 Reset Practice Session", use_container_width=True, key="btn_reset_ad"):
+            st.session_state.ad_q = None
+            st.session_state.ad_submitted = False
+            st.session_state.ad_result = None
+            st.session_state.ad_choice = None
+            st.session_state.ad_hints = []
+            st.session_state.ad_total = 0
+            st.session_state.ad_correct = 0
+            st.session_state.ad_streak = 0
+            st.session_state.ad_last_weak = None
+            st.rerun()
+
+    # Load initial question if none active
+    if st.session_state.ad_q is None:
+        target_t = random.choice(available_topics) if ad_topic.startswith("🎲") else ad_topic
+        with st.spinner("🤖 Preparing your question with Google AI..."):
+            st.session_state.ad_q = orchestrator.generate_adaptive_ai_question(
+                topic=target_t,
+                exam_type=exam_type,
+                difficulty=ad_diff
+            )
+        st.session_state.ad_submitted = False
+        st.session_state.ad_choice = None
+        st.session_state.ad_hints = []
         st.rerun()
 
-    if st.session_state.get("show_drill_quiz", False) and st.session_state.quiz_questions:
-        st.markdown("---")
-        render_quiz_flow(orchestrator, exam_type, is_standalone=False)
+    curr_ad_q: Question = st.session_state.ad_q
+
+    # Session Metrics Strip
+    col_m1, col_m2, col_m3, col_m4 = st.columns(4)
+    with col_m1:
+        st.metric("Total Solved", st.session_state.ad_total)
+    with col_m2:
+        acc = int((st.session_state.ad_correct / st.session_state.ad_total) * 100) if st.session_state.ad_total > 0 else 0
+        st.metric("Accuracy", f"{acc}%")
+    with col_m3:
+        st.metric("Current Streak", f"🔥 {st.session_state.ad_streak}")
+    with col_m4:
+        engine_badge = "✨ Gemini AI" if (has_key and str(curr_ad_q.id).startswith("ai_")) else "📚 Past Paper Bank"
+        st.metric("Engine", engine_badge)
+
+    st.markdown("---")
+
+    # Main Question Card
+    is_ai_q = str(curr_ad_q.id).startswith("ai_")
+    ai_tag = "<span style='background: #F3E8FF; color: #7E22CE; padding: 3px 10px; border-radius: 6px; font-weight: 700; font-size: 13px; margin-left: 8px;'>✨ Live Google AI Question</span>" if is_ai_q else ""
+    st.markdown(f"""
+    <div style='background: white; border: 1px solid #CBD5E1; border-radius: 12px; padding: 22px; margin-bottom: 15px;'>
+        <div style='display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;'>
+            <div>
+                <span style='background: #EFF6FF; color: #1D4ED8; padding: 4px 10px; border-radius: 6px; font-weight: 700; font-size: 13px;'>{curr_ad_q.topic}</span>
+                {ai_tag}
+            </div>
+            <span style='background: #F1F5F9; color: #475569; padding: 4px 10px; border-radius: 6px; font-weight: 600; font-size: 13px;'>{curr_ad_q.difficulty} Level</span>
+        </div>
+        <h4 style='color: #0F172A; margin: 12px 0 16px 0; font-weight: 600; line-height: 1.5;'>{curr_ad_q.question}</h4>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Options
+    opts_dict = {f"({opt.key}) {opt.text}": opt.key for opt in curr_ad_q.options}
+
+    if not st.session_state.ad_submitted:
+        # User answering
+        sel_label = st.radio(
+            "Select your answer:",
+            list(opts_dict.keys()),
+            index=None,
+            key=f"rad_ad_{curr_ad_q.id}"
+        )
+        picked_key = opts_dict[sel_label] if sel_label else None
+
+        col_act1, col_act2 = st.columns([1.5, 1])
+        with col_act1:
+            if st.button("✅ Submit Attempt", type="primary", use_container_width=True, key=f"btn_sub_ad_{curr_ad_q.id}"):
+                if not picked_key:
+                    st.warning("⚠️ Please select an option before submitting!")
+                else:
+                    eval_res = orchestrator.evaluate_answer(curr_ad_q, picked_key)
+                    st.session_state.ad_submitted = True
+                    st.session_state.ad_result = eval_res
+                    st.session_state.ad_choice = picked_key
+                    st.session_state.ad_total += 1
+                    if eval_res.is_correct:
+                        st.session_state.ad_correct += 1
+                        st.session_state.ad_streak += 1
+                        st.session_state.ad_last_weak = None
+                    else:
+                        st.session_state.ad_streak = 0
+                        st.session_state.ad_last_weak = eval_res.recommended_concept
+                    st.rerun()
+        with col_act2:
+            if st.button("💡 Socratic Hint", use_container_width=True, key=f"btn_hint_ad_{curr_ad_q.id}"):
+                lvl = len(st.session_state.ad_hints) + 1
+                hint = orchestrator.get_socratic_hint(curr_ad_q, hint_level=lvl)
+                st.session_state.ad_hints.append(hint)
+                st.rerun()
+
+        if st.session_state.ad_hints:
+            for h in st.session_state.ad_hints:
+                st.markdown(f"""
+                <div class='hint-card' style='margin-top: 10px;'>
+                    <h5 style='color: #B45309; margin-top:0;'>💡 Level {h.level} Hint ({h.level_name})</h5>
+                    <p style='margin-bottom: 6px;'>{h.hint_text}</p>
+                    <p style='color: #78350F; font-weight:600; margin:0;'>❓ {h.guiding_question}</p>
+                </div>
+                """, unsafe_allow_html=True)
+
+    else:
+        # User submitted attempt!
+        user_ch = st.session_state.ad_choice
+        eval_res = st.session_state.ad_result
+        is_corr = eval_res.is_correct if eval_res else False
+
+        if is_corr:
+            st.markdown(f"""
+            <div class='success-card' style='margin-bottom: 15px;'>
+                <h4 style='color: #15803D; margin-top:0;'>🎉 Correct! Option {curr_ad_q.correct_key} is right!</h4>
+                <p style='margin:0; color: #166534;'>Great problem-solving. Points added to your topic mastery.</p>
+            </div>
+            """, unsafe_allow_html=True)
+        else:
+            st.markdown(f"""
+            <div class='error-diagnosis-card' style='margin-bottom: 15px;'>
+                <h4 style='color: #B91C1C; margin-top:0;'>❌ Missed: You selected ({user_ch}), Correct is ({curr_ad_q.correct_key})</h4>
+                <p style='font-weight: 600; margin-bottom: 4px; color: #7F1D1D;'>🔍 Identified Error: {eval_res.misconception_name if eval_res else 'Conceptual Slip'}</p>
+                <p style='color: #991B1B; margin-bottom: 6px;'>{eval_res.diagnosis if eval_res else ''}</p>
+                <p style='color: #1E40AF; background: #DBEAFE; padding: 4px 10px; border-radius: 6px; display: inline-block; font-size: 13px; font-weight: 600; margin:0;'>
+                    🎯 Concept to master: {eval_res.recommended_concept if eval_res else curr_ad_q.topic}
+                </p>
+            </div>
+            """, unsafe_allow_html=True)
+
+        with st.expander("📖 View Full Step-by-Step Solution", expanded=True):
+            for opt in curr_ad_q.options:
+                pfx = "👉 " if opt.key == user_ch else "• "
+                sfx = " *(Your Choice)*" if opt.key == user_ch else ""
+                if opt.key == curr_ad_q.correct_key:
+                    sfx += " ✅ *(Correct Answer)*"
+                st.write(f"{pfx}**({opt.key})** {opt.text} {sfx}")
+            clean_rat = curr_ad_q.rationale.replace("$r^2$", "r²").replace("$r$", "r").replace("$", "")
+            st.markdown(f"**Explanation:**\n\n{clean_rat}")
+
+        # The NEXT AI QUESTION button!
+        st.markdown("")
+        if is_corr:
+            btn_text = "✨ Next Challenge (Generate with Google AI) ➡️"
+            sub_msg = "Google AI is crafting the next challenge for you..."
+        else:
+            missed_concept = eval_res.recommended_concept if eval_res else curr_ad_q.topic
+            btn_text = f"🎯 Next AI Question (Targeting: {missed_concept[:30]}...) ➡️"
+            sub_msg = "Google AI is creating a tailored follow-up question to master this weak spot..."
+
+        if st.button(btn_text, type="primary", use_container_width=True, key=f"btn_next_ai_q_{curr_ad_q.id}"):
+            with st.spinner(sub_msg):
+                next_topic = random.choice(available_topics) if ad_topic.startswith("🎲") else ad_topic
+                weak_target = st.session_state.ad_last_weak if not is_corr else None
+                new_q = orchestrator.generate_adaptive_ai_question(
+                    topic=next_topic,
+                    exam_type=exam_type,
+                    difficulty=ad_diff,
+                    weak_concept=weak_target
+                )
+                st.session_state.ad_q = new_q
+                st.session_state.ad_submitted = False
+                st.session_state.ad_choice = None
+                st.session_state.ad_result = None
+                st.session_state.ad_hints = []
+                st.rerun()
 
 
 

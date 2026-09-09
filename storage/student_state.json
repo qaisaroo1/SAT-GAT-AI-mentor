@@ -2,9 +2,9 @@
   "masteries": {
     "Linear Equations and Slope-Intercept Form": {
       "topic": "Linear Equations and Slope-Intercept Form",
-      "attempts": 49,
+      "attempts": 50,
       "correct": 13,
-      "score_percent": 26.5,
+      "score_percent": 26.0,
       "common_errors": [
         "Calculation / Arithmetic Mistake",
         "Trap Choice / Cognitive Bias",
@@ -636,6 +636,13 @@
     },
     {
       "question_id": "sat_linear_01",
+      "topic": "Linear Equations and Slope-Intercept Form",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "sat_linear_08",
       "topic": "Linear Equations and Slope-Intercept Form",
       "is_correct": false,
       "error_category": "Fell for a Common Exam Trick",

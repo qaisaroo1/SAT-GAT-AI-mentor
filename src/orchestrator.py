@@ -169,6 +169,37 @@ The SAT Math section tests 4 main areas:
             exclude_ids=exclude_ids
         )
 
+    def generate_adaptive_ai_question(
+        self,
+        topic: str,
+        exam_type: str = "SAT",
+        difficulty: str = "Medium",
+        weak_concept: Optional[str] = None
+    ) -> Question:
+        """
+        Generate a single live question with Gemini AI after an attempt,
+        reinforcing the specific concept missed or advancing to new challenges.
+        Falls back to calibrated library if AI client is unavailable.
+        """
+        if self.diagnostic_agent.client:
+            ai_q = self.diagnostic_agent.generate_live_ai_question(
+                topic=topic,
+                exam_type=exam_type,
+                difficulty=difficulty,
+                weak_concept=weak_concept
+            )
+            if ai_q:
+                return ai_q
+        # Fallback to calibrated bank
+        quiz = self.diagnostic_agent.generate_quiz(
+            topic=topic,
+            exam_type=exam_type,
+            count=1,
+            difficulty=difficulty,
+            weak_concepts=[weak_concept] if weak_concept else None
+        )
+        return quiz[0] if quiz else self.diagnostic_agent.generate_question(exam_type, topic)
+
     def set_api_key(self, api_key: str) -> bool:
         """Update API key across all LLM agents."""
         return self.diagnostic_agent.set_api_key(api_key)
