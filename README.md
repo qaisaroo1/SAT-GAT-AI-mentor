@@ -18,6 +18,12 @@ An Agentic AI educational platform designed for standardized test prep students 
    - **Level 2 (Scaffold):** Prompts for intermediate principles or rules.
    - **Level 3 (Step-Through):** Walks through the first calculation step, prompting the student to execute the remainder.
 5. **Adaptive Study Scheduler Agent:** Evaluates recurring mistake patterns and topic mastery percentages to generate dynamic 3-day and 7-day focused study sprints.
+6. **Full & Half Exam Simulator (Test Day Experience):**
+   - **Digital SAT** (Official 98 Qs Full / 49 Qs Half Mock) & **NTS GAT General** (Official 100 Qs Full / 50 Qs Half Mock).
+   - **Real-Time Countdown Timer:** Second-by-second countdown with visual urgency alerts.
+   - **Question Navigator Palette:** 1-to-98/100 color-coded grid (🟢 Answered, 🔴 Skipped, 🚩 Flagged) with instant jumping.
+   - **On-Screen Scientific Calculator:** Integrated popover calculator with basic/scientific arithmetic, powers, roots, constants, and keyboard support.
+   - **Official Scaled Scoring:** Scaled 1600 SAT score and 100-point GAT score with percentile and readiness feedback.
 
 ---
 
@@ -41,8 +47,8 @@ An Agentic AI educational platform designed for standardized test prep students 
 
 ### 1. Clone & Set Up Environment
 ```bash
-git clone https://github.com/your-username/sat-gat-ai-mentor.git
-cd sat-gat-ai-mentor
+git clone https://github.com/qaisaroo1/SAT-GAT-AI-mentor.git
+cd SAT-GAT-AI-mentor
 
 # Create and activate virtual environment
 python -m venv venv
@@ -53,16 +59,16 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-### 2. Configure API Key
-Create a `.env` file in the project root:
+### 2. Configure API Key *(Optional)*
+> **Note:** The system is **100% operational offline** out-of-the-box using the embedded official past papers, pre-calibrated question bank, and offline grading. If you want live dynamic question generation from Google Gemini, add your key to `.env`:
 ```env
 GEMINI_API_KEY=your_google_ai_studio_api_key_here
 ```
-*(Note: The system also includes an offline pre-calibrated bank for high-resilience demos.)*
 
 ### 3. Run Verification Tests
 ```bash
 python test_system.py
+python test_simulator.py
 ```
 
 ### 4. Launch the Web Interface
