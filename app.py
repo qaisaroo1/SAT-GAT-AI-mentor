@@ -1,6 +1,8 @@
 import os
 import time
 import urllib.parse
+from pathlib import Path
+from dotenv import load_dotenv
 import streamlit as st
 import streamlit.components.v1 as components
 from src.orchestrator import MentorOrchestrator
@@ -8,6 +10,9 @@ from src.schemas import (
     Question, ErrorAnalysisResult, SocraticHint,
     ExamSimulationConfig, ScaledExamScore
 )
+
+BASE_DIR = Path(__file__).resolve().parent
+load_dotenv(BASE_DIR / ".env")
 
 # Page configuration
 st.set_page_config(
@@ -1272,17 +1277,67 @@ with st.sidebar:
     st.divider()
 
     # Optional Gemini Key Manager
-    with st.expander("🔑 Gemini API Key (Optional)", expanded=False):
-        st.caption("Paste your Gemini API key to enable live AI question generation. Otherwise, the app seamlessly runs on the expanded 90+ question bank.")
-        api_input = st.text_input("Gemini API Key", type="password", value=st.session_state.gemini_api_key, key="input_api_key")
-        if st.button("Save Key", use_container_width=True, key="btn_save_key"):
-            if api_input.strip():
-                st.session_state.gemini_api_key = api_input.strip()
-                orchestrator.set_api_key(api_input.strip())
-                st.success("✅ Gemini Connected!")
-            else:
+    has_api_key = bool(st.session_state.gemini_api_key.strip())
+    expander_title = "🔑 Gemini API Key (✅ Connected)" if has_api_key else "🔑 Gemini API Key (Optional)"
+    with st.expander(expander_title, expanded=not has_api_key):
+        st.caption("Paste your Google AI Studio Gemini API key for live dynamic AI question generation. Otherwise, the app runs 100% offline on official past papers.")
+        
+        if has_api_key:
+            curr_key = st.session_state.gemini_api_key.strip()
+            masked_key = curr_key[:6] + "..." + curr_key[-4:] if len(curr_key) > 10 else "••••••••"
+            st.success(f"🟢 **Key Saved & Active:** `{masked_key}`")
+        else:
+            st.info("ℹ️ Running offline on official College Board SAT & NTS GAT past-paper bank.")
+        
+        show_chars = st.checkbox("👁️ Show key characters", value=False, key="chk_show_key_chars")
+        input_type = "default" if show_chars else "password"
+        
+        api_input = st.text_input(
+            "Gemini API Key",
+            type=input_type,
+            value=st.session_state.gemini_api_key,
+            placeholder="AIzaSy...",
+            key="input_api_key",
+            help="Saved locally into .env (ignored by git). Never exposed publicly."
+        )
+        
+        col_k1, col_k2 = st.columns(2)
+        with col_k1:
+            if st.button("💾 Save Key", use_container_width=True, key="btn_save_key"):
+                clean_key = api_input.strip()
+                if clean_key:
+                    st.session_state.gemini_api_key = clean_key
+                    os.environ["GEMINI_API_KEY"] = clean_key
+                    orchestrator.set_api_key(clean_key)
+                    # Persist to .env file
+                    env_path = BASE_DIR / ".env"
+                    try:
+                        env_lines = []
+                        if env_path.exists():
+                            for line in env_path.read_text(encoding="utf-8").splitlines():
+                                if not line.strip().startswith("GEMINI_API_KEY="):
+                                    env_lines.append(line)
+                        env_lines.append(f"GEMINI_API_KEY={clean_key}")
+                        env_path.write_text("\n".join(env_lines) + "\n", encoding="utf-8")
+                        st.toast("✅ Key saved permanently to .env!")
+                    except Exception as e:
+                        print(f"Error saving .env: {e}")
+                    st.rerun()
+                else:
+                    st.warning("Please enter a key before saving.")
+        with col_k2:
+            if st.button("🗑️ Clear Key", use_container_width=True, key="btn_clear_key"):
                 st.session_state.gemini_api_key = ""
-                st.info("Cleared key. Using calibrated library.")
+                os.environ.pop("GEMINI_API_KEY", None)
+                env_path = BASE_DIR / ".env"
+                if env_path.exists():
+                    try:
+                        lines = [l for l in env_path.read_text(encoding="utf-8").splitlines() if not l.strip().startswith("GEMINI_API_KEY=")]
+                        env_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+                    except Exception:
+                        pass
+                st.toast("Key cleared. Using offline bank.")
+                st.rerun()
 
     st.divider()
 
