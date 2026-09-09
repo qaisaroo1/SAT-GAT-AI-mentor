@@ -259,6 +259,25 @@ STRICT REQUIREMENTS:
         final_list = results + selected
         return final_list[:count]
 
+    def generate_question(
+        self,
+        exam_type: str = "SAT",
+        topic: Optional[str] = None,
+        exclude_id: Optional[str] = None
+    ) -> Question:
+        """Serve a single calibrated diagnostic question."""
+        exclude_ids = [exclude_id] if exclude_id else None
+        target_topic = topic or ("Linear Equations" if exam_type.upper() == "SAT" else "Analytical Reasoning")
+        quiz = self.generate_quiz(
+            topic=target_topic,
+            exam_type=exam_type,
+            count=1,
+            exclude_ids=exclude_ids
+        )
+        if quiz:
+            return quiz[0]
+        return FALLBACK_QUESTIONS[0]
+
     def get_topic_quiz_questions(self, topic: str, exam_type: str = "SAT") -> List[Question]:
         """Legacy helper returning standard 5-question quiz."""
         return self.generate_quiz(topic=topic, exam_type=exam_type, count=5)

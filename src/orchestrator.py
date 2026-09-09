@@ -5,7 +5,11 @@ from src.agents.diagnostic_agent import DiagnosticAgent
 from src.agents.error_agent import CognitiveErrorAgent
 from src.agents.socratic_agent import SocraticTutorAgent
 from src.agents.scheduler_agent import StudySchedulerAgent
-from src.schemas import Question, ErrorAnalysisResult, SocraticHint, StudyPlan
+from src.simulator import ExamSimulator
+from src.schemas import (
+    Question, ErrorAnalysisResult, SocraticHint, StudyPlan,
+    ExamSimulationConfig, ScaledExamScore
+)
 
 
 class MentorOrchestrator:
@@ -22,6 +26,7 @@ class MentorOrchestrator:
         self.error_agent = CognitiveErrorAgent()
         self.socratic_agent = SocraticTutorAgent()
         self.scheduler_agent = StudySchedulerAgent()
+        self.simulator = ExamSimulator(self.knowledge_store.storage_file.parent)
 
     def get_available_topics(self, exam_type: str = "SAT") -> List[str]:
         """Fetch all available syllabus topics from the indexed prep books."""
@@ -211,3 +216,23 @@ The SAT Math section tests 4 main areas:
             "summary": self.tracker.get_summary(),
             "weakest_topics": self.tracker.get_weakest_topics(limit=3)
         }
+
+    def get_exam_simulation_config(self, exam_type: str = "SAT", length_mode: str = "full") -> ExamSimulationConfig:
+        """Get simulation rules, question counts, and duration for full or half mode."""
+        return self.simulator.get_config(exam_type=exam_type, length_mode=length_mode)
+
+    def start_exam_simulation(self, exam_type: str = "SAT", length_mode: str = "full") -> Tuple[ExamSimulationConfig, List[Question]]:
+        """Assembles a full (98/100 Qs) or half (49/50 Qs) exam simulation set."""
+        cfg = self.simulator.get_config(exam_type=exam_type, length_mode=length_mode)
+        questions = self.simulator.assemble_exam(exam_type=exam_type, length_mode=length_mode)
+        return cfg, questions
+
+    def score_exam_simulation(
+        self,
+        config: ExamSimulationConfig,
+        questions: List[Question],
+        user_answers: Dict[int, str]
+    ) -> ScaledExamScore:
+        """Computes official scaled score, section sub-scores, and cognitive diagnosis."""
+        return self.simulator.score_exam(config=config, questions=questions, user_answers=user_answers)
+

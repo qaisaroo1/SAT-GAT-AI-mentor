@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Any
 from pydantic import BaseModel, Field
 
 
@@ -66,3 +66,30 @@ class SocraticHint(BaseModel):
     hint_level: int = Field(description="1 (Nudge), 2 (Scaffold), or 3 (Step-Through)")
     hint_text: str = Field(description="The pedagogical guidance without revealing the answer")
     guiding_question: str = Field(description="A thought-provoking question prompting the student's next step")
+
+
+class ExamSimulationConfig(BaseModel):
+    exam_type: str = Field(description="SAT or GAT")
+    length_mode: str = Field(description="'full' or 'half'")
+    total_questions: int = Field(description="Total questions in this exam session (e.g. 98/49 or 100/50)")
+    duration_minutes: int = Field(description="Official time limit in minutes")
+    sections: List[str] = Field(description="List of sections included in the exam")
+
+
+class ScaledExamScore(BaseModel):
+    exam_type: str
+    length_mode: str
+    total_questions: int
+    attempted_count: int
+    correct_count: int
+    raw_score_percent: float
+    scaled_score: int = Field(description="400-1600 for SAT, 0-100 for GAT")
+    max_scaled_score: int = Field(description="1600 for SAT, 100 for GAT")
+    section_breakdown: Dict[str, Dict[str, Any]] = Field(
+        default_factory=dict,
+        description="Performance metrics per exam section (attempted, correct, percent, scaled)"
+    )
+    percentile_estimate: str
+    readiness_level: str
+    weak_topics: List[str] = Field(default_factory=list)
+    recommendation: str

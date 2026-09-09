@@ -2,9 +2,9 @@
   "masteries": {
     "Linear Equations and Slope-Intercept Form": {
       "topic": "Linear Equations and Slope-Intercept Form",
-      "attempts": 39,
+      "attempts": 49,
       "correct": 13,
-      "score_percent": 33.3,
+      "score_percent": 26.5,
       "common_errors": [
         "Calculation / Arithmetic Mistake",
         "Trap Choice / Cognitive Bias",
@@ -14,9 +14,9 @@
     },
     "Geometry: Circles in the Coordinate Plane": {
       "topic": "Geometry: Circles in the Coordinate Plane",
-      "attempts": 9,
-      "correct": 3,
-      "score_percent": 33.3,
+      "attempts": 14,
+      "correct": 5,
+      "score_percent": 35.7,
       "common_errors": [
         "Trap Choice / Cognitive Bias",
         "Fell for a Common Exam Trick"
@@ -24,11 +24,12 @@
     },
     "Systems of Linear Equations": {
       "topic": "Systems of Linear Equations",
-      "attempts": 2,
+      "attempts": 4,
       "correct": 1,
-      "score_percent": 50.0,
+      "score_percent": 25.0,
       "common_errors": [
-        "Math Calculation Slip"
+        "Math Calculation Slip",
+        "Fell for a Common Exam Trick"
       ]
     },
     "Quadratic Functions and Parabola Properties": {
@@ -513,6 +514,125 @@
       "is_correct": false,
       "error_category": "Math Calculation Slip",
       "misconception": "Math Calculation Slip"
+    },
+    {
+      "question_id": "sat_linear_01",
+      "topic": "Linear Equations and Slope-Intercept Form",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "sat_circle_04",
+      "topic": "Geometry: Circles in the Coordinate Plane",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "sat_circle_09",
+      "topic": "Geometry: Circles in the Coordinate Plane",
+      "is_correct": true,
+      "error_category": null,
+      "misconception": "None"
+    },
+    {
+      "question_id": "sat_circle_10",
+      "topic": "Geometry: Circles in the Coordinate Plane",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "sat_circle_01",
+      "topic": "Geometry: Circles in the Coordinate Plane",
+      "is_correct": true,
+      "error_category": null,
+      "misconception": "None"
+    },
+    {
+      "question_id": "sat_circle_03",
+      "topic": "Geometry: Circles in the Coordinate Plane",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "sat_linear_08",
+      "topic": "Linear Equations and Slope-Intercept Form",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "sat_linear_07",
+      "topic": "Linear Equations and Slope-Intercept Form",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "sat_linear_01",
+      "topic": "Linear Equations and Slope-Intercept Form",
+      "is_correct": false,
+      "error_category": "Math Calculation Slip",
+      "misconception": "Math Calculation Slip"
+    },
+    {
+      "question_id": "sat_linear_02",
+      "topic": "Linear Equations and Slope-Intercept Form",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "sat_linear_04",
+      "topic": "Linear Equations and Slope-Intercept Form",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "sat_linear_07",
+      "topic": "Linear Equations and Slope-Intercept Form",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "sat_linear_04",
+      "topic": "Linear Equations and Slope-Intercept Form",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "sat_systems_01",
+      "topic": "Systems of Linear Equations",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "sat_systems_01",
+      "topic": "Systems of Linear Equations",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "sat_linear_02",
+      "topic": "Linear Equations and Slope-Intercept Form",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "sat_linear_01",
+      "topic": "Linear Equations and Slope-Intercept Form",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
     },
     {
       "question_id": "sat_linear_01",
