@@ -14,13 +14,38 @@ except ImportError:
     genai = None
 
 
+def is_valid_question(q: Question) -> bool:
+    """Rigorous sanity check: ensures complete stem and non-empty options."""
+    if not q or not q.question:
+        return False
+    q_str = q.question.strip()
+    if len(q_str) < 20 or q_str.endswith(",") or "costs ." in q_str or "for ." in q_str or "have ," in q_str:
+        return False
+    if not q.options or len(q.options) != 4:
+        return False
+    for opt in q.options:
+        if not opt.text or not opt.text.strip():
+            return False
+    if q.correct_key not in ["A", "B", "C", "D"]:
+        return False
+    return True
+
+
 def _load_questions() -> List[Question]:
     """Load the calibrated bank from storage/topic_questions.json."""
     json_path = Path(__file__).resolve().parent.parent.parent / "storage" / "topic_questions.json"
     if json_path.exists():
         try:
             raw = json.loads(json_path.read_text(encoding="utf-8"))
-            return [Question.model_validate(d) for d in raw]
+            valid = []
+            for d in raw:
+                try:
+                    q = Question.model_validate(d)
+                    if is_valid_question(q):
+                        valid.append(q)
+                except Exception:
+                    pass
+            return valid
         except Exception as e:
             print(f"[DiagnosticAgent] Error loading questions from JSON: {e}")
     return []
@@ -91,11 +116,31 @@ CURRICULUM CONTEXT:
 {context_text}
 
 STRICT REQUIREMENTS:
-1. Provide 4 options (A, B, C, D) with exactly ONE correct answer.
-2. The correct answer must NOT always be 'A'. Vary the correct option between A, B, C, and D.
-3. Write clear, friendly, everyday English explanations in the rationale. Avoid raw dollar signs or confusing unrendered symbols.
+1. Provide exactly 4 options (A, B, C, D). Every option MUST have complete non-empty text.
+2. Exactly ONE option is correct. The correct answer must NOT always be 'A'.
+3. State the question stem completely with all numbers, values, and question prompt clearly written.
 4. Include 'distractor_analysis' for each of the 3 incorrect options explaining the specific student mistake.
-5. Return strictly valid JSON adhering to the Question schema.
+5. Return strictly valid JSON adhering to this exact schema:
+{{
+  "id": "ai_{exam_type.lower()}_q",
+  "exam_type": "{exam_type}",
+  "topic": "{topic}",
+  "difficulty": "{difficulty}",
+  "question": "Complete question text with all numbers stated.",
+  "options": [
+    {{"key": "A", "text": "Option A complete text"}},
+    {{"key": "B", "text": "Option B complete text"}},
+    {{"key": "C", "text": "Option C complete text"}},
+    {{"key": "D", "text": "Option D complete text"}}
+  ],
+  "correct_key": "B",
+  "rationale": "Clear step-by-step solution.",
+  "distractor_analysis": {{
+    "A": "Why A is tempting.",
+    "C": "Why C is tempting.",
+    "D": "Why D is tempting."
+  }}
+}}
 """
         try:
             import time
@@ -104,17 +149,24 @@ STRICT REQUIREMENTS:
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
-                    response_schema=Question,
                     temperature=0.7
                 )
             )
-            q = Question.model_validate_json(response.text)
+            txt = response.text.strip()
+            if txt.startswith("```json"):
+                txt = txt[7:]
+            if txt.endswith("```"):
+                txt = txt[:-3]
+            q = Question.model_validate_json(txt.strip())
             if not q.id or q.id in ["string", "id"]:
                 q.id = f"ai_{exam_type.lower()}_{int(time.time())}"
             q.exam_type = exam_type
             if not q.topic:
                 q.topic = topic
-            return q
+            if is_valid_question(q):
+                return q
+            print(f"[DiagnosticAgent] Generated AI question failed validation: {q.question[:60]}")
+            return None
         except Exception as e:
             print(f"[DiagnosticAgent] Live AI question generation error ({e}).")
             return None
@@ -141,8 +193,8 @@ STRICT REQUIREMENTS:
                     new_correct = k
                 else:
                     old_analysis = q_copy.distractor_analysis.get(opt.key, "Calculation trap.")
-                    new_dist[k] = old_analysis
-                new_opts.append(MCQOption(key=k, text=opt.text))
+                clean_text = opt.text.strip() if (opt.text and opt.text.strip()) else f"Option {k}"
+                new_opts.append(MCQOption(key=k, text=clean_text))
 
             q_copy.options = new_opts
             q_copy.correct_key = new_correct

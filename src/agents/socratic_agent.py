@@ -392,6 +392,13 @@ OPTIONS:
 
 STUDENT'S MISTAKE / ERROR:
 {student_mistake or 'Student requested a hint'}
+
+Return strictly valid JSON adhering to this exact schema:
+{{
+  "hint_level": {hint_level},
+  "hint_text": "The pedagogical guidance without revealing the answer",
+  "guiding_question": "A thought-provoking question prompting the student's next step"
+}}
 """
 
         try:
@@ -400,11 +407,15 @@ STUDENT'S MISTAKE / ERROR:
                 contents=system_instruction,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
-                    response_schema=SocraticHint,
                     temperature=0.3
                 )
             )
-            hint = SocraticHint.model_validate_json(response.text)
+            txt = response.text.strip()
+            if txt.startswith("```json"):
+                txt = txt[7:]
+            if txt.endswith("```"):
+                txt = txt[:-3]
+            hint = SocraticHint.model_validate_json(txt.strip())
             hint.hint_level = hint_level
             return hint
         except Exception as e:

@@ -2,9 +2,9 @@
   "masteries": {
     "Linear Equations and Slope-Intercept Form": {
       "topic": "Linear Equations and Slope-Intercept Form",
-      "attempts": 50,
+      "attempts": 51,
       "correct": 13,
-      "score_percent": 26.0,
+      "score_percent": 25.5,
       "common_errors": [
         "Calculation / Arithmetic Mistake",
         "Trap Choice / Cognitive Bias",
@@ -24,9 +24,9 @@
     },
     "Systems of Linear Equations": {
       "topic": "Systems of Linear Equations",
-      "attempts": 4,
+      "attempts": 5,
       "correct": 1,
-      "score_percent": 25.0,
+      "score_percent": 20.0,
       "common_errors": [
         "Math Calculation Slip",
         "Fell for a Common Exam Trick"
@@ -61,7 +61,7 @@
     },
     "Linear Sequencing Puzzles": {
       "topic": "Linear Sequencing Puzzles",
-      "attempts": 1,
+      "attempts": 6,
       "correct": 0,
       "score_percent": 0.0,
       "common_errors": [
@@ -647,6 +647,55 @@
       "is_correct": false,
       "error_category": "Fell for a Common Exam Trick",
       "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "gat_seq_07",
+      "topic": "Linear Sequencing Puzzles",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "gat_seq_08",
+      "topic": "Linear Sequencing Puzzles",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "gat_seq_01",
+      "topic": "Linear Sequencing Puzzles",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "gat_seq_05",
+      "topic": "Linear Sequencing Puzzles",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "gat_seq_02",
+      "topic": "Linear Sequencing Puzzles",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "sat_systems_07",
+      "topic": "Systems of Linear Equations",
+      "is_correct": false,
+      "error_category": "Fell for a Common Exam Trick",
+      "misconception": "Fell for a Common Exam Trick"
+    },
+    {
+      "question_id": "sat_linear_02",
+      "topic": "Linear Equations and Slope-Intercept Form",
+      "is_correct": false,
+      "error_category": "Math Calculation Slip",
+      "misconception": "Arithmetic Calculation Error"
     }
   ]
 }

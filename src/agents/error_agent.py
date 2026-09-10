@@ -85,9 +85,20 @@ STUDENT WORK/NOTES: {student_notes or 'None provided'}
 
 TASK:
 1. Explain WHY the student made this choice (the underlying thought process or flawed assumption).
-2. Classify into one of: 'Conceptual Gap', 'Trap Choice / Cognitive Bias', 'Calculation / Arithmetic Mistake', 'Misreading Premise / Constraint Overlooked'.
+2. Classify into category: MUST be exactly one of: 'Missing Formula or Rule', 'Fell for a Common Exam Trick', 'Math Calculation Slip', 'Misread the Question'.
 3. Name the specific misconception (e.g. 'Inverted Slope', 'Converse Fallacy', 'Radius vs Area Confusion').
 4. Specify the exact concept section to review.
+
+Return strictly valid JSON adhering to this exact schema:
+{{
+  "is_correct": false,
+  "selected_key": "{selected_key}",
+  "correct_key": "{question.correct_key}",
+  "category": "Missing Formula or Rule",
+  "diagnosis": "Detailed reason why the student made this choice",
+  "misconception_name": "Specific misconception name",
+  "recommended_concept": "Concept section to review"
+}}
 """
 
         try:
@@ -96,11 +107,15 @@ TASK:
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
-                    response_schema=ErrorAnalysisResult,
                     temperature=0.2
                 )
             )
-            return ErrorAnalysisResult.model_validate_json(response.text)
+            txt = response.text.strip()
+            if txt.startswith("```json"):
+                txt = txt[7:]
+            if txt.endswith("```"):
+                txt = txt[:-3]
+            return ErrorAnalysisResult.model_validate_json(txt.strip())
         except Exception as e:
             print(f"[CognitiveErrorAgent] Analysis error ({e}). Using deterministic rule.")
             return ErrorAnalysisResult(

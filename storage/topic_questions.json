@@ -36,7 +36,7 @@
     "exam_type": "SAT",
     "topic": "Linear Equations and Slope-Intercept Form",
     "difficulty": "Medium",
-    "question": "A service technician charges a flat visit fee of  plus  for each hour of repair work. If a customer paid a total of , how many hours did the technician work?",
+    "question": "A service technician charges a flat visit fee of $50 plus $35 for each hour of repair work. If a customer paid a total of $190, how many hours did the technician work?",
     "options": [
       {
         "key": "A",
@@ -56,11 +56,11 @@
       }
     ],
     "correct_key": "D",
-    "rationale": "Step 1: Set up the linear equation: Total Cost = Flat Fee + (Rate x Hours). So 190 = 50 + 35h.\n\nStep 2: Subtract flat fee: 190 - 50 = 140. So 35h = 140.\n\nStep 3: Divide 140 by 35 to get hours: h = 4.",
+    "rationale": "Step 1: Set up the linear equation: Total Cost = Flat Fee + (Hourly Rate * Hours). So 190 = 50 + 35h.\n\nStep 2: Subtract the $50 flat fee from both sides: 190 - 50 = 140. So 35h = 140.\n\nStep 3: Divide by 35 to find hours: h = 140 / 35 = 4 hours.",
     "distractor_analysis": {
-      "A": "Subtracted incorrectly or used (190 - 50) / 45.",
-      "B": "Miscalculated 140 / 35 as 5.",
-      "C": "Divided 190 directly by 35 without subtracting 50 flat fee first."
+      "A": "Subtracted incorrectly or used an incorrect hourly rate.",
+      "B": "Divided incorrectly (140 / 35 = 4, not 5).",
+      "C": "Divided 190 directly by 35 without subtracting the $50 flat fee first."
     }
   },
   {
@@ -292,7 +292,7 @@
     "exam_type": "SAT",
     "topic": "Systems of Linear Equations",
     "difficulty": "Hard",
-    "question": "A student bought a total of 8 notebooks and pens for . Each notebook costs  and each pen costs . How many notebooks did the student buy?",
+    "question": "A student bought a total of 8 notebooks and pens for $20. Each notebook costs $3 and each pen costs $2. How many notebooks did the student buy?",
     "options": [
       {
         "key": "A",
@@ -312,10 +312,10 @@
       }
     ],
     "correct_key": "D",
-    "rationale": "Step 1: Set up equations: n + p = 8 (items) and 3n + 2p = 20 (cost).\n\nStep 2: p = 8 - n. Substitute: 3n + 2(8 - n) = 20.\n\nStep 3: 3n + 16 - 2n = 20 => n = 4 notebooks.",
+    "rationale": "Step 1: Set up the system of equations. Let n = notebooks and p = pens.\nItems: n + p = 8 => p = 8 - n.\nCost: 3n + 2p = 20.\n\nStep 2: Substitute p into the cost equation:\n3n + 2(8 - n) = 20\n3n + 16 - 2n = 20\nn + 16 = 20 => n = 4 notebooks.\n\nStep 3: The student bought 4 notebooks.",
     "distractor_analysis": {
-      "A": "Guessed 3 (would cost , not ).",
-      "B": "Guessed 5 (would cost , over budget).",
+      "A": "Guessed 3 (3 notebooks and 5 pens would cost $19, not $20).",
+      "B": "Guessed 5 (5 notebooks and 3 pens would cost $21, over budget).",
       "C": "Subtracted incorrectly."
     }
   },
@@ -324,7 +324,7 @@
     "exam_type": "SAT",
     "topic": "Quadratic Functions and Parabola Properties",
     "difficulty": "Medium",
-    "question": "The function f is defined by f(x) = 2(x - 3)\u00b2 - 8. What is the minimum value of f(x)?",
+    "question": "The function f is defined by f(x) = 2(x - 3)² - 8. What is the minimum value of f(x)?",
     "options": [
       {
         "key": "A",
@@ -344,7 +344,7 @@
       }
     ],
     "correct_key": "D",
-    "rationale": "Step 1: Vertex form is f(x) = a(x - h)\u00b2 + k with vertex (h, k) = (3, -8).\n\nStep 2: Since a = 2 > 0, the parabola opens upward, so vertex is minimum.\n\nStep 3: The minimum VALUE is the y-coordinate: -8.",
+    "rationale": "Step 1: Vertex form is f(x) = a(x - h)² + k with vertex (h, k) = (3, -8).\n\nStep 2: Since a = 2 > 0, the parabola opens upward, so vertex is minimum.\n\nStep 3: The minimum VALUE is the y-coordinate: -8.",
     "distractor_analysis": {
       "A": "Picked the x-value (x = 3) where minimum occurs instead of minimum value itself.",
       "B": "Flipped x-sign to -3.",
@@ -356,7 +356,7 @@
     "exam_type": "SAT",
     "topic": "Quadratic Functions and Parabola Properties",
     "difficulty": "Medium",
-    "question": "What are the solutions (x-intercepts) of the equation x\u00b2 - 7x + 10 = 0?",
+    "question": "What are the solutions (x-intercepts) of the equation x² - 7x + 10 = 0?",
     "options": [
       {
         "key": "A",
@@ -388,7 +388,7 @@
     "exam_type": "SAT",
     "topic": "Quadratic Functions and Parabola Properties",
     "difficulty": "Hard",
-    "question": "What are the coordinates of the vertex of the parabola f(x) = x\u00b2 - 6x + 5?",
+    "question": "What are the coordinates of the vertex of the parabola f(x) = x² - 6x + 5?",
     "options": [
       {
         "key": "A",
@@ -408,7 +408,7 @@
       }
     ],
     "correct_key": "C",
-    "rationale": "Step 1: x-coordinate of vertex: x = -b / (2a) = -(-6) / 2 = 3.\n\nStep 2: Substitute x = 3: f(3) = 3\u00b2 - 6(3) + 5 = 9 - 18 + 5 = -4.\n\nStep 3: Vertex is (3, -4).",
+    "rationale": "Step 1: x-coordinate of vertex: x = -b / (2a) = -(-6) / 2 = 3.\n\nStep 2: Substitute x = 3: f(3) = 3² - 6(3) + 5 = 9 - 18 + 5 = -4.\n\nStep 3: Vertex is (3, -4).",
     "distractor_analysis": {
       "A": "Sign error on -b/(2a), getting -3.",
       "B": "Used y-intercept (5) as y-coordinate.",
@@ -420,7 +420,7 @@
     "exam_type": "SAT",
     "topic": "Quadratic Functions and Parabola Properties",
     "difficulty": "Medium",
-    "question": "How many real solutions does the quadratic equation 2x\u00b2 - 4x + 5 = 0 have?",
+    "question": "How many real solutions does the quadratic equation 2x² - 4x + 5 = 0 have?",
     "options": [
       {
         "key": "A",
@@ -440,7 +440,7 @@
       }
     ],
     "correct_key": "A",
-    "rationale": "Step 1: Calculate discriminant D = b\u00b2 - 4ac.\n\nStep 2: D = (-4)\u00b2 - 4(2)(5) = 16 - 40 = -24.\n\nStep 3: Since D < 0, there are zero real solutions.",
+    "rationale": "Step 1: Calculate discriminant D = b² - 4ac.\n\nStep 2: D = (-4)² - 4(2)(5) = 16 - 40 = -24.\n\nStep 3: Since D < 0, there are zero real solutions.",
     "distractor_analysis": {
       "B": "Assumed D = 0 without calculating.",
       "C": "Assumed quadratics always have two real roots.",
@@ -484,7 +484,7 @@
     "exam_type": "SAT",
     "topic": "Geometry: Circles in the Coordinate Plane",
     "difficulty": "Hard",
-    "question": "A circle in the xy-plane has the equation x\u00b2 + y\u00b2 - 8x + 6y = 11. What is the radius of the circle?",
+    "question": "A circle in the xy-plane has the equation x² + y² - 8x + 6y = 11. What is the radius of the circle?",
     "options": [
       {
         "key": "A",
@@ -504,9 +504,9 @@
       }
     ],
     "correct_key": "A",
-    "rationale": "Step 1: Complete square: (x - 4)\u00b2 + (y + 3)\u00b2 = 11 + 16 + 9 = 36.\n\nStep 2: Right side is r\u00b2 = 36.\n\nStep 3: Square root gives r = 6.",
+    "rationale": "Step 1: Complete square: (x - 4)² + (y + 3)² = 11 + 16 + 9 = 36.\n\nStep 2: Right side is r² = 36.\n\nStep 3: Square root gives r = 6.",
     "distractor_analysis": {
-      "B": "Fell for trap of choosing r\u00b2 (36) instead of radius r (6).",
+      "B": "Fell for trap of choosing r² (36) instead of radius r (6).",
       "C": "Assumed 11 was radius.",
       "D": "Took x-offset (8/2 = 4)."
     }
@@ -516,7 +516,7 @@
     "exam_type": "SAT",
     "topic": "Geometry: Circles in the Coordinate Plane",
     "difficulty": "Medium",
-    "question": "A circle is defined by the equation (x + 5)\u00b2 + (y - 2)\u00b2 = 49. What are the coordinates of the center of this circle?",
+    "question": "A circle is defined by the equation (x + 5)² + (y - 2)² = 49. What are the coordinates of the center of this circle?",
     "options": [
       {
         "key": "A",
@@ -536,7 +536,7 @@
       }
     ],
     "correct_key": "C",
-    "rationale": "Step 1: Circle equation is (x - h)\u00b2 + (y - k)\u00b2 = r\u00b2 with center (h, k).\n\nStep 2: (x + 5) gives h = -5; (y - 2) gives k = 2.\n\nStep 3: Center is (-5, 2).",
+    "rationale": "Step 1: Circle equation is (x - h)² + (y - k)² = r² with center (h, k).\n\nStep 2: (x + 5) gives h = -5; (y - 2) gives k = 2.\n\nStep 3: Center is (-5, 2).",
     "distractor_analysis": {
       "A": "Flipped signs, choosing (5, -2).",
       "B": "Kept both coordinates negative.",
@@ -552,25 +552,25 @@
     "options": [
       {
         "key": "A",
-        "text": "x\u00b2 + y\u00b2 = 5"
+        "text": "x² + y² = 5"
       },
       {
         "key": "B",
-        "text": "x\u00b2 + y\u00b2 = 25"
+        "text": "x² + y² = 25"
       },
       {
         "key": "C",
-        "text": "(x - 3)\u00b2 + (y - 4)\u00b2 = 25"
+        "text": "(x - 3)² + (y - 4)² = 25"
       },
       {
         "key": "D",
-        "text": "x\u00b2 + y\u00b2 = 7"
+        "text": "x² + y² = 7"
       }
     ],
     "correct_key": "B",
-    "rationale": "Step 1: Centered at (0, 0) gives x\u00b2 + y\u00b2 = r\u00b2.\n\nStep 2: Distance from (0, 0) to (3, 4) gives r\u00b2 = 3\u00b2 + 4\u00b2 = 9 + 16 = 25.\n\nStep 3: Equation is x\u00b2 + y\u00b2 = 25.",
+    "rationale": "Step 1: Centered at (0, 0) gives x² + y² = r².\n\nStep 2: Distance from (0, 0) to (3, 4) gives r² = 3² + 4² = 9 + 16 = 25.\n\nStep 3: Equation is x² + y² = 25.",
     "distractor_analysis": {
-      "A": "Put r = 5 on right side instead of r\u00b2 = 25.",
+      "A": "Put r = 5 on right side instead of r² = 25.",
       "C": "Used (3, 4) as center.",
       "D": "Added 3 + 4 = 7."
     }
@@ -580,7 +580,7 @@
     "exam_type": "SAT",
     "topic": "Geometry: Circles in the Coordinate Plane",
     "difficulty": "Hard",
-    "question": "A circle in the xy-plane has the equation (x - 1)\u00b2 + (y + 4)\u00b2 = 64. What is the DIAMETER of the circle?",
+    "question": "A circle in the xy-plane has the equation (x - 1)² + (y + 4)² = 64. What is the DIAMETER of the circle?",
     "options": [
       {
         "key": "A",
@@ -600,10 +600,10 @@
       }
     ],
     "correct_key": "D",
-    "rationale": "Step 1: r\u00b2 = 64, so radius r = 8.\n\nStep 2: Question asks for DIAMETER.\n\nStep 3: Diameter = 2 x 8 = 16.",
+    "rationale": "Step 1: r² = 64, so radius r = 8.\n\nStep 2: Question asks for DIAMETER.\n\nStep 3: Diameter = 2 x 8 = 16.",
     "distractor_analysis": {
       "A": "Answered radius (8) instead of diameter (16).",
-      "B": "Chose r\u00b2 = 64 directly.",
+      "B": "Chose r² = 64 directly.",
       "C": "Divided 64 by 2."
     }
   },
@@ -612,31 +612,31 @@
     "exam_type": "SAT",
     "topic": "Geometry: Circles in the Coordinate Plane",
     "difficulty": "Easy",
-    "question": "A circle is given by the equation (x - 3)\u00b2 + (y - 7)\u00b2 = 16. What is the AREA of this circle?",
+    "question": "A circle is given by the equation (x - 3)² + (y - 7)² = 16. What is the AREA of this circle?",
     "options": [
       {
         "key": "A",
-        "text": "16\u03c0"
+        "text": "16π"
       },
       {
         "key": "B",
-        "text": "4\u03c0"
+        "text": "4π"
       },
       {
         "key": "C",
-        "text": "8\u03c0"
+        "text": "8π"
       },
       {
         "key": "D",
-        "text": "64\u03c0"
+        "text": "64π"
       }
     ],
     "correct_key": "A",
-    "rationale": "Step 1: Area = \u03c0 r\u00b2.\n\nStep 2: In the circle formula, the number on the right IS r\u00b2 = 16.\n\nStep 3: Area = 16\u03c0.",
+    "rationale": "Step 1: Area = π r².\n\nStep 2: In the circle formula, the number on the right IS r² = 16.\n\nStep 3: Area = 16π.",
     "distractor_analysis": {
-      "B": "Multiplied radius 4 by \u03c0.",
+      "B": "Multiplied radius 4 by π.",
       "C": "Multiplied radius 4 by 2.",
-      "D": "Squared 16 to get 256\u03c0."
+      "D": "Squared 16 to get 256π."
     }
   },
   {
@@ -644,7 +644,7 @@
     "exam_type": "SAT",
     "topic": "Digital SAT: Reading & Writing (Official College Board)",
     "difficulty": "Medium",
-    "question": "Passage: 'To dye wool, Navajo (Din\u00e9) weaver Lillie Taylor uses plants and vegetables from Arizona, where she lives. For example, she achieved the deep reds and browns featured in her 2003 rug In the Path of the Four Seasons by using Arizona dock roots, drying and grinding them before mixing the powder with water to create a dye bath. To intensify the appearance of certain colors, Taylor also sometimes mixes in clay obtained from nearby soil.'\n\nWhich choice best states the main idea of the text?",
+    "question": "Passage: 'To dye wool, Navajo (Diné) weaver Lillie Taylor uses plants and vegetables from Arizona, where she lives. For example, she achieved the deep reds and browns featured in her 2003 rug In the Path of the Four Seasons by using Arizona dock roots, drying and grinding them before mixing the powder with water to create a dye bath. To intensify the appearance of certain colors, Taylor also sometimes mixes in clay obtained from nearby soil.'\n\nWhich choice best states the main idea of the text?",
     "options": [
       {
         "key": "A",
@@ -868,31 +868,31 @@
     "exam_type": "SAT",
     "topic": "Digital SAT: Math & Problem Solving (Official College Board)",
     "difficulty": "Easy",
-    "question": "A laptop computer originally costs . During a sale, the price is discounted by 20%. What is the sale price of the laptop?",
+    "question": "A laptop computer originally costs $500. During a sale, the price is discounted by 20%. What is the sale price of the laptop?",
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "$400"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "$100"
       },
       {
         "key": "C",
-        "text": ""
+        "text": "$450"
       },
       {
         "key": "D",
-        "text": ""
+        "text": "$350"
       }
     ],
     "correct_key": "A",
-    "rationale": "Step 1: Discount = 0.20 x 500 = .\n\nStep 2: Sale price = 500 - 100 = .\n\nStep 3: Final price is .",
+    "rationale": "Step 1: Calculate the 20% discount: 0.20 * $500 = $100.\n\nStep 2: Subtract the discount from the original price: $500 - $100 = $400.\n\nStep 3: The final sale price is $400.",
     "distractor_analysis": {
-      "B": "Gave discount amount () instead of sale price.",
-      "C": "Subtracted 10% ().",
-      "D": "Calculated discount incorrectly."
+      "B": "Calculated the discount amount ($100) instead of the final sale price.",
+      "C": "Subtracted only 10% ($50) instead of 20%.",
+      "D": "Subtracted 30% ($150) instead of 20%."
     }
   },
   {
@@ -964,7 +964,7 @@
     "exam_type": "GAT",
     "topic": "Linear Sequencing Puzzles",
     "difficulty": "Medium",
-    "question": "Six professors\u2014Farooq, Ghazala, Hamid, Imran, Junaid, and Khalid\u2014lecture on Monday through Saturday (Days 1 to 6). Imran lectures on Wednesday (Day 3). Farooq must lecture before Ghazala (F < G). Khalid lectures immediately after Hamid ([H][K]). Neither Farooq nor Khalid can lecture on Saturday. If Farooq lectures on Monday, which day MUST Khalid lecture?",
+    "question": "Six professors—Farooq, Ghazala, Hamid, Imran, Junaid, and Khalid—lecture on Monday through Saturday (Days 1 to 6). Imran lectures on Wednesday (Day 3). Farooq must lecture before Ghazala (F < G). Khalid lectures immediately after Hamid ([H][K]). Neither Farooq nor Khalid can lecture on Saturday. If Farooq lectures on Monday, which day MUST Khalid lecture?",
     "options": [
       {
         "key": "A",
@@ -996,7 +996,7 @@
     "exam_type": "GAT",
     "topic": "Linear Sequencing Puzzles",
     "difficulty": "Medium",
-    "question": "Five runners\u2014A, B, C, D, and E\u2014finish a race in positions 1 to 5 (1 = 1st, 5 = 5th).\nRules:\n1. A finishes before B (A < B).\n2. C finishes immediately after B ([B][C]).\n3. D finishes in 1st place.\nIf E finishes in 5th place, in which position does B finish?",
+    "question": "Five runners—A, B, C, D, and E—finish a race in positions 1 to 5 (1 = 1st, 5 = 5th).\nRules:\n1. A finishes before B (A < B).\n2. C finishes immediately after B ([B][C]).\n3. D finishes in 1st place.\nIf E finishes in 5th place, in which position does B finish?",
     "options": [
       {
         "key": "A",
@@ -1028,7 +1028,7 @@
     "exam_type": "GAT",
     "topic": "Linear Sequencing Puzzles",
     "difficulty": "Easy",
-    "question": "Four cars\u2014P, Q, R, and S\u2014park in spots 1, 2, 3, and 4.\nRules:\n1. Car P is parked immediately to the left of Car Q ([P][Q]).\n2. Car R is parked in spot 3.\n3. Car S is parked in spot 4.\nWhich parking spot MUST Car P occupy?",
+    "question": "Four cars—P, Q, R, and S—park in spots 1, 2, 3, and 4.\nRules:\n1. Car P is parked immediately to the left of Car Q ([P][Q]).\n2. Car R is parked in spot 3.\n3. Car S is parked in spot 4.\nWhich parking spot MUST Car P occupy?",
     "options": [
       {
         "key": "A",
@@ -1060,7 +1060,7 @@
     "exam_type": "GAT",
     "topic": "Linear Sequencing Puzzles",
     "difficulty": "Hard",
-    "question": "Five students\u2014T, U, V, W, and X\u2014present 1st through 5th.\nRules:\n1. U presents 2nd.\n2. W presents before T (W < T).\n3. X presents immediately after V ([V][X]).\nIf W presents 1st, who MUST present 5th?",
+    "question": "Five students—T, U, V, W, and X—present 1st through 5th.\nRules:\n1. U presents 2nd.\n2. W presents before T (W < T).\n3. X presents immediately after V ([V][X]).\nIf W presents 1st, who MUST present 5th?",
     "options": [
       {
         "key": "A",
@@ -1732,7 +1732,7 @@
     "exam_type": "SAT",
     "topic": "Systems of Linear Equations",
     "difficulty": "Hard",
-    "question": "If 2x - y = 5 and x + 2y = 10, what is the value of x\u00b2 - y\u00b2?",
+    "question": "If 2x - y = 5 and x + 2y = 10, what is the value of x² - y²?",
     "options": [
       {
         "key": "A",
@@ -1752,11 +1752,11 @@
       }
     ],
     "correct_key": "A",
-    "rationale": "Multiply first equation by 2: 4x - 2y = 10. Add to second equation: 5x = 20 -> x = 4. Substitute x = 4 into 2(4) - y = 5 -> y = 3. Thus x\u00b2 - y\u00b2 = 4\u00b2 - 3\u00b2 = 16 - 9 = 7.",
+    "rationale": "Multiply first equation by 2: 4x - 2y = 10. Add to second equation: 5x = 20 -> x = 4. Substitute x = 4 into 2(4) - y = 5 -> y = 3. Thus x² - y² = 4² - 3² = 16 - 9 = 7.",
     "distractor_analysis": {
       "B": "Subtracted x - y = 1 and multiplied.",
-      "C": "Computed only x\u00b2 (16).",
-      "D": "Computed only y\u00b2 (9)."
+      "C": "Computed only x² (16).",
+      "D": "Computed only y² (9)."
     }
   },
   {
@@ -1764,7 +1764,7 @@
     "exam_type": "SAT",
     "topic": "Quadratic Functions and Parabola Properties",
     "difficulty": "Easy",
-    "question": "What are the solutions to the quadratic equation x\u00b2 - 9 = 0?",
+    "question": "What are the solutions to the quadratic equation x² - 9 = 0?",
     "options": [
       {
         "key": "A",
@@ -1784,7 +1784,7 @@
       }
     ],
     "correct_key": "B",
-    "rationale": "x\u00b2 = 9. Taking the square root of both sides gives x = 3 and x = -3.",
+    "rationale": "x² = 9. Taking the square root of both sides gives x = 3 and x = -3.",
     "distractor_analysis": {
       "A": "Forgot the negative square root.",
       "C": "Did not take the square root of 9.",
@@ -1796,7 +1796,7 @@
     "exam_type": "SAT",
     "topic": "Quadratic Functions and Parabola Properties",
     "difficulty": "Medium",
-    "question": "What is the sum of the solutions of the equation 2x\u00b2 - 12x + 10 = 0?",
+    "question": "What is the sum of the solutions of the equation 2x² - 12x + 10 = 0?",
     "options": [
       {
         "key": "A",
@@ -1828,7 +1828,7 @@
     "exam_type": "SAT",
     "topic": "Quadratic Functions and Parabola Properties",
     "difficulty": "Medium",
-    "question": "What is the minimum value of the function f(x) = (x - 4)\u00b2 + 5?",
+    "question": "What is the minimum value of the function f(x) = (x - 4)² + 5?",
     "options": [
       {
         "key": "A",
@@ -1848,7 +1848,7 @@
       }
     ],
     "correct_key": "D",
-    "rationale": "In vertex form f(x) = a(x - h)\u00b2 + k, since a > 0, the minimum value is the y-coordinate of the vertex, which is k = 5 (at x = 4).",
+    "rationale": "In vertex form f(x) = a(x - h)² + k, since a > 0, the minimum value is the y-coordinate of the vertex, which is k = 5 (at x = 4).",
     "distractor_analysis": {
       "A": "Gave the x-value where the minimum occurs instead of the minimum value itself.",
       "B": "Inverted the vertex x-coordinate.",
@@ -1860,7 +1860,7 @@
     "exam_type": "SAT",
     "topic": "Quadratic Functions and Parabola Properties",
     "difficulty": "Hard",
-    "question": "For what value of k will the equation x\u00b2 + 6x + k = 0 have exactly one real solution?",
+    "question": "For what value of k will the equation x² + 6x + k = 0 have exactly one real solution?",
     "options": [
       {
         "key": "A",
@@ -1880,9 +1880,9 @@
       }
     ],
     "correct_key": "A",
-    "rationale": "A quadratic has exactly one real solution when its discriminant b\u00b2 - 4ac = 0. Here, 6\u00b2 - 4(1)(k) = 0 -> 36 - 4k = 0 -> 4k = 36 -> k = 9.",
+    "rationale": "A quadratic has exactly one real solution when its discriminant b² - 4ac = 0. Here, 6² - 4(1)(k) = 0 -> 36 - 4k = 0 -> 4k = 36 -> k = 9.",
     "distractor_analysis": {
-      "B": "Computed b\u00b2 (36) without dividing by 4.",
+      "B": "Computed b² (36) without dividing by 4.",
       "C": "Divided 6 by 2 without squaring.",
       "D": "Subtracted incorrectly."
     }
@@ -1892,7 +1892,7 @@
     "exam_type": "SAT",
     "topic": "Quadratic Functions and Parabola Properties",
     "difficulty": "Hard",
-    "question": "The graph of y = ax\u00b2 + bx + c passes through (0, 3) and has a vertex at (2, -1). What is the value of a?",
+    "question": "The graph of y = ax² + bx + c passes through (0, 3) and has a vertex at (2, -1). What is the value of a?",
     "options": [
       {
         "key": "A",
@@ -1912,7 +1912,7 @@
       }
     ],
     "correct_key": "B",
-    "rationale": "Using vertex form y = a(x - 2)\u00b2 - 1. Plug in point (0, 3): 3 = a(0 - 2)\u00b2 - 1 -> 3 = 4a - 1 -> 4a = 4 -> a = 1.",
+    "rationale": "Using vertex form y = a(x - 2)² - 1. Plug in point (0, 3): 3 = a(0 - 2)² - 1 -> 3 = 4a - 1 -> 4a = 4 -> a = 1.",
     "distractor_analysis": {
       "A": "Calculated 4a = 8 by adding 3 and 1 incorrectly.",
       "C": "Forgot to subtract -1 when solving for a.",
@@ -1924,7 +1924,7 @@
     "exam_type": "SAT",
     "topic": "Geometry: Circles in the Coordinate Plane",
     "difficulty": "Easy",
-    "question": "What is the center and radius of the circle given by (x + 3)\u00b2 + (y - 5)\u00b2 = 49?",
+    "question": "What is the center and radius of the circle given by (x + 3)² + (y - 5)² = 49?",
     "options": [
       {
         "key": "A",
@@ -1944,7 +1944,7 @@
       }
     ],
     "correct_key": "B",
-    "rationale": "Standard circle equation is (x - h)\u00b2 + (y - k)\u00b2 = r\u00b2. Here h = -3, k = 5, and r = sqrt(49) = 7.",
+    "rationale": "Standard circle equation is (x - h)² + (y - k)² = r². Here h = -3, k = 5, and r = sqrt(49) = 7.",
     "distractor_analysis": {
       "A": "Flipped signs of center and forgot to take square root of 49.",
       "C": "Flipped signs of center.",
@@ -1960,25 +1960,25 @@
     "options": [
       {
         "key": "A",
-        "text": "x\u00b2 + y\u00b2 = 5"
+        "text": "x² + y² = 5"
       },
       {
         "key": "B",
-        "text": "x\u00b2 + y\u00b2 = 7"
+        "text": "x² + y² = 7"
       },
       {
         "key": "C",
-        "text": "x\u00b2 + y\u00b2 = 25"
+        "text": "x² + y² = 25"
       },
       {
         "key": "D",
-        "text": "(x - 3)\u00b2 + (y - 4)\u00b2 = 25"
+        "text": "(x - 3)² + (y - 4)² = 25"
       }
     ],
     "correct_key": "C",
-    "rationale": "Radius r = sqrt((3-0)\u00b2 + (4-0)\u00b2) = sqrt(9 + 16) = sqrt(25) = 5. Equation is x\u00b2 + y\u00b2 = r\u00b2 = 25.",
+    "rationale": "Radius r = sqrt((3-0)² + (4-0)²) = sqrt(9 + 16) = sqrt(25) = 5. Equation is x² + y² = r² = 25.",
     "distractor_analysis": {
-      "A": "Put r (5) on right hand side instead of r\u00b2 (25).",
+      "A": "Put r (5) on right hand side instead of r² (25).",
       "B": "Added 3 + 4 = 7.",
       "D": "Used (3, 4) as the center instead of (0, 0)."
     }
@@ -1988,7 +1988,7 @@
     "exam_type": "SAT",
     "topic": "Geometry: Circles in the Coordinate Plane",
     "difficulty": "Medium",
-    "question": "What is the radius of the circle given by x\u00b2 + y\u00b2 - 8x = 9?",
+    "question": "What is the radius of the circle given by x² + y² - 8x = 9?",
     "options": [
       {
         "key": "A",
@@ -2008,7 +2008,7 @@
       }
     ],
     "correct_key": "D",
-    "rationale": "Complete the square for x: (x\u00b2 - 8x + 16) + y\u00b2 = 9 + 16 -> (x - 4)\u00b2 + y\u00b2 = 25. Radius r = sqrt(25) = 5.",
+    "rationale": "Complete the square for x: (x² - 8x + 16) + y² = 9 + 16 -> (x - 4)² + y² = 25. Radius r = sqrt(25) = 5.",
     "distractor_analysis": {
       "A": "Took square root of 9 without completing the square.",
       "B": "Gave the x-coordinate of the center (h = 4).",
@@ -2052,31 +2052,31 @@
     "exam_type": "SAT",
     "topic": "Geometry: Circles in the Coordinate Plane",
     "difficulty": "Hard",
-    "question": "The equation x\u00b2 + y\u00b2 - 6x + 4y - 12 = 0 represents a circle. What is its area?",
+    "question": "The equation x² + y² - 6x + 4y - 12 = 0 represents a circle. What is its area?",
     "options": [
       {
         "key": "A",
-        "text": "12\u03c0"
+        "text": "12π"
       },
       {
         "key": "B",
-        "text": "13\u03c0"
+        "text": "13π"
       },
       {
         "key": "C",
-        "text": "25\u03c0"
+        "text": "25π"
       },
       {
         "key": "D",
-        "text": "5\u03c0"
+        "text": "5π"
       }
     ],
     "correct_key": "C",
-    "rationale": "Complete the square: (x\u00b2 - 6x + 9) + (y\u00b2 + 4y + 4) = 12 + 9 + 4 -> (x - 3)\u00b2 + (y + 2)\u00b2 = 25. Thus r\u00b2 = 25. Area = \u03c0r\u00b2 = 25\u03c0.",
+    "rationale": "Complete the square: (x² - 6x + 9) + (y² + 4y + 4) = 12 + 9 + 4 -> (x - 3)² + (y + 2)² = 25. Thus r² = 25. Area = πr² = 25π.",
     "distractor_analysis": {
       "A": "Used the constant 12 from the original equation.",
       "B": "Added 9 + 4 = 13 without adding the constant 12.",
-      "D": "Used r = 5 instead of r\u00b2 = 25."
+      "D": "Used r = 5 instead of r² = 25."
     }
   },
   {
@@ -2308,7 +2308,7 @@
     "exam_type": "SAT",
     "topic": "Digital SAT: Math & Problem Solving (Official College Board)",
     "difficulty": "Medium",
-    "question": "If f(x) = 2x\u00b2 - 3x + 4, what is the value of f(-2)?",
+    "question": "If f(x) = 2x² - 3x + 4, what is the value of f(-2)?",
     "options": [
       {
         "key": "A",
@@ -2328,9 +2328,9 @@
       }
     ],
     "correct_key": "B",
-    "rationale": "f(-2) = 2(-2)\u00b2 - 3(-2) + 4 = 2(4) + 6 + 4 = 8 + 6 + 4 = 18.",
+    "rationale": "f(-2) = 2(-2)² - 3(-2) + 4 = 2(4) + 6 + 4 = 8 + 6 + 4 = 18.",
     "distractor_analysis": {
-      "A": "Treated (-2)\u00b2 as -4: 2(-4) + 6 + 4 = 2.",
+      "A": "Treated (-2)² as -4: 2(-4) + 6 + 4 = 2.",
       "C": "Subtracted 6 instead of adding: 8 - 6 + 4 = 6.",
       "D": "Forgot that squaring a negative number yields a positive."
     }
@@ -2340,7 +2340,7 @@
     "exam_type": "SAT",
     "topic": "Digital SAT: Math & Problem Solving (Official College Board)",
     "difficulty": "Hard",
-    "question": "A cylindrical water tank has a radius of 3 meters and a height of 10 meters. If water is pumped in at a rate of 15\u03c0 cubic meters per minute, how many minutes will it take to fill the empty tank?",
+    "question": "A cylindrical water tank has a radius of 3 meters and a height of 10 meters. If water is pumped in at a rate of 15π cubic meters per minute, how many minutes will it take to fill the empty tank?",
     "options": [
       {
         "key": "A",
@@ -2360,10 +2360,10 @@
       }
     ],
     "correct_key": "A",
-    "rationale": "Volume of cylinder = \u03c0r\u00b2h = \u03c0(3\u00b2)(10) = 90\u03c0 cubic meters. Time = Total Volume / Rate = 90\u03c0 / 15\u03c0 = 6 minutes.",
+    "rationale": "Volume of cylinder = πr²h = π(3²)(10) = 90π cubic meters. Time = Total Volume / Rate = 90π / 15π = 6 minutes.",
     "distractor_analysis": {
       "B": "Divided 90 by 10 instead of 15.",
-      "C": "Used 2\u03c0rh instead of \u03c0r\u00b2h.",
+      "C": "Used 2πrh instead of πr²h.",
       "D": "Estimated rate as time."
     }
   },
@@ -2372,7 +2372,7 @@
     "exam_type": "SAT",
     "topic": "Digital SAT: Math & Problem Solving (Official College Board)",
     "difficulty": "Hard",
-    "question": "In a right triangle, angle \u03b8 has cos(\u03b8) = 5/13. What is the value of tan(\u03b8)?",
+    "question": "In a right triangle, angle θ has cos(θ) = 5/13. What is the value of tan(θ)?",
     "options": [
       {
         "key": "A",
@@ -2392,11 +2392,11 @@
       }
     ],
     "correct_key": "A",
-    "rationale": "In a right triangle with hypotenuse 13 and adjacent side 5, the opposite side is sqrt(13\u00b2 - 5\u00b2) = sqrt(169 - 25) = sqrt(144) = 12. Therefore tan(\u03b8) = opposite / adjacent = 12/5.",
+    "rationale": "In a right triangle with hypotenuse 13 and adjacent side 5, the opposite side is sqrt(13² - 5²) = sqrt(169 - 25) = sqrt(144) = 12. Therefore tan(θ) = opposite / adjacent = 12/5.",
     "distractor_analysis": {
       "B": "Inverted tangent (adjacent / opposite).",
-      "C": "Found sin(\u03b8) = 12/13 instead of tan(\u03b8).",
-      "D": "Found sec(\u03b8) = 13/5."
+      "C": "Found sin(θ) = 12/13 instead of tan(θ).",
+      "D": "Found sec(θ) = 13/5."
     }
   },
   {
@@ -2877,6 +2877,38 @@
       "A": "History is in Slot 2.",
       "C": "Slot 6 is strictly English.",
       "D": "Slot 6 is strictly English."
+    }
+  },
+  {
+    "id": "sat_official_math_11",
+    "exam_type": "SAT",
+    "topic": "Digital SAT: Math & Problem Solving (Official College Board)",
+    "difficulty": "Medium",
+    "question": "A store sells two different-sized containers of blueberries. The store's total sales of these blueberries was $896.86 last month. The equation 4.51x + 6.07y = 896.86 represents this situation, where x is the number of smaller containers sold and y is the number of larger containers sold. According to the equation, what is the price, in dollars, of each smaller container?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$4.51"
+      },
+      {
+        "key": "B",
+        "text": "$6.07"
+      },
+      {
+        "key": "C",
+        "text": "$8.96"
+      },
+      {
+        "key": "D",
+        "text": "$10.58"
+      }
+    ],
+    "correct_key": "A",
+    "rationale": "Step 1: In the linear revenue equation 4.51x + 6.07y = 896.86, the coefficient of each variable represents the unit price.\n\nStep 2: Since x is the number of smaller containers sold, its coefficient 4.51 represents the price in dollars of one smaller container ($4.51).\n\nStep 3: Therefore, the price of each smaller container is $4.51.",
+    "distractor_analysis": {
+      "B": "Identified the coefficient of y ($6.07), which is the price of the larger container.",
+      "C": "Misread a value from the total sales ($896.86).",
+      "D": "Summed the two coefficients (4.51 + 6.07 = 10.58)."
     }
   }
 ]

@@ -416,7 +416,8 @@ def render_quiz_flow(orchestrator: MentorOrchestrator, exam_type: str, is_standa
                     suffix = " *(Your Choice)*" if opt.key == user_choice else ""
                     if opt.key == q_item.correct_key:
                         suffix += " ✅ *(Correct Answer)*"
-                    st.write(f"{prefix}**{opt.key}:** {opt.text} {suffix}")
+                    clean_txt = opt.text.strip() if (opt.text and opt.text.strip()) else f"Option {opt.key}"
+                    st.write(f"{prefix}**{opt.key}:** {clean_txt} {suffix}")
 
                 clean_rat = q_item.rationale.replace("$r^2$", "r²").replace("$r$", "r").replace("$", "")
                 st.markdown("**How to solve it step-by-step:**")
@@ -481,7 +482,7 @@ def render_quiz_flow(orchestrator: MentorOrchestrator, exam_type: str, is_standa
 
         st.markdown(f"**{q.question}**")
 
-        options_dict = {f"{opt.key}: {opt.text}": opt.key for opt in q.options}
+        options_dict = {f"{opt.key}: {opt.text.strip() if (opt.text and opt.text.strip()) else 'Option ' + opt.key}": opt.key for opt in q.options}
         
         # Check if user already picked an answer for this question
         prev_ans = st.session_state.quiz_answers.get(curr_idx)
@@ -1024,7 +1025,7 @@ def render_simulator_flow(orchestrator: MentorOrchestrator, exam_type: str, init
         """, unsafe_allow_html=True)
 
         # Multiple Choice Options
-        options_dict = {f"({opt.key}) {opt.text}": opt.key for opt in q.options}
+        options_dict = {f"({opt.key}) {opt.text.strip() if (opt.text and opt.text.strip()) else 'Option ' + opt.key}": opt.key for opt in q.options}
         current_saved_key = st.session_state.sim_answers.get(curr_idx)
         default_opt_idx = None
         for i_opt, opt in enumerate(q.options):
@@ -1221,7 +1222,8 @@ def render_simulator_flow(orchestrator: MentorOrchestrator, exam_type: str, init
                     suffix = " *(Your Answer)*" if opt.key == user_choice else ""
                     if opt.key == q_item.correct_key:
                         suffix += " ✅ *(Correct Answer)*"
-                    st.write(f"{prefix}**{opt.key}:** {opt.text} {suffix}")
+                    clean_txt = opt.text.strip() if (opt.text and opt.text.strip()) else f"Option {opt.key}"
+                    st.write(f"{prefix}**{opt.key}:** {clean_txt} {suffix}")
 
                 st.markdown("**How to solve it:**")
                 clean_rat = q_item.rationale.replace("$r^2$", "r²").replace("$r$", "r").replace("$", "")
@@ -1663,7 +1665,7 @@ with tab_drill:
     """, unsafe_allow_html=True)
 
     # Options
-    opts_dict = {f"({opt.key}) {opt.text}": opt.key for opt in curr_ad_q.options}
+    opts_dict = {f"({opt.key}) {opt.text.strip() if (opt.text and opt.text.strip()) else 'Option ' + opt.key}": opt.key for opt in curr_ad_q.options}
 
     if not st.session_state.ad_submitted:
         # User answering
@@ -1742,7 +1744,8 @@ with tab_drill:
                 sfx = " *(Your Choice)*" if opt.key == user_ch else ""
                 if opt.key == curr_ad_q.correct_key:
                     sfx += " ✅ *(Correct Answer)*"
-                st.write(f"{pfx}**({opt.key})** {opt.text} {sfx}")
+                clean_txt = opt.text.strip() if (opt.text and opt.text.strip()) else f"Option {opt.key}"
+                st.write(f"{pfx}**({opt.key})** {clean_txt} {sfx}")
             clean_rat = curr_ad_q.rationale.replace("$r^2$", "r²").replace("$r$", "r").replace("$", "")
             st.markdown(f"**Explanation:**\n\n{clean_rat}")
 

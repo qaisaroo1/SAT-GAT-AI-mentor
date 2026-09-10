@@ -24,7 +24,18 @@ class ExamSimulator:
         if json_path.exists():
             try:
                 raw = json.loads(json_path.read_text(encoding="utf-8"))
-                return [Question.model_validate(q) for q in raw]
+                valid = []
+                for q_dict in raw:
+                    try:
+                        q = Question.model_validate(q_dict)
+                        # Sanitize: ensure no empty options and complete stems
+                        has_empty = any(not opt.text or not opt.text.strip() for opt in q.options)
+                        q_str = q.question.strip()
+                        if not has_empty and len(q_str) >= 20 and not q_str.endswith(",") and "costs ." not in q_str and "for ." not in q_str:
+                            valid.append(q)
+                    except Exception:
+                        pass
+                return valid
             except Exception as e:
                 print(f"[ExamSimulator] Error loading topic_questions: {e}")
         return []
@@ -88,7 +99,8 @@ class ExamSimulator:
             else:
                 old_analysis = q_copy.distractor_analysis.get(opt.key, "Selected alternative distractor trap.")
                 new_distractor_analysis[k] = old_analysis
-            new_opts.append(MCQOption(key=k, text=opt.text))
+            clean_txt = opt.text.strip() if (opt.text and opt.text.strip()) else f"Option {k}"
+            new_opts.append(MCQOption(key=k, text=clean_txt))
 
         q_copy.options = new_opts
         q_copy.correct_key = new_correct

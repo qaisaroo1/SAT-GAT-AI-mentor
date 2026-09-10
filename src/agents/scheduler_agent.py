@@ -97,6 +97,21 @@ REQUIREMENTS:
 1. Provide exactly {days} daily tasks focused on targeting their weakest topics and cognitive traps.
 2. Include estimated minutes (20-45 mins per day).
 3. Include a motivating, realistic closing encouragement.
+
+Return strictly valid JSON adhering to this exact schema:
+{{
+  "target_exam": "{exam_type}",
+  "weakest_topics": {weak_topics},
+  "tasks": [
+    {{
+      "day": 1,
+      "focus_topic": "{t1}",
+      "task_description": "Review core concepts and solve targeted practice problems",
+      "estimated_minutes": 30
+    }}
+  ],
+  "motivational_note": "A motivating, encouraging message."
+}}
 """
 
         try:
@@ -105,11 +120,15 @@ REQUIREMENTS:
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
-                    response_schema=StudyPlan,
                     temperature=0.3
                 )
             )
-            return StudyPlan.model_validate_json(response.text)
+            txt = response.text.strip()
+            if txt.startswith("```json"):
+                txt = txt[7:]
+            if txt.endswith("```"):
+                txt = txt[:-3]
+            return StudyPlan.model_validate_json(txt.strip())
         except Exception as e:
             print(f"[StudySchedulerAgent] Plan error ({e}). Returning calibrated schedule.")
             return StudyPlan(

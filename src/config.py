@@ -8,8 +8,8 @@ load_dotenv(BASE_DIR / ".env")
 
 # API Keys & LLM Configuration
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
-DEFAULT_MODEL = "gemini-1.5-flash"
-EMBEDDING_MODEL = "text-embedding-004"
+DEFAULT_MODEL = "gemini-3.6-flash"
+EMBEDDING_MODEL = "gemini-embedding-001"
 
 # Directory Paths
 DATA_DIR = BASE_DIR / "data"
